@@ -4,38 +4,116 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ZADU project</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
-  <body class="bg-white">
+  <body>
+    <!-- 상단 헤더 -->
+    <header class="header">
+      <nav class="nav_box">
+        <img src="images/logo_h.png" alt="자두로고" class="zadu" />
 
-  <!-- 상단 헤더 -->
-  <header class="w-full p-4 flex items-center justify-between border-b">
-    <h1 class="text-lg font-bold">로고</h1>
-    <button class="text-sm">메뉴</button>
-  </header>
+        <ul class="manu">
+          <li class="home">HOME</li>
+          <li class="about">About</li>
+          <li class="support">Support</li>
+          <li class="download">Download</li>
+        </ul>
+      </nav>
+      <p class="header-title">
+        Lorem Ipsum is simply dummy text of the printing and
+      </p>
+      <p class="header-subtext">
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text ever
+        since the 1500s, when an unknown
+      </p>
+      <button class="download_btn">Download</button>
+      <img src="./images/box-cat.png" alt="박스고양이" class="box-cat" />
+    </header>
+    <!-- 메인 영역 -->
+    <main class="main">
+      <!-- 섹션 1 -->
+      <section class="intro">
+        <img src="./images/img_4.jpg" alt="침대고양이" class="bedroom-cat" />
+        <p class="intro-text">
+          Lorem Ipsum is simply dummy text of the printing and dummy text
+        </p>
+        <p class="intro-subtext">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry.
+        </p>
+        <p class="intro-bt-text">dummy text of the printing and dummy</p>
+        <p class="intro-bt-subtext">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown
+        </p>
+      </section>
 
-  <!-- 메인 영역 -->
-  <main class="p-4 space-y-6">
+      <!-- 섹션 2 -->
+      <section class="feature-text">
+        <img src="./images/img_1.jpg" alt="캣타워" class="cat_tower" />
+        <img src="./images/img_2.jpg" alt="방에 있는 고양이" class="room_cat" />
+        <img
+          src="./images/img_3.jpg"
+          alt="고양이 뒷모습"
+          class="cat-back-view"
+        />
+        <p class="img-caption">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown Ipsum is simply dummy text of the
+          printing and typesetting industry.
+        </p>
+        <button class="learn_more">Learn More</button>
+        <button class="bt_btn">
+          <p class="blog_post">Subscribe to our Blog post</p>
+          
+      </section>
 
-    <!-- 섹션 1 -->
-    <section class="bg-gray-100 p-4 rounded-xl">
-      <p class="text-base">여기에 첫 번째 콘텐츠</p>
-    </section>
+      <!-- 섹션 3 -->
+      <section class="info-text">
+        <p class="blog_subpost">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+          </p>
+          <input
+            type="e-mail"
+            name="user_e-mail"
+            id="class"
+          />
+          <img src="./images/mail.svg" alt="이메일">
+          <button class="subscribe-bt">Subscribe</button>
+        </button>
+        
+      </section>
+      
+    </main>
 
-    <!-- 섹션 2 -->
-    <section class="bg-gray-100 p-4 rounded-xl">
-      <p class="text-base">여기에 두 번째 콘텐츠</p>
-    </section>
-
-    <!-- 섹션 3 -->
-    <section class="bg-gray-100 p-4 rounded-xl">
-      <p class="text-base">여기에 세 번째 콘텐츠</p>
-    </section>
-
-  </main>
-
-  <!-- 하단 -->
-  <footer class="">
-  </footer>
-
-</body>
+    <!-- 하단 -->
+    <footer class="footer">
+      <img src="" alt="" class="">
+      <img src="./images/up-cat.png" alt="위에 보는 고양이" class="up_cat" />
+      <img src="./images/logo_h.png" alt="자두 로고" class="zadu">
+      <a href="#" class="blog">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+<path d="M13.096 7.18477C11.7929 7.18477 10.5732 7.54601 9.53402 8.17587V2H5V20.6457H9.53402V20.0089C10.5732 20.6364 11.7929 21 13.096 21C16.9079 21 20 17.9063 20 14.0924C20 10.2762 16.9102 7.18477 13.096 7.18477ZM12.4271 16.8781C10.8301 16.8781 9.53402 15.5814 9.53402 13.9835C9.53402 12.3857 10.8301 11.089 12.4271 11.089C14.0241 11.089 15.3202 12.3857 15.3202 13.9835C15.3202 15.5837 14.0241 16.8781 12.4271 16.8781Z" fill="white"/>
+</svg></a>
+<a href="#" class="instagram">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+<path d="M17 2H7C4.23858 2 2 4.23858 2 7V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V7C22 4.23858 19.7614 2 17 2Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M16 11.3701C16.1234 12.2023 15.9812 13.0523 15.5937 13.7991C15.2062 14.5459 14.5931 15.1515 13.8416 15.5297C13.0901 15.908 12.2384 16.0397 11.4077 15.906C10.5771 15.7723 9.80971 15.3801 9.21479 14.7852C8.61987 14.1903 8.22768 13.4229 8.09402 12.5923C7.96035 11.7616 8.09202 10.91 8.47028 10.1584C8.84854 9.40691 9.45414 8.7938 10.2009 8.4063C10.9477 8.0188 11.7977 7.87665 12.63 8.00006C13.4789 8.12594 14.2648 8.52152 14.8716 9.12836C15.4785 9.73521 15.8741 10.5211 16 11.3701Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M17.5 6.5H17.51" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></a>
+<a href="#" class="facebook">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+<path d="M17 2H14C12.6739 2 11.4021 2.52678 10.4645 3.46447C9.52678 4.40215 9 5.67392 9 7V10H6V14H9V22H13V14H16L17 10H13V7C13 6.73478 13.1054 6.48043 13.2929 6.29289C13.4804 6.10536 13.7348 6 14 6H17V2Z" fill="white"/>
+</svg></a>
+<a href="#" class="youtube">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+<path d="M22.54 6.42C22.4212 5.94541 22.1792 5.51057 21.8386 5.15941C21.498 4.80824 21.0707 4.55318 20.6 4.42C18.88 4 12 4 12 4C12 4 5.11996 4 3.39996 4.46C2.92921 4.59318 2.50194 4.84824 2.16131 5.19941C1.82068 5.55057 1.57875 5.98541 1.45996 6.46C1.14518 8.20556 0.991197 9.97631 0.999961 11.75C0.988741 13.537 1.14273 15.3213 1.45996 17.08C1.59092 17.5398 1.83827 17.9581 2.17811 18.2945C2.51794 18.6308 2.93878 18.8738 3.39996 19C5.11996 19.46 12 19.46 12 19.46C12 19.46 18.88 19.46 20.6 19C21.0707 18.8668 21.498 18.6118 21.8386 18.2606C22.1792 17.9094 22.4212 17.4746 22.54 17C22.8523 15.2676 23.0063 13.5103 23 11.75C23.0112 9.96295 22.8572 8.1787 22.54 6.42Z" fill="white"/>
+<path d="M9.75 15.02L15.5 11.75L9.75 8.47998V15.02Z" fill="#F29D52"/>
+</svg>
+</a>
+  </body>
 </html>
