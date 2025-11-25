@@ -1,0 +1,19 @@
+:root {
+  /* 배경 색상 */
+  --nav-bg-color: #f2d8d9;
+  --head-bg-color: #f2d8d9;
+  --main-bg-color: #ffffff;
+
+  /* 폰트 색상 */
+  --main-text-color: #000000;
+  --bright-text-color: #ffffff;
+  --accent-text-color: #d97652;
+
+  /* 버튼 색상 */
+  --main-btn-color: #d97652;
+  --social-btn-color: #f29d52;
+}
+
+body {
+  margin: 0;
+}
