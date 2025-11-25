@@ -14,8 +14,14 @@
   --social-btn-color: #f29d52;
 }
 
-body {
+body,
+p {
   margin: 0;
+  font-size: 16px;
+}
+
+body {
+  min-width: 390px;
 }
 
 .navbar {
@@ -23,10 +29,51 @@ body {
   justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
-  padding: 20px;
-  width: 100%;
+  padding: 0 20px;
   height: 76px;
   background-color: var(--head-bg-color);
+}
+
+.head_banner {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  overflow: hidden;
+  height: calc(794px - 76px);
+  background-color: var(--head-bg-color);
+}
+
+.banner_btn {
+  border: none;
+  font-weight: 700;
+  font-size: 0.875rem;
+  border-radius: 40px;
+  color: var(--bright-text-color);
+  background-color: var(--main-btn-color);
+  padding: 11px 24px;
+  cursor: pointer;
+  width: 119px;
+  transition: 0.2s ease;
+}
+
+.banner_text_large,
+.banner_text_small {
+  text-align: center;
+}
+
+.banner_text_large {
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin: 40px 60px 0;
+}
+
+.banner_text_small {
+  width: 280px;
+  height: 98px;
+  font-weight: 400;
+  font-size: 0.875rem;
+  margin: 30px 58px 30px 52px;
 }
 
 .head_logo {
@@ -38,4 +85,14 @@ body {
   width: 32px;
   height: 32px;
   cursor: pointer;
+}
+
+.image_banner {
+  margin: 30px;
+  width: 197px;
+  height: 422px;
+}
+
+.banner_btn:active {
+  transform: scale(0.95);
 }
