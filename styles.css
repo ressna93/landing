@@ -72,3 +72,32 @@ body {
     display: none; /* 큰 화면에서는 메뉴 버튼 숨김 */
   }
 }
+.Hero-Section {
+  background-color: var(--header-bg-color);
+}
+.title-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+.title {
+  margin-block: 0;
+  padding-inline: 6rem;
+  padding-top: 4rem;
+  padding-bottom: 3rem;
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+.title-explanation {
+  font-size: 1.4rem;
+  padding-inline: 5rem;
+}
+.btn-title {
+  margin-top: 1.6rem;
+  width: 11.9rem;
+}
+.title-image {
+  width: 19.7rem;
+  height: 42.2rem;
+}
