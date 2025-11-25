@@ -69,6 +69,9 @@ body {
   flex-direction: column;
   text-align: left;
 }
+.flex-right {
+  display: inline-flex;
+}
 .text-orange {
   color: #d97652;
   font-family: "NotosansB";
