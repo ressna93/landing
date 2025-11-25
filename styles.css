@@ -7,10 +7,15 @@ html {
   font-size: 14px;
 }
 body {
+  display: flex;
   margin: 0;
   font-family: Arial, sans-serif;
   color: var(--text-color);
   line-height: 1.6;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
 }
 img { /* 이미지 반응형 기본 설정 */ 
   max-width: 100%;
@@ -47,13 +52,53 @@ img { /* 이미지 반응형 기본 설정 */
   flex-direction: column;
   text-align: center;
   background-color: var(--header-bg-color);
+  height: 206vw;
+}
+.hero-text {
+  margin-top: 5vw;
+  padding: 0px 16vw;
+} 
+.hero-image {
+  display: flex;
+  width: 51.5vw;
+  right: 23vw;
+  position: absolute;
+  top: 130vw;
+}
+.card-section {
+  display: flex;
+  padding: 2rem;
+  background-color: #fff;
+  position: relative;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.card-section-imgs {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+.subscribe-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.e-mail-form {
+  margin: 1rem 0;
+  padding: 0.8rem;
+  width: 80%;
+  max-width: 400px;
+  border: 1px solid var(--border-color);
+  border-radius: 40px;
 }
 .action-btn { /* 변수를 이용해 어느화면이던 버튼 사이즈를 일정하게*/
   color: var(--text-color);
   font-size: 1.2rem;
-  padding: 1.85vw 6.8vw;
+  padding: 0.8rem 2.5rem;
   border: none;
-
   border-radius: 40px;
   background-color: var(--accent-color);
   transition: background-color 0.3s ease;
