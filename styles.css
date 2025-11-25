@@ -71,6 +71,7 @@ header {
   background-color: var(--header-bg-color);
   box-sizing: border-box;
   height: var(--fixed-nav-height);
+  z-index: 100;
 }
 .nav-bar {
   display: flex;
@@ -205,8 +206,10 @@ header {
   display: flex;
   flex-direction: column;
   align-items: start;
-  padding: 2.25rem 2rem;
-  gap: 0.625rem;
+  padding: 1.875rem 2rem;
+  gap: 1.25rem;
+  margin-bottom: -6.5rem;
+  z-index: 1;
 }
 .subscribe-card-title {
   font-size: 1.5rem;
