@@ -53,15 +53,23 @@ img {
 .btn-primary {
   background-color: var(--accent-color);
   color: #fff;
+  border-radius: 40px;
 }
 
 .btn-primary:hover {
   background-color: var(--accent-color);
 }
 
-.btn-secondary {
-  background-color: var(--primary-color);
-  color: var(--text-color);
+.btn-outline {
+  background-color: var(--accent-color);
+  color: var(--accent-color);
+  color: #fff;
+  border-radius: 40px;
+}
+
+.btn-download {
+  background-color: #fff;
+  color: var(--accent-color);
 }
 
 /* =====================헤더===================== */
@@ -134,6 +142,8 @@ img {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  align-items: center;
+  text-align: center;
 }
 
 .hero-text {
@@ -197,15 +207,6 @@ img {
   font-size: 0.95rem;
 }
 
-/* 갤러리이미지 모바일용으로 사전세팅 */
-.gallery-images {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  margin-bottom: 2rem;
-}
-
-.gallery-item img {
-  border-radius: 15px;
-  box-shadow: var(--shadow-md);
+.gallery-desc span {
+  color: var(--accent-color);
 }
