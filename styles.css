@@ -19,3 +19,53 @@
   --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.1);
   --shadow-lg: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
+html {
+  font-size: 62.5%; /* 16px * 0.625 = 10px */
+}
+
+body {
+  margin: 0;
+}
+.landing {
+  background-color: var(--header-bg-color);
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: clamp(7.2rem, 10vw, 10.2rem);
+}
+.logo-image {
+  width: 9.2rem;
+  height: 3.3rem;
+  margin-left: 2rem;
+}
+.nav-toggle-image {
+  margin-right: 2rem;
+}
+.nav-menu {
+  display: none;
+  list-style: none;
+  gap: 3rem;
+  font-size: 1.6rem;
+  margin: 0 auto;
+}
+.btn-download {
+  border-radius: 4rem;
+  width: 14rem;
+  height: 5rem;
+  background-color: var(--accent-color);
+}
+@media (min-width: 768px) {
+  .navbar {
+    height: 10.2rem;
+  }
+  .nav-menu {
+    display: flex; /* 메뉴 보여주기 */
+    margin-right: 10rem;
+    align-items: center;
+  }
+  .nav-toggle-image {
+    display: none; /* 큰 화면에서는 메뉴 버튼 숨김 */
+  }
+}
