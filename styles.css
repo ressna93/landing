@@ -392,8 +392,8 @@ header {
   color: var(--accent-color);
 }
 .window-desc {
-}
-.modal-close-btn {
+  font-size: 0.875rem;
+  font-weight: 400;
 }
 
 @keyframes slide {
@@ -559,6 +559,20 @@ header {
   }
   .footer-site-map-item-list {
     display: none;
+  }
+
+  .window {
+    width: 37.5rem;
+    aspect-ratio: 1.5 / 1;
+  }
+  .window-img-inner {
+    width: 6.875rem;
+  }
+  .window-title {
+    font-size: 2rem;
+  }
+  .modal-close-btn {
+    padding: 1rem 1.875rem;
   }
 }
 
