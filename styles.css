@@ -1,0 +1,16 @@
+header {
+  background: #f2d8d9;
+}
+
+.nav-ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.box-cat {
+  position: relative;
+}
+
+.img-box {
+  display: flex;
+}
