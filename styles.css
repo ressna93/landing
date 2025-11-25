@@ -19,3 +19,29 @@
   --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.1);
   --shadow-lg: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
+
+/*헤더*/
+div.header {
+  background-color: var(--header-bg-color);
+  width: 390px;
+  height: 76px;
+  text-align: center;
+}
+
+div.header_center {
+  width: 226px;
+}
+
+div.header_left {
+  float: left;
+  text-align: center;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+div.header_right {
+  float: right;
+  text-align: center;
+  padding-right: 20px;
+  padding-top: 20px;
+}
