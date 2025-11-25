@@ -216,19 +216,14 @@ img {
   padding: 2rem 1rem;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 .gallery-images {
   display: flex;
-  gap: 1rem;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
   padding-bottom: 1rem;
 }
-
 .gallery-item {
-  scroll-snap-align: center;
   min-width: 80%;
 }
 
@@ -256,4 +251,60 @@ img {
   background-color: var(--accent-color);
   color: #fff;
   border-radius: 40px;
+}
+/* =====================구독 */
+
+.subscribe-section {
+  border-radius: 18px;
+  max-width: 380px;
+  margin: 0 auto;
+  position: relative;
+  background-color: var(--dark-bg);
+  color: #fff;
+  padding: 2.5rem 1rem 3.5rem;
+  overflow: hidden;
+}
+
+.subscribe-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  max-width: 360px;
+}
+.subscribe-text h2 {
+  margin: 0 0 0.75rem;
+}
+
+.subscribe-text p {
+  margin: 0;
+}
+
+.subscribe-form {
+  max-width: 100%;
+  padding: 0 1.5rem;
+}
+
+.subscribe-input-wrap {
+  width: 100%;
+  background-color: #fff;
+  padding: 0.6rem 0.9rem;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.subscribe-input-wrap input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 0.9rem;
+}
+
+.subscribe-btn {
+  margin-left: auto;
+  padding: 0.6rem 1.6rem;
+  border-radius: 40px;
+  box-shadow: var(--shadow-md);
+  display: inline-block;
 }
