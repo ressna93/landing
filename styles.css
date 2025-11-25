@@ -69,14 +69,17 @@ header {
   width: 100%;
   background-color: var(--header-bg-color);
   box-sizing: border-box;
-  height: var(--fixed-nav-height);
   z-index: 100;
 }
 .nav-bar {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 1.25rem;
   margin: 0 auto;
+  /* 햄버거 메뉴 nav-item-list가 참조 */
+  position: relative;
+  height: var(--fixed-nav-height);
 }
 .logo-icon-inner {
   width: 5.75rem;
@@ -86,11 +89,46 @@ header {
 .logo-icon-inner > img {
   width: 100%;
 }
-.nav-item-list {
-  display: none;
+.hamburger-menu-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
-.nav-item {
-  /* TODO 768px 이상에서 구현 */
+.nav-item-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  top: var(--fixed-nav-height);
+  opacity: 0;
+  z-index: -1;
+}
+.hamburger-menu-toggle ~ .nav-item-list {
+  transform: translateY(-100%);
+  transition: all 0.3s ease;
+}
+.hamburger-menu-toggle:checked ~ .nav-item-list {
+  transform: translateY(0);
+  opacity: 1;
+  z-index: 101;
+}
+.hamburger-menu-toggle:checked ~ .nav-item-list > .nav-item {
+  background-color: var(--header-bg-color);
+  padding: 1rem 2rem;
+  width: 4rem;
+  text-align: center;
+}
+.hamburger-menu-toggle:checked ~ .nav-item-list > .download-btn {
+  margin-top: 1rem;
+}
+.hamburger-menu-toggle-lbl {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 102;
 }
 .hero-container {
   display: flex;
@@ -428,6 +466,27 @@ header {
   }
   .nav-bar {
     max-width: var(--content-w-lg);
+  }
+  .hamburger-menu-toggle-lbl {
+    display: none;
+  }
+  .hamburger-menu-toggle ~ .nav-item-list {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    transition: none;
+    transform: translateY(0);
+    top: 0;
+    opacity: 1;
+  }
+  .hamburger-menu-toggle:checked ~ .nav-item-list > .nav-item {
+    background-color: transparent;
+    padding: 0;
+    width: auto;
+    text-align: center;
+  }
+  .hamburger-menu-toggle:checked ~ .nav-item-list > .download-btn {
+    margin-top: 0;
   }
 
   .hero-container {
