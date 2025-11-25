@@ -3,6 +3,9 @@
 box-sizing: border-box;  박스 모델 일관성
 }
 */
+html {
+  font-size: 14px;
+}
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -13,7 +16,7 @@ img { /* 이미지 반응형 기본 설정 */
   max-width: 100%;
   height: auto;
 }
- .header-nav {    /* 모바일 우선 개발 */
+.header-nav {    /* 모바일 우선 개발 */
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -22,8 +25,8 @@ img { /* 이미지 반응형 기본 설정 */
   justify-content: space-between;
   align-items: center;
   flex-wrap: nowrap;
-  background-color: #F2D8D9;
-  color: black;
+  background-color: var(--header-bg-color);
+  color: var(--text-color);
   padding: 1.24rem 2rem;
 }
 .menu-desktop-btn,  /* 데스크톱 메뉴 숨김 */
@@ -32,7 +35,7 @@ img { /* 이미지 반응형 기본 설정 */
   display: none; 
 }
 .menu-mb-btn {
-  background: #F2D8D9;
+  background: var(--header-bg-color);
   border: none;
 }/* 모바일 메뉴버튼을 눌러서 메뉴를 활성화하는건 패스 */
 .main-logo {
@@ -43,9 +46,47 @@ img { /* 이미지 반응형 기본 설정 */
   display: flex;
   flex-direction: column;
   text-align: center;
-  background-color: #F2D8D9;
+  background-color: var(--header-bg-color);
 }
-@media (min-width: 768px) { /* 데스크톱 */
+.action-btn { /* 변수를 이용해 어느화면이던 버튼 사이즈를 일정하게*/
+  color: var(--text-color);
+  font-size: 1.2rem;
+  padding: 1.85vw 6.8vw;
+  border: none;
+
+  border-radius: 40px;
+  background-color: var(--accent-color);
+  transition: background-color 0.3s ease;
+}
+.action-btn:hover {
+  background-color: var(--accent-color);
+}
+.image-left {
+  box-shadow: var(--shadow-md);
+}
+.social-icon { /* 소셜 아이콘 */
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+.social-icon:hover {
+  background-color: var(--accent-color);
+}
+.social-icon svg {
+  width: 24px;
+  height: 24px;
+  color: var(--text-color);
+}
+.action-btn, /* 부드러운 모션 */
+.social-icon,
+.footer-bottom a,
+.main-nav a {
+  transition: all 0.3s ease;
+}
+/* 베이스  - 끝-*/
+
+/* 데스크톱 */
+@media (min-width: 768px) { 
   .hero-section {
     display: flex;
     flex-direction: row;
@@ -58,33 +99,4 @@ img { /* 이미지 반응형 기본 설정 */
   .menu-mb-btn { /* 데스크톱에서 모바일 메뉴버튼 숨김 */
     display: none;
   }
-}
-.action-btn { /* 변수를 이용해 어느화면이던 버튼 사이즈를 일정하게*/
-  background-color: var(--accent-color);
-  transition: background-color 0.3s ease;
-}
-.action-btn:hover {
-  background-color: var(--accent-hover);
-}
-.image-left {
-  box-shadow: var(--shadow-md);
-}
-.social-icon { /* 소셜 아이콘 */
-  background-color: var(--accent-color);
-  border-radius: 50%;
-  transition: background-color 0.3s ease;
-}
-.social-icon:hover {
-  background-color: var(--accent-hover);
-}
-.social-icon svg {
-  width: 24px;
-  height: 24px;
-  color: white;
-}
-.action-btn, /* 부드러운 모션 */
-.social-icon,
-.footer-bottom a,
-.main-nav a {
-  transition: all 0.3s ease;
 }
