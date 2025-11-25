@@ -33,6 +33,7 @@ img {
 .page {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 1.5rem;
 }
 /* =====================버튼===================== */
 .btn {
@@ -209,4 +210,50 @@ img {
 
 .gallery-desc span {
   color: var(--accent-color);
+}
+/* 고양이 슬라이드 효과 줘보기 */
+.gallery-slider {
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.gallery-images {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 1rem;
+}
+
+.gallery-item {
+  scroll-snap-align: center;
+  min-width: 80%;
+}
+
+.gallery-item img {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: var(--shadow-md);
+}
+
+.gallery-text {
+  font-size: 1rem;
+  color: var(--text-color);
+  line-height: 1.55;
+  margin: 0;
+  text-align: left;
+}
+.gallery-touch {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1rem;
+}
+
+.learn-btn {
+  background-color: var(--accent-color);
+  color: #fff;
+  border-radius: 40px;
 }
