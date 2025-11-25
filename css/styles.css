@@ -91,10 +91,38 @@
 .text-box {
   position: relative;
   padding-bottom: 4rem;
+  margin-bottom: 5rem;
 }
 
 .text-box button {
   position: absolute;
   right: 1rem;
   bottom: 1rem;
+}
+
+.Subscribe-form {
+  background-color: var(--dark-bg);
+  color: var(--text-lighter);
+  padding: 3.6rem 3.2rem;
+  border-radius: 1.8rem;
+}
+
+.Subscribe-form > h3 {
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+}
+
+.Subscribe-form > p {
+  margin-bottom: 2rem;
+}
+
+.Subscribe-form > input {
+  font-size: 1.2rem;
+  padding: 1.2rem 7rem 1.2rem 4.8rem;
+  border: none;
+  border-radius: 6rem;
+}
+
+.Subscribe-btn {
+  margin: 2rem 0 0 14.5rem;
 }
