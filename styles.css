@@ -7,10 +7,10 @@ header {
   justify-content: flex-end;
 }
 
-.box-cat {
-  position: relative;
+.img-box {
+  display: flex;
 }
 
-.img-box {
+.footer-img {
   display: flex;
 }
