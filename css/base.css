@@ -10,6 +10,7 @@
   --text-color: #333; /* 기본 텍스트 */
   --text-light: #666; /* 밝은 텍스트 */
   --text-lighter: #f2e9d8; /* 더 밝은 텍스트 */
+  --text-orange: #d97652;
 
   /* 기타 */
   --border-color: #eee; /* 테두리 색상 */
@@ -33,6 +34,11 @@ body {
   color: var(--text-color);
   line-height: 1.6;
   font-size: 1.4rem;
+}
+
+h2,
+p {
+  margin: 0;
 }
 
 img {
