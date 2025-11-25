@@ -1,10 +1,51 @@
+body {
+  margin: 0;
+}
+
 header {
   background: #f2d8d9;
 }
-
-.nav-ul {
+nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px;
+}
+.logo {
+  position: relative;
+  right: 120px;
+  width: 150px;
+  height: 50px;
+}
+.nav-div {
   display: flex;
   justify-content: flex-end;
+  gap: 1rem;
+}
+button {
+  background: #d97652;
+  border-radius: 40px;
+  color: white;
+  border: none;
+  width: 140px;
+  height: 50px;
+  font-size: 16px;
+}
+
+.header-p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: start;
+}
+h1 {
+  font-size: 34px;
+}
+.hpt {
+  margin-right: 100px;
+}
+.box-cat {
+  float: right;
+  height: 600px;
 }
 
 .img-box {
