@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ZADU</title>
   <link rel="stylesheet" href="./styles.css">
+  <script defer src="./script.js"></script>
 </head>
 
 <body>
@@ -111,7 +112,7 @@
             </div>
             <input type="text" class="email-input" placeholder="Enter your e-mail address">
           </div>
-          <button class="subscribe accent-btn">Subscribe</button>
+          <button id="subscribe-btn" class="subscribe-btn accent-btn">Subscribe</button>
         </div>
       </div>
     </div>
@@ -159,6 +160,22 @@
       </div>
     </div>
   </footer>
+
+  <!-- modal -->
+  <div id="my-modal" class="modal hidden">
+    <div class="window">
+      <div class="window-content">
+        <div class="window-img-inner">
+          <img src="./images/cat-subscribe.png" alt="모달 고양이 이미지">
+        </div>
+        <div class="window-text-group">
+          <p class="window-title">Thank you!</p>
+          <p class="window-desc">Lorem Ipsum is simply dummy text of the printing industry.</p>
+        </div>
+        <button class="modal-close-btn accent-btn">OK! I Love ZADU</button>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
