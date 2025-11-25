@@ -20,6 +20,22 @@
   --shadow-lg: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
+@font-face {
+  font-family: "NotoSansLao";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 900;
+  src: url(https://cdn.jsdelivr.net/fontsource/fonts/noto-sans-lao:vf@latest/latin-wght-normal.woff2)
+    format("woff2-variations");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193,
+    U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+body {
+  font-family: "NotoSansLao";
+}
+
 .nav-row {
   display: flex;
   gap: 226px;
@@ -27,6 +43,10 @@
   align-items: center;
   flex-wrap: wrap;
   margin-top: 22px;
+}
+
+h1 {
+  font-family: ;
 }
 
 /* 카드 스와이프 */
