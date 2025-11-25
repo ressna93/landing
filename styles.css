@@ -2,6 +2,7 @@
   /* 기본 색상 */
   --primary-color: #f8b49b; /* 연한 살구색 */
   --accent-color: #ef835d; /* 강조색 (버튼, 아이콘) */
+  --button-color: #d97652; /* 버튼 색상(다운로드, 구독) */
   --accent-hover: #dc5b28; /* 호버 상태 색상 */
   --header-bg-color: #f2d8d9; /* 헤더/히어로 배경색 */
   --dark-bg: #2c3e50; /* 다크 배경 (구독 섹션) */
@@ -19,16 +20,42 @@
   --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.1);
   --shadow-lg: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
-.html {
+@font-face {
+  font-family: "Notosans";
+  src: url("./fonts/Noto\ Sans\ Lao.TTF/NotoSansLao-Regular.ttf")
+    format("trytype");
+  font-weight: 300;
+}
+html {
   font-size: 14px;
 }
+body {
+  margin: auto;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.flex-col-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
 /*===== header =====*/
 .header {
+  margin: 0;
   background-color: #f2d8d9;
   display: flex;
   flex-direction: row;
 }
 
+.zadu-logo {
+  margin: 0.72rem;
+  display: flex;
+  flex-direction: row;
+}
 .zadu-logo img {
   width: 92px;
   height: 33px;
@@ -40,12 +67,29 @@
 }
 
 .btn-orange {
+  background-color: #d97652;
+  text-align: center;
+  border-radius: 2.88rem;
+  color: white;
+  border-color: #eee;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  font-family: sans-serif;
+  font-weight: 700;
 }
 
 .btn-hamburger {
+  background-color: #f2d8d9;
+  border: none;
+  font-size: 2rem;
+  align-items: flex-end;
 }
 
 /*===== MAIN =====*/
+.main {
+}
 .hero-section {
   /* hreo-section */
 }
@@ -96,4 +140,7 @@
 }
 
 .bottom {
+}
+
+@media (min-width: 768px;) {
 }
