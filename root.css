@@ -1,0 +1,21 @@
+:root {
+  /* 기본 색상 */
+  --primary-color: #f8b49b; /* 연한 살구색 */
+  --accent-color: #ef835d; /* 강조색 (버튼, 아이콘) */
+  --accent-hover: #dc5b28; /* 호버 상태 색상 */
+  --header-bg-color: #f2d8d9; /* 헤더/히어로 배경색 */
+  --dark-bg: #2c3e50; /* 다크 배경 (구독 섹션) */
+
+  /* 텍스트 색상 */
+  --text-color: #333; /* 기본 텍스트 */
+  --text-light: #666; /* 밝은 텍스트 */
+  --text-lighter: #f2e9d8; /* 더 밝은 텍스트 */
+
+  /* 기타 */
+  --border-color: #eee; /* 테두리 색상 */
+
+  /* 그림자 효과 */
+  --shadow-sm: 0 2px 5px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
