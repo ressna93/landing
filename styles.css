@@ -24,7 +24,7 @@
   font-family: "Notosans";
   src: url("./fonts/Noto\ Sans\ Lao.TTF/NotoSansLao-Regular.ttf")
     format("truetype");
-  font-weight: 300;
+  font-weight: 400;
 }
 @font-face {
   font-family: "NotosansB";
@@ -89,7 +89,7 @@ body {
   text-align: center;
   border-radius: 2.88rem;
   color: white;
-  border-color: #eee;
+  border-color: #f2d8d9;
   padding-left: 2rem;
   padding-right: 2rem;
   padding-top: 0.8rem;
@@ -112,7 +112,10 @@ body {
   /* hreo-section */
   background-color: #f2d8d9;
 }
-
+.Bold {
+  font-family: "NotosansB";
+  font-size: 1.6rem;
+}
 .text-contents {
 }
 
