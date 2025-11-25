@@ -23,8 +23,26 @@
 @font-face {
   font-family: "Notosans";
   src: url("./fonts/Noto\ Sans\ Lao.TTF/NotoSansLao-Regular.ttf")
-    format("trytype");
+    format("truetype");
   font-weight: 300;
+}
+@font-face {
+  font-family: "NotosansB";
+  src: url("./fonts/Noto\ Sans\ Lao.TTF/NotoSansLao-Bold.ttf")
+    format("truetype");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "NotosansL";
+  src: url("./fonts/Noto\ Sans\ Lao.TTF/NotoSansLao-Light.ttf")
+    format("truetype");
+  font-weight: 100;
+}
+@font-face {
+  font-family: "NotosansM";
+  src: url("./fonts/Noto\ Sans\ Lao.TTF/NotoSansLao-Medium.ttf")
+    format("truetype");
+  font-weight: 500;
 }
 html {
   font-size: 14px;
@@ -76,8 +94,8 @@ body {
   padding-right: 2rem;
   padding-top: 0.8rem;
   padding-bottom: 0.8rem;
-  font-family: sans-serif;
-  font-weight: 700;
+  font-family: "NotosansB";
+  font-size: 1.4rem;
 }
 
 .btn-hamburger {
@@ -92,6 +110,7 @@ body {
 }
 .hero-section {
   /* hreo-section */
+  background-color: #f2d8d9;
 }
 
 .text-contents {
