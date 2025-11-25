@@ -56,6 +56,9 @@ body {
   height: 5rem;
   background-color: var(--accent-color);
 }
+.btn-download:hover {
+  background-color: var(--accent-hover);
+}
 @media (min-width: 768px) {
   .navbar {
     height: 10.2rem;
