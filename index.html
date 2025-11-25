@@ -5,7 +5,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ZADU</title>
-  <link rel="stylesheet" href="./common.css">
   <link rel="stylesheet" href="./styles.css">
 </head>
 
@@ -21,20 +20,23 @@
           </div>
           <!-- TODO 햄버거 메뉴 -->
           <div class="nav-item-list">
-            <div class="nav-item">Home</div>
-            <div class="nav-item">About</div>
-            <div class="nav-item">Support</div>
-            <div class="nav-item accent-btn"><button class="download">Download</button></div>
+            <a class="nav-item">Home</a>
+            <a class="nav-item">About</a>
+            <a class="nav-item">Support</a>
+            <button class="download accent-btn">Download</button>
           </div>
         </div>
       </nav>
 
       <!-- hero -->
       <div class="hero-container">
-        <p class="hero-title">Lorem Ipsum is simply dummy text of the printing and</p>
-        <p class="hero-introduce">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-          has been the industry's standard dummy text ever since the 1500s, when an unknown</p>
-        <button class="download accent-btn">Download</button>
+        <div class="hero-text-group">
+          <p class="hero-title">Lorem Ipsum is simply dummy text of the printing and</p>
+          <p class="hero-introduce">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+            Ipsum
+            has been the industry's standard dummy text ever since the 1500s, when an unknown</p>
+          <button class="download accent-btn">Download</button>
+        </div>
         <div class="hero-img-inner">
           <img src="./images/box-cat.png" alt="박스 쓴 고양이 대문 이미지">
         </div>
@@ -59,9 +61,14 @@
       <!-- galary -->
       <section class="galary">
         <div class="galary-content">
-          <p class="galary-title">dummy text of the printing and dummy</p>
-          <p class="galary-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-            has been the industry's standard dummy text ever since the 1500s, when an unknown</p>
+          <div class="galary-text-group">
+            <p class="galary-title">dummy text of the printing and dummy</p>
+            <p class="galary-desc">Lorem Ipsum is simply <strong class="keyword">dummy text</strong> of the printing and
+              typesetting
+              industry. Lorem
+              Ipsum
+              has been the industry's standard dummy text ever since the 1500s, when an unknown</p>
+          </div>
           <div class="galary-card-list">
             <div class="galary-card-list-inner">
               <div class="galary-card">
@@ -92,16 +99,20 @@
 
       <!-- subscribe-card -->
       <div class="subscribe-card">
-        <p class="subscribe-card-title">Subscribe to our Blog post</p>
-        <p class="subscribe-card-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-          Ipsum has been the industry's standard dummy text</p>
-        <div class="email-input-group">
-          <div class="email-input-icon-inner">
-            <img src="./images/mail.svg" alt="입력 칸 이메일 아이콘">
-          </div>
-          <input type="text" class="email-input" placeholder="Enter your e-mail address">
+        <div class="subscribe-card-text-group">
+          <p class="subscribe-card-title">Subscribe to our Blog post</p>
+          <p class="subscribe-card-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum has been the industry's standard dummy text</p>
         </div>
-        <button class="subscribe accent-btn">Subscribe</button>
+        <div class="email-input-container">
+          <div class="email-input-group">
+            <div class="email-input-icon-inner">
+              <img src="./images/mail.svg" alt="입력 칸 이메일 아이콘">
+            </div>
+            <input type="text" class="email-input" placeholder="Enter your e-mail address">
+          </div>
+          <button class="subscribe accent-btn">Subscribe</button>
+        </div>
       </div>
     </div>
   </main>
