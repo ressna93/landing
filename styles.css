@@ -155,3 +155,24 @@ img {
   max-width: 320px;
   margin: 0 auto;
 }
+/* 0카드 */
+/* 히어로와의 간격 card-section */
+.card-section {
+  padding: 2.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+/* img_4 radius */
+.card-image img {
+  border-radius: 8px;
+  box-shadow: var(--shadow-md);
+}
+
+.card-text h2 {
+  margin: 0 0 0.75rem;
+}
+
+.card-text p {
+  margin: 0 0 0.75rem;
+}
