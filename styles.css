@@ -9,33 +9,53 @@ body {
   color: var(--text-color);
   line-height: 1.6;
 }
-img {
-  max-width: 100%; /* 이미지 반응형 기본 설정 */ 
+img { /* 이미지 반응형 기본 설정 */ 
+  max-width: 100%;
   height: auto;
 }
-.hero-section { /* 모바일 우선 개발 */
+ .header-nav {    /* 모바일 우선 개발 */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
   display: flex;
-  flex-direction: column;
-  background-color: #F2D8D9;
-}
-.menu-desktop-btn { /* 데스크톱 메뉴 숨김 */
-  display: none; 
-}
-/* 모바일 메뉴버튼을 눌러서 메뉴를 활성화하는건 패스 */
-
-.header-nav {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
   background-color: #F2D8D9;
   color: black;
-  padding: 1rem 2rem;
+  padding: 1.24rem 2rem;
+}
+.menu-desktop-btn,  /* 데스크톱 메뉴 숨김 */
+.menu-desktop-link,
+.menu-download-btn { 
+  display: none; 
+}
+.menu-mb-btn {
+  background: #F2D8D9;
+  border: none;
+}/* 모바일 메뉴버튼을 눌러서 메뉴를 활성화하는건 패스 */
+.main-logo {
+  width: 24.5vw;
+  height: auto;
+}
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #F2D8D9;
 }
 @media (min-width: 768px) { /* 데스크톱 */
   .hero-section {
-    flex-direction: row; 
+    display: flex;
+    flex-direction: row;
   }
-  .menu-desktop-btn { /* 데스크톱 메뉴 보임 */
-    display: block; 
+  .menu-desktop-btn,  /* 데스크톱 메뉴 보임 */
+  .menu-desktop-link,
+  .menu-download-btn {
+    display: flex; 
   }
-  .hero-section { /* 데스크톱에서 히어로 섹션 숨김 */
+  .menu-mb-btn { /* 데스크톱에서 모바일 메뉴버튼 숨김 */
     display: none;
   }
 }
