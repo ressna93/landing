@@ -19,12 +19,81 @@
   --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.1);
   --shadow-lg: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
-
+.html {
+  font-size: 14px;
+}
+/*===== header =====*/
 .header {
   background-color: #f2d8d9;
+  display: flex;
+  flex-direction: row;
 }
 
 .zadu-logo img {
   width: 92px;
   height: 33px;
+}
+
+.nav-menu {
+  gap: 2em;
+  display: none;
+}
+
+.btn-orange {
+}
+
+.btn-hamburger {
+}
+
+/*===== MAIN =====*/
+.hero-section {
+  /* hreo-section */
+}
+
+.text-contents {
+}
+
+.box-cat img {
+}
+
+.card-section img {
+  /* card-section */
+}
+
+.gallery-section {
+  /* gallery-section */
+}
+
+.mid-text {
+}
+
+.image-gal img {
+}
+
+.bot-container {
+}
+
+.subscribe-box {
+  /* subscribe-section */
+}
+
+.email {
+}
+
+.email img {
+}
+
+.email-tab {
+}
+
+.cat-img img {
+}
+/*===== Footer =====*/
+.sns-icons {
+}
+
+.sns-icons img {
+}
+
+.bottom {
 }
