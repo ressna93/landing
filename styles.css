@@ -16,6 +16,7 @@ input {
 a {
   color: inherit;
   text-decoration: none;
+  cursor: pointer;
 }
 
 :root {
@@ -93,7 +94,6 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
 }
 .nav-item-list {
   display: flex;
@@ -478,6 +478,7 @@ header {
     transform: translateY(0);
     top: 0;
     opacity: 1;
+    z-index: 101;
   }
   .hamburger-menu-toggle:checked ~ .nav-item-list > .nav-item {
     background-color: transparent;
