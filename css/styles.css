@@ -90,9 +90,11 @@
 
 .text-box {
   position: relative;
+  padding-bottom: 4rem;
 }
 
 .text-box button {
   position: absolute;
-  right: 1px;
+  right: 1rem;
+  bottom: 1rem;
 }
