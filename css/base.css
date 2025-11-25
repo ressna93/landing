@@ -52,6 +52,10 @@ button {
   cursor: pointer;
 }
 
+a {
+  text-decoration: none;
+}
+
 .btn {
   background-color: var(--accent-color);
   border-radius: 4rem;

@@ -91,7 +91,7 @@
 .text-box {
   position: relative;
   padding-bottom: 4rem;
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
 }
 
 .text-box button {
@@ -100,11 +100,13 @@
   bottom: 1rem;
 }
 
+/* 구독 폼 */
 .Subscribe-form {
   background-color: var(--dark-bg);
   color: var(--text-lighter);
   padding: 3.6rem 3.2rem;
   border-radius: 1.8rem;
+  margin-bottom: -2rem;
 }
 
 .Subscribe-form > h3 {
@@ -125,4 +127,52 @@
 
 .Subscribe-btn {
   margin: 2rem 0 0 14.5rem;
+}
+
+/* 메인 컨텐츠 아래 고양이 백그라운드 */
+.bottom-img {
+  margin: -4rem -3.2rem;
+  background-image: url(../images/up-cat.png);
+  height: 24rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
+}
+
+/* footer */
+.left-footer {
+  padding: 2.4rem;
+  gap: 6rem;
+}
+
+.left-footer > img {
+  width: 11.1rem;
+  height: auto;
+}
+
+.left-footer > div {
+  gap: 1.6rem;
+}
+
+.footer-btn {
+  background-color: var(--accent-color);
+  border-radius: 5rem;
+  width: 3.2rem;
+  height: 3.2rem;
+  padding: 0;
+}
+
+.footer-btn img {
+  width: 1.83rem;
+}
+
+.right-footer {
+  align-items: flex-end;
+  padding: 3rem 2rem;
+  gap: 1rem;
+}
+
+.right-footer a {
+  color: var(--text-light);
 }
