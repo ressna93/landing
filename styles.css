@@ -103,12 +103,12 @@ body {
   border-radius: 2.88rem;
   color: white;
   border-color: #f2d8d9;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  padding-top: 0.8rem;
-  padding-bottom: 0.8rem;
+  padding-left: 1.7rem;
+  padding-right: 1.7rem;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
   font-family: "NotosansB";
-  font-size: 1.4rem;
+  font-size: 1rem;
 }
 
 .btn-hamburger {
@@ -136,7 +136,7 @@ body {
 }
 .text-contents {
   margin-bottom: 2rem;
-  margin: 3rem;
+  margin: 2.5rem;
 }
 
 .box-cat img {
@@ -157,9 +157,21 @@ body {
 }
 
 .mid-text {
+  margin-bottom: 2rem;
+  margin-top: -1rem;
 }
-
+.image-gal {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: row;
+  justify-content: center;
+  justify-items: center;
+}
 .image-gal img {
+  width: 260px;
+  height: 260px;
+  margin: 0.7rem;
+  border-radius: 1.3rem;
 }
 
 .bot-container {
