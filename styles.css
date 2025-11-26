@@ -578,6 +578,14 @@ header {
     transform: translateX(0%);
   }
 }
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
 /* -------------------------------------------------------------------------- */
 /*                                media queries                               */
@@ -770,10 +778,16 @@ header {
 .hidden {
   display: none;
 }
-
 .nav-bar a,
 .accent-btn,
 .footer-container a,
 .sns-icon-btn {
   transition: all 0.3s ease;
+}
+.scroll-fade-in {
+  animation-timeline: view(block 90% 10%);
+  animation-name: fade-in;
+  animation-fill-mode: both;
+  animation-timing-function: linear;
+  animation-duration: 1ms; /* 파이어폭스에 스크롤 애니메이션을 적용하려면 필요 */
 }
