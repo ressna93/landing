@@ -5,6 +5,7 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   color: var(--text-color);
+  overflow-x: hidden;
 }
 p {
   margin: 0;
@@ -59,7 +60,7 @@ a {
   --content-w-lg: 1024px;
 
   /* modal */
-  --modal-bg: rgba(0, 0, 0, 0.3);
+  --modal-bg: rgba(0, 0, 0, 0.6);
 }
 
 /* -------------------------------------------------------------------------- */
@@ -271,6 +272,7 @@ header {
   display: flex;
   flex-direction: column;
   padding: 2rem;
+  padding-bottom: 15rem;
   gap: 3.5rem;
 }
 
@@ -285,9 +287,9 @@ header {
 .main-card-img-inner {
   min-width: 20.375rem;
   aspect-ratio: 20.375 / 11.875;
-  border-radius: 18px;
+  border-radius: 8px;
   overflow: hidden;
-  box-shadow: var(--shadow-lg);
+  box-shadow: var(--shadow-md);
 }
 .main-card-img-inner > img {
   width: 100%;
@@ -352,9 +354,9 @@ header {
 .galary-card-img-inner {
   width: var(--galary-card-size);
   aspect-ratio: 1 / 1;
-  border-radius: 18px;
+  border-radius: 15px;
   overflow: hidden;
-  box-shadow: var(--shadow-lg);
+  box-shadow: var(--shadow-md);
 }
 .galary-card-img-inner > img {
   width: 100%;
@@ -382,8 +384,21 @@ header {
   align-items: start;
   padding: 1.875rem 2rem;
   gap: 1.25rem;
-  margin-bottom: -6.5rem;
-  z-index: 1;
+  position: relative;
+}
+.subscribe-card::after {
+  position: absolute;
+  width: 100vw;
+  height: 15rem;
+  content: "";
+  background-image: url("images/up-cat.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: -1;
 }
 
 /* subscribe text */
@@ -451,11 +466,6 @@ header {
 .footer-container {
   display: flex;
   flex-direction: column;
-}
-
-/* footer image */
-.footer-img-inner > img {
-  width: 100%;
 }
 
 /* footer menu */
@@ -540,7 +550,7 @@ header {
 @media (min-width: 768px) {
   /* ----------------------------------- nav ---------------------------------- */
   .nav-bar {
-    max-width: var(--content-w-lg);
+    max-width: min(90vw, var(--content-w-lg));
   }
   .hamburger-menu-toggle-lbl {
     display: none;
@@ -574,13 +584,13 @@ header {
   .hero-container {
     flex-direction: row;
     margin: 0 auto;
-    max-width: var(--content-w-lg);
+    max-width: min(90vw, var(--content-w-lg));
   }
   .hero-text-group {
+    width: 50%;
     gap: 2.5rem;
     text-align: left;
     align-items: start;
-    max-width: 46rem;
   }
   .hero-title {
     font-size: 3rem;
@@ -590,34 +600,34 @@ header {
     font-size: 1rem;
   }
   .hero-img-inner {
-    width: 26rem;
+    width: 50%;
     flex-shrink: 0;
     margin-bottom: -10rem;
   }
 
   /* ---------------------------------- main ---------------------------------- */
   .main-container {
-    max-width: var(--content-w-lg);
+    max-width: min(90vw, var(--content-w-lg));
     margin: 0 auto;
+    padding: 0rem;
+    padding-top: 2rem;
+    padding-bottom: 20rem;
     gap: 7.5rem;
   }
   .main-card {
     flex-direction: row;
+    align-items: center;
     gap: 0;
   }
   .main-card-img-inner {
-    width: 41.25rem;
-    flex: 1;
-  }
-  .main-card-img-inner > img {
-    margin-top: 0;
+    width: 50%;
   }
   .main-card-content {
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 2.5rem 4rem;
-    flex: 1;
   }
   .main-card-title {
     font-size: 2rem;
@@ -664,7 +674,10 @@ header {
     flex-direction: row;
     align-items: center;
     padding: 3.125rem 3.625rem;
-    margin-bottom: -9rem;
+  }
+  .subscribe-card::after {
+    height: 21.25rem;
+    top: 50%;
   }
   .subscribe-card-text-group {
     gap: 1.125rem;
@@ -685,18 +698,11 @@ header {
   }
 
   /* --------------------------------- footer --------------------------------- */
-  .footer-img-inner {
-    height: 21.25rem;
-    overflow: hidden;
-  }
-  .footer-img-inner > img {
-    margin-top: -12rem;
-  }
   .footer-menu {
     justify-content: center;
   }
   .footer-main-menu {
-    max-width: var(--content-w-lg);
+    max-width: min(90vw, var(--content-w-lg));
     flex: 1;
     flex-direction: row;
     justify-content: space-between;
