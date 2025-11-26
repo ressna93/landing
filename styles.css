@@ -351,6 +351,15 @@ body {
     position: relative;
     top: -3rem;
   }
+  .Subscribe-box {
+    width: clamp(70rem, 70vw, 128rem);
+    height: 20rem;
+    display: flex;
+    flex-direction: row;
+  }
+  .Subscribe-title {
+    max-width: 46rem;
+  }
 }
 
 @media (min-width: 1024px) {
