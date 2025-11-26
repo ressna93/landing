@@ -30,9 +30,8 @@ img {
 }
 
 .page {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
-  padding: 0 1.5rem;
 }
 /* =====================버튼===================== */
 .btn {
@@ -248,13 +247,14 @@ img {
 
 .subscribe-section {
   border-radius: 18px;
-  max-width: 380px;
+  max-width: 320px;
   margin: 0 auto;
   position: relative;
   background-color: var(--dark-bg);
   color: #fff;
-  padding: 2.5rem 1rem 5rem;
+  padding: 1.5rem 2rem;
   overflow: visible;
+  height: auto;
 }
 /* 애먹은 고양이 섹션 */
 .cat-section {
@@ -437,6 +437,13 @@ img {
 .modal-ok-btn:hover {
   background-color: var(--accent-hover);
 }
+@media (min-width: 590px) {
+  .subscribe-section {
+    width: 326px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+}
 
 @media (min-width: 768px) {
   .hamburger {
@@ -457,6 +464,12 @@ img {
   .gallery-slider {
     max-width: 900px;
     margin: 0 auto;
+  }
+  .subscribe-section {
+    width: 400px;
+    margin: 0 auto;
+    padding: 2rem;
+    padding-bottom: 2rem;
   }
 }
 
@@ -503,7 +516,6 @@ img {
   }
   .subscribe-section {
     width: 900px;
-    height: 200px;
     margin: 0 auto;
     padding: 2rem;
   }
@@ -514,5 +526,59 @@ img {
     object-fit: cover;
     display: block;
     margin: 0 auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hamburger {
+    display: none;
+  }
+
+  .page-header {
+    width: 100%;
+    background-color: var(--header-bg-color);
+  }
+  .inner-header {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 2rem 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo img {
+    width: 149px;
+    height: 53px;
+    object-fit: contain;
+  }
+
+  .main-nav {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .nav-list {
+    display: flex;
+    gap: 40px;
+  }
+
+  .nav-list a {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--text-color);
+  }
+
+  .nav-list a:hover {
+    color: var(--accent-color);
+  }
+
+  .btn-download {
+    background-color: var(--accent-color);
+    color: #fff;
+    padding: 10px 24px;
+    border-radius: 40px;
+    font-size: 15px;
   }
 }
