@@ -40,6 +40,7 @@ a {
   --text-color: #333; /* 기본 텍스트 */
   --text-light: #666; /* 밝은 텍스트 */
   --text-lighter: #f2e9d8; /* 더 밝은 텍스트 */
+  --a-hover: #ff4444;
 
   /* 기타 */
   --border-color: #eee; /* 테두리 색상 */
@@ -74,6 +75,25 @@ a {
   color: white;
   font-weight: 700;
   border-radius: 40px;
+}
+.accent-btn:hover {
+  background-color: var(--accent-hover);
+}
+.sns-icon-btn {
+  width: 2rem;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sns-icon-btn:hover {
+  background-color: var(--accent-hover);
+}
+.sns-icon-btn > img {
+  width: 1.125rem;
+  aspect-ratio: 1 / 1;
 }
 /* modals */
 .center-modal {
@@ -169,6 +189,10 @@ header {
   /* 햄버거 메뉴 nav-item-list가 참조 */
   position: relative;
   height: var(--fixed-nav-height);
+}
+.nav-bar a:hover {
+  color: var(--a-hover);
+  transform: translateY(-10%);
 }
 
 /* nav logo */
@@ -467,6 +491,10 @@ header {
   display: flex;
   flex-direction: column;
 }
+.footer-container a:hover {
+  color: var(--a-hover);
+  transform: translateY(-10%);
+}
 
 /* footer menu */
 .footer-menu {
@@ -492,19 +520,6 @@ header {
 .sns-icon-item-list {
   display: flex;
   gap: 1rem;
-}
-.sns-icon-btn {
-  width: 2rem;
-  aspect-ratio: 1 / 1;
-  border-radius: 50%;
-  background-color: var(--accent-color);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.sns-icon-btn > img {
-  width: 1.125rem;
-  aspect-ratio: 1 / 1;
 }
 
 /* footer sub menu */
@@ -733,4 +748,11 @@ header {
 /* -------------------------------------------------------------------------- */
 .hidden {
   display: none;
+}
+
+.nav-bar a,
+.accent-btn,
+.footer-container a,
+.sns-icon-btn {
+  transition: all 0.3s ease;
 }
