@@ -195,3 +195,51 @@ footer {
   height: 30px;
   background: #f29d52;
 }
+
+@media (max-width: 768px) {
+  body {
+    width: 100%;
+  }
+
+  .nav-div {
+    display: flex;
+    flex-direction: row;
+  }
+  div {
+    display: block;
+    text-align: center;
+    white-space: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+  .logo {
+    left: 1px;
+  }
+
+  .img-box {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .ci {
+    width: 100%;
+    height: 100%;
+  }
+
+  .Subscribe {
+    display: flex;
+    width: 400px;
+    height: 400px;
+    text-align: center;
+    justify-content: center;
+    left: 350px;
+  }
+
+  .su-text {
+    text-align: start;
+  }
+
+  input {
+    width: 350px;
+  }
+}
