@@ -392,13 +392,13 @@ header {
 
 /* galary cards */
 .galary-card-list {
-  width: 90%;
+  display: flex;
   overflow: hidden;
 }
 .galary-card-list-inner {
   display: flex;
-  /* TODO width를 고정? */
-  /* animation: slide 6s linear infinite; */
+  transform: translateX(var(--galary-card-size));
+  animation: slide 6s linear infinite;
   box-sizing: border-box;
 }
 .galary-card {
@@ -568,25 +568,25 @@ header {
 /* -------------------------------------------------------------------------- */
 @keyframes slide {
   0% {
-    transform: translateX(0%);
+    transform: translateX(var(--galary-card-size));
   }
   15% {
-    transform: translateX(0%);
+    transform: translateX(var(--galary-card-size));
   }
   30% {
-    transform: translateX(calc(var(--galary-card-size) * -1));
+    transform: translateX(0);
   }
   45% {
-    transform: translateX(calc(var(--galary-card-size) * -1));
+    transform: translateX(0);
   }
   60% {
-    transform: translateX(calc(var(--galary-card-size) * -2));
+    transform: translateX(calc(var(--galary-card-size) * -1));
   }
   75% {
-    transform: translateX(calc(var(--galary-card-size) * -2));
+    transform: translateX(calc(var(--galary-card-size) * -1));
   }
   100% {
-    transform: translateX(0%);
+    transform: translateX(var(--galary-card-size));
   }
 }
 @keyframes fade-in {
@@ -706,9 +706,10 @@ header {
   .galary-card-list-inner {
     gap: 4.5rem;
     justify-content: center;
+    animation: none;
+    transform: none;
   }
   .galary-card {
-    width: 23.625rem;
     margin: 0;
   }
   .galary-more-content {
