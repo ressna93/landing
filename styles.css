@@ -13,9 +13,7 @@
   --footer-text: #767676; /* 어바웃 등 회색글씨 */
 
   /* 그림자 효과 */
-  --shadow-sm: 0 2px 5px rgba(0, 0, 0, 0.1);
-  --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.1);
-  --shadow-lg: 0 4px 15px rgba(0, 0, 0, 0.1);
+  --shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
 }
 @font-face {
   font-family: "Notosans";
@@ -157,8 +155,6 @@ body {
 }
 /*=========================================*/
 /*===== MAIN =====*/
-.main {
-}
 /*-------------------------*/
 /* hreo-section */
 /*-------------------------*/
@@ -168,8 +164,7 @@ body {
 .text-contents {
   margin: 2rem 0 2rem 0;
 }
-.box-cat {
-}
+
 .box-cat img {
   width: 197px;
   height: 422px;
@@ -192,14 +187,12 @@ body {
   height: 190px;
   border-radius: 1.3rem;
   margin-top: -1rem;
-  box-shadow: var(--shadow-lg);
+  box-shadow: var(--shadow);
 }
 
 /*-------------------------*/
 /* gallery-section */
 /*-------------------------*/
-.gallery-section {
-}
 
 .mid-text {
   margin: -1rem 0 2rem 0;
@@ -215,6 +208,7 @@ body {
   height: 260px;
   margin: 0.7rem;
   border-radius: 1.3rem;
+  box-shadow: var(--shadow);
 }
 /*-------------------------*/
 /* subscribe-section */
@@ -319,28 +313,4 @@ body {
   z-index: 2;
   gap: 0.5rem;
   margin-right: 1rem;
-}
-
-@media (min-width: 768px) {
-  .image-gal {
-    display: flex;
-  }
-  .nav-menu {
-    display: flex;
-  }
-  .btn-hamburger {
-    display: none;
-  }
-  .bottom {
-    display: none;
-  }
-  .footer {
-    justify-content: center;
-    align-items: center;
-  }
-  .bot-logo-icons {
-    flex-direction: row;
-    gap: 32rem;
-    margin: 0;
-  }
 }

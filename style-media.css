@@ -1,0 +1,26 @@
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+  .image-gal {
+    display: flex;
+  }
+  .nav-menu {
+    display: flex;
+  }
+  .btn-hamburger {
+    display: none;
+  }
+  .bottom {
+    display: none;
+  }
+  .footer {
+    justify-content: center;
+    align-items: center;
+  }
+  .bot-logo-icons {
+    flex-direction: row;
+    gap: 26rem;
+    margin: 0;
+  }
+}
