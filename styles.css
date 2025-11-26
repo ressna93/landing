@@ -52,7 +52,8 @@ a {
   --shadow-lg: 0 4px 15px rgba(0, 0, 0, 0.1);
 
   /* 상단 fixed 크기 */
-  --fixed-nav-height: 4.75rem;
+  --fixed-nav-height-md: 3rem;
+  --fixed-nav-height-lg: 4.75rem;
 
   /* 갤러리 */
   --galary-card-size: 16.25rem;
@@ -76,6 +77,7 @@ a {
   color: white;
   font-weight: 700;
   border-radius: 40px;
+  transition: all 0.3s ease;
 }
 .accent-btn:hover {
   background-color: var(--accent-hover);
@@ -88,6 +90,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.3s ease;
 }
 .sns-icon-btn:hover {
   background-color: var(--accent-hover);
@@ -192,7 +195,7 @@ a {
 /*                                   header                                   */
 /* -------------------------------------------------------------------------- */
 header {
-  margin-top: var(--fixed-nav-height);
+  margin-top: var(--fixed-nav-height-md);
 }
 .header-container {
   display: flex;
@@ -218,7 +221,10 @@ header {
   margin: 0 auto;
   /* 햄버거 메뉴 nav-item-list가 참조 */
   position: relative;
-  height: var(--fixed-nav-height);
+  height: var(--fixed-nav-height-md);
+}
+.nav-bar a {
+  transition: all 0.3s ease;
 }
 .nav-bar a:hover {
   color: var(--a-hover);
@@ -276,7 +282,7 @@ header {
   align-items: center;
   position: absolute;
   right: 0;
-  top: var(--fixed-nav-height);
+  top: var(--fixed-nav-height-md);
   opacity: 0;
   z-index: -1;
 }
@@ -522,6 +528,9 @@ header {
   display: flex;
   flex-direction: column;
 }
+.footer-container a {
+  transition: all 0.3s ease;
+}
 .footer-container a:hover {
   color: var(--a-hover);
   transform: translateY(-10%);
@@ -608,9 +617,14 @@ header {
 /*                                media queries                               */
 /* -------------------------------------------------------------------------- */
 @media (min-width: 768px) {
+  /* --------------------------------- header --------------------------------- */
+  header {
+    margin-top: var(--fixed-nav-height-lg);
+  }
   /* ----------------------------------- nav ---------------------------------- */
   .nav-bar {
     max-width: min(90vw, var(--content-w-lg));
+    height: var(--fixed-nav-height-lg);
   }
   .hamburger-menu-toggle-lbl {
     display: none;
@@ -635,6 +649,7 @@ header {
     margin-top: 0;
   }
   .nav-item-list {
+    top: var(--fixed-nav-height-md);
     display: flex;
     align-items: center;
     gap: 1.875rem;
@@ -794,12 +809,6 @@ header {
 /* -------------------------------------------------------------------------- */
 .hidden {
   display: none;
-}
-.nav-bar a,
-.accent-btn,
-.footer-container a,
-.sns-icon-btn {
-  transition: all 0.3s ease;
 }
 .scroll-fade-in {
   animation-timeline: view(block 90% 10%);
