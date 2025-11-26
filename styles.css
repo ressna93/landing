@@ -117,13 +117,23 @@ body {
   width: 660px;
   height: 390px;
   border-radius: 30px;
+  margin-left: 30px;
 }
 
 .card-textbody {
-  margin: 10px;
+  margin: 30px;
 }
 
 .body-text {
   font-weight: bolder;
   font-size: 20px;
+}
+.body-subtext {
+  margin-top: 50px;
+  justify-items: center;
+}
+h1,
+.point {
+  color: orange;
+  font-weight: bolder;
 }
