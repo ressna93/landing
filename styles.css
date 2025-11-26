@@ -1,7 +1,7 @@
 :root {
   /* 기본 색상 */
   --primary-color: #f8b49b; /* 연한 살구색 */
-  --accent-color: #ef835d; /* 강조색 (버튼, 아이콘) */
+  --icons-color: #f29d52; /* 아이콘 색상 */
   --btn-text-orange: #d97652; /* 버튼, 강조단어 색상 */
   --accent-hover: #dc5b28; /* 호버 상태 색상 */
   --header-bg-color: #f2d8d9; /* 헤더/히어로 배경색 */
@@ -10,6 +10,7 @@
 
   /* 기타 */
   --border-color: #eee; /* 테두리 색상 */
+  --footer-text: #767676; /* 어바웃 등 회색글씨 */
 
   /* 그림자 효과 */
   --shadow-sm: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -109,7 +110,7 @@ body {
 /*=========================================*/
 /*===== header =====*/
 .header {
-  margin: 0;
+  padding: 1.5rem;
   background-color: var(--header-bg-color);
   display: flex;
   flex-direction: row;
@@ -117,9 +118,9 @@ body {
 }
 
 .zadu-logo {
-  margin: 0.72rem;
   display: flex;
   flex-direction: row;
+  margin-left: 0.1rem;
 }
 .zadu-logo img {
   width: 92px;
@@ -150,7 +151,7 @@ body {
   cursor: pointer;
   position: absolute;
   right: 1rem;
-  top: 50%;
+  top: 40%;
   transform: translateY(-50%);
   z-index: 3;
 }
@@ -271,16 +272,53 @@ body {
 /*===== Footer =====*/
 .footer {
   margin-top: 15rem;
+  padding: 1rem 0 2rem 1rem;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+.bot-logo-icons {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+  gap: 3rem;
+}
+.bot-logo-icons img {
+  width: 8rem;
+  height: 2.8rem;
 }
 .sns-icons {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
 }
-
+.icon {
+  background-color: var(--icons-color);
+  border-radius: 50%;
+  width: 2.3rem;
+  height: 2.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .sns-icons img {
+  width: 1.3rem;
+  height: 1.3rem;
 }
 
 .bottom {
-}
-@media (min-width: 500px) {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  color: var(--footer-text);
+  font-family: "Notosans";
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-55%);
+  z-index: 2;
+  gap: 0.5rem;
+  margin-right: 1rem;
 }
 
 @media (min-width: 768px) {
@@ -289,5 +327,20 @@ body {
   }
   .nav-menu {
     display: flex;
+  }
+  .btn-hamburger {
+    display: none;
+  }
+  .bottom {
+    display: none;
+  }
+  .footer {
+    justify-content: center;
+    align-items: center;
+  }
+  .bot-logo-icons {
+    flex-direction: row;
+    gap: 32rem;
+    margin: 0;
   }
 }
