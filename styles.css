@@ -215,20 +215,19 @@ header {
 /* hamburger menu */
 .hamburger-menu-toggle ~ .nav-item-list {
   transform: translateY(-100%);
-  transition: all 0.3s ease;
 }
 .hamburger-menu-toggle:checked ~ .nav-item-list {
   transform: translateY(0);
   opacity: 1;
   z-index: 101;
 }
-.hamburger-menu-toggle:checked ~ .nav-item-list > .nav-item {
+.hamburger-menu-toggle ~ .nav-item-list > .nav-item {
   background-color: var(--header-bg-color);
   padding: 1rem 2rem;
   width: 4rem;
   text-align: center;
 }
-.hamburger-menu-toggle:checked ~ .nav-item-list > .download-btn {
+.hamburger-menu-toggle ~ .nav-item-list > .download-btn {
   margin-top: 1rem;
 }
 .hamburger-menu-toggle-lbl {
@@ -580,13 +579,13 @@ header {
     opacity: 1;
     z-index: 101;
   }
-  .hamburger-menu-toggle:checked ~ .nav-item-list > .nav-item {
+  .hamburger-menu-toggle ~ .nav-item-list > .nav-item {
     background-color: transparent;
     padding: 0;
     width: auto;
     text-align: center;
   }
-  .hamburger-menu-toggle:checked ~ .nav-item-list > .download-btn {
+  .hamburger-menu-toggle ~ .nav-item-list > .download-btn {
     margin-top: 0;
   }
   .nav-item-list {
