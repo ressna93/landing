@@ -254,7 +254,7 @@ img {
   background-color: var(--dark-bg);
   color: #fff;
   padding: 2.5rem 1rem 5rem;
-  overflow: hidden;
+  overflow: visible;
 }
 /* 애먹은 고양이 섹션 */
 .cat-section {
@@ -442,6 +442,22 @@ img {
   .hamburger {
     display: none;
   }
+  .gallery-images {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  .gallery-item {
+    min-width: auto;
+    flex: 1;
+  }
+  .gallery-item img {
+    height: auto;
+  }
+  .gallery-slider {
+    max-width: 900px;
+    margin: 0 auto;
+  }
 }
 
 @media (min-width: 880px) {
@@ -483,6 +499,20 @@ img {
   }
   .gallery-slider {
     max-width: 900px;
+    margin: 0 auto;
+  }
+  .subscribe-section {
+    width: 900px;
+    height: 200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+
+  .cat-section img {
+    width: 900px;
+    height: 340px;
+    object-fit: cover;
+    display: block;
     margin: 0 auto;
   }
 }
