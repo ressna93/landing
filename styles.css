@@ -1,8 +1,3 @@
-/*
-{
-box-sizing: border-box;  박스 모델 일관성
-}
-*/
 html {
   font-size: 14px;
 }
@@ -21,7 +16,12 @@ img { /* 이미지 반응형 기본 설정 */
   max-width: 100%;
   height: auto;
 }
-.header-nav {    /* 모바일 우선 개발 */
+/* 기본 부모 - 끝 - */
+
+/* 모바일 반응형 - 시작 - */
+
+/* 헤더 - 시작 - */
+.header-nav {
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -47,6 +47,9 @@ img { /* 이미지 반응형 기본 설정 */
   width: 24.5vw;
   height: auto;
 }
+/* 헤더 - 끝 -*/
+
+/* 히어로섹션 - 시작 -*/
 .hero-section {
   display: flex;
   flex-direction: column;
@@ -65,7 +68,9 @@ img { /* 이미지 반응형 기본 설정 */
   position: absolute;
   top: 130vw;
 } 
-/* 헤더, 히어로섹션 - 끝 -*/ 
+/* 히어로섹션 - 끝 -*/ 
+
+/* 카드 섹션 - 시작 - */
 .card-section {
   display: flex;
   padding: 2vw;
@@ -82,28 +87,34 @@ img { /* 이미지 반응형 기본 설정 */
   margin-bottom: 2vw;
   object-fit: cover;
 }
+/* 카드 섹션 - 끝 - */
+
+/* 갤러리 섹션 - 시작 - */
 .gallery-section {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
 }
 .gallery-section-text {
-display: flex;
-flex-direction: column;
-flex-wrap: nowrap;
-align-items: flex-end;
-text-align: center;
-gap: 10px;
-padding: 2vw;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: flex-end;
+  text-align: center;
+  gap: 10px;
+  padding: 2vw;
 }
-.card-section-sub {
+.gallery-section-img {
   border-radius: 18px;
   width: 82%;
   box-shadow: var(--shadow-lg);
 }
+/* 갤러리 섹션 - 끝 - */
+
+/* 구독 섹션 - 시작 - */
 .subscribe-section {
   display: flex;
   flex-direction: column;
@@ -124,6 +135,9 @@ padding: 2vw;
   border: 1px solid var(--border-color);
   border-radius: 40px;
 }
+/* 구독 섹션 - 끝 - */
+
+/* 푸터 섹션 - 시작 - */
 .footer {
   display: flex;
   flex-direction: column;
@@ -163,7 +177,11 @@ padding: 2vw;
   justify-content: center;
   line-height: 2.8rem;
 }
+/* 푸터 섹션 - 끝 - */
 
+/* 모바일 반응형 - 끝 - */
+
+/* 종합 베이스 - 시작 - */
 .action-btn { /* 변수를 이용해 어느화면이던 버튼 사이즈를 일정하게*/
   color: var(--text-color);
   font-size: 1.2rem;
@@ -198,7 +216,7 @@ padding: 2vw;
 .main-nav a {
   transition: all 0.3s ease;
 }
-/* 베이스  - 끝-*/
+/* 종합 베이스  - 끝 -*/
 
 /* 데스크톱 */
 @media (min-width: 768px) { 
