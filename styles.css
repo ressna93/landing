@@ -498,17 +498,16 @@ header {
   font-weight: 400;
 }
 .email-input:not(:placeholder-shown):not(:valid) ~ .email-validator-msg {
-  max-height: 1.5rem;
+  display: block;
 }
 .email-validator-msg {
   position: absolute;
-  max-height: 0;
+  display: none;
   overflow: hidden;
   color: var(--text-warning);
   left: 0;
   font-size: 0.875rem;
   font-weight: 700;
-  transition: all 0.3s ease;
 }
 
 /* subscribe button */
