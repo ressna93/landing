@@ -8,20 +8,25 @@
     <title>조준환 - 반응형 랜딩 페이지 제작 실습</title>
   </head>
   <body>
-    <div class="d-flex flex-col page-wrapper">
-      <!-- nav -->
-      <header class="d-flex flex-row justify-between navbar-container">
+    <!-- <div class="d-flex flex-col page-wrapper"> -->
+    <!-- nav -->
+    <header class="background">
+      <div
+        class="d-flex flex-row justify-between page-wrapper navbar-container"
+      >
         <img src="./images/logo_h.svg" alt="ZADU타이틀" class="header-logo" />
         <button class="d-flex flex-col justify-between nav-icon-btn">
           <span class="nav-line"></span>
           <span class="nav-line"></span>
           <span class="nav-line"></span>
         </button>
-      </header>
+      </div>
+    </header>
 
-      <main>
-        <!-- hero -->
-        <section class="d-flex flex-col item-center hero-container">
+    <main>
+      <!-- hero -->
+      <section class="background">
+        <div class="d-flex flex-col item-center hero-container">
           <h2>
             Lorem Ipsum is simply <br />
             dummy text <br />
@@ -40,9 +45,11 @@
             alt="박스 고양이"
             class="boxCat-img"
           />
-        </section>
+        </div>
+      </section>
 
-        <section class="d-flex flex-col main-content">
+      <section>
+        <div class="d-flex flex-col page-wrapper main-content">
           <img src="./images/img_4.jpg" alt="뭐냐옹" />
           <h2>
             Lorem Ipsum is simply <br />
@@ -119,38 +126,39 @@
               Subscribe
             </button>
           </div>
-          <!-- 메인 컨텐츠 아래 고양이 이미지 -->
-          <div class="bottom-img"></div>
-        </section>
-      </main>
-
-      <footer class="d-flex flex-row justify-between">
-        <div class="d-flex flex-col left-footer">
-          <img src="./images/logo_h.svg" alt="푸터 로고" />
-          <div class="d-flex flex-row">
-            <button class="d-flex justify-center item-center footer-btn">
-              <img src="./images/blog.svg" alt="블로그 버튼" />
-            </button>
-            <button class="d-flex justify-center item-center footer-btn">
-              <img src="./images/instagram.svg" alt="인스타 버튼" />
-            </button>
-            <button class="d-flex justify-center item-center footer-btn">
-              <img src="./images/facebook.svg" alt="페이스북 버튼" />
-            </button>
-            <button class="d-flex justify-center item-center footer-btn">
-              <img src="./images/youtube.svg" alt="유튜브 버튼" />
-            </button>
-          </div>
         </div>
+        <!-- 메인 컨텐츠 아래 고양이 이미지 -->
+        <div class="bottom-img"></div>
+      </section>
+    </main>
 
-        <div class="d-flex flex-col right-footer">
-          <a href="#">About</a>
-          <a href="#">Blog</a>
-          <a href="#">Support</a>
-          <a href="#">Teams of Use</a>
+    <footer class="d-flex flex-row justify-between">
+      <div class="d-flex flex-col left-footer">
+        <img src="./images/logo_h.svg" alt="푸터 로고" />
+        <div class="d-flex flex-row">
+          <button class="d-flex justify-center item-center footer-btn">
+            <img src="./images/blog.svg" alt="블로그 버튼" />
+          </button>
+          <button class="d-flex justify-center item-center footer-btn">
+            <img src="./images/instagram.svg" alt="인스타 버튼" />
+          </button>
+          <button class="d-flex justify-center item-center footer-btn">
+            <img src="./images/facebook.svg" alt="페이스북 버튼" />
+          </button>
+          <button class="d-flex justify-center item-center footer-btn">
+            <img src="./images/youtube.svg" alt="유튜브 버튼" />
+          </button>
         </div>
-      </footer>
-    </div>
+      </div>
+
+      <div class="d-flex flex-col right-footer">
+        <a href="#">About</a>
+        <a href="#">Blog</a>
+        <a href="#">Support</a>
+        <a href="#">Teams of Use</a>
+      </div>
+    </footer>
+    <!-- </div> -->
     <!-- 모달 -->
     <div
       class="d-flex item-center justify-center Smodal-set hidden"
@@ -169,6 +177,7 @@
       // 필요한 요소 선택
       const modal = document.getElementById("Smodal-set");
       const subscribeBtn = document.getElementById("subscribe-btn");
+      // 클래스 지정에서 아이디 지정으로 변경함
       const closeBtn = document.getElementById("modal-close-btn");
 
       // 1. Subscribe 버튼 클릭 시 모달 표시
