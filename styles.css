@@ -240,7 +240,8 @@ header {
 .hamburger-menu-toggle ~ .nav-item-list {
   transform: translateY(-100%);
 }
-.hamburger-menu-toggle:checked ~ .nav-item-list {
+.hamburger-menu-toggle:checked ~ .nav-item-list,
+.hamburger-menu-group:focus-within > .nav-item-list {
   transform: translateY(0);
   opacity: 1;
   z-index: 101;
