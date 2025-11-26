@@ -54,6 +54,8 @@ body {
   display: flex;
   flex-direction: column;
 }
+/*-------------------------*/
+/* =======flex======= */
 .flex-col-center {
   display: flex;
   flex-direction: column;
@@ -76,7 +78,8 @@ body {
   justify-content: right;
   margin-right: 2.4rem;
 }
-/* =====text===== */
+/*-------------------------*/
+/* =======text======= */
 .text-orange {
   color: var(--btn-text-orange);
   font-family: "NotosansB";
@@ -153,8 +156,10 @@ body {
 /*===== MAIN =====*/
 .main {
 }
+/*-------------------------*/
+/* hreo-section */
+/*-------------------------*/
 .hero-section {
-  /* hreo-section */
   background-color: var(--header-bg-color);
 }
 .text-contents {
@@ -167,16 +172,20 @@ body {
   height: 422px;
 }
 /*-------------------------*/
+/* card-section */
+/*-------------------------*/
 .card-section img {
-  /* card-section */
   width: 326px;
   height: 190px;
   border-radius: 1.3rem;
   margin-top: 3rem;
+  box-shadow: var(--shadow-lg);
 }
+
+/*-------------------------*/
+/* gallery-section */
 /*-------------------------*/
 .gallery-section {
-  /* gallery-section */
 }
 
 .mid-text {
@@ -199,13 +208,16 @@ body {
 .bot-container {
 }
 /*-------------------------*/
+/* subscribe-section */
+/*-------------------------*/
 .subscribe-box {
-  /* subscribe-section */
   background-color: var(--dark-bg);
   width: 23.3rem;
   height: 25rem;
   margin-top: 3rem;
   border-radius: 1rem;
+  position: relative;
+  z-index: 0;
 }
 
 .email {
@@ -230,11 +242,28 @@ body {
 .email-tab {
   border: none;
 }
-
-.cat-img img {
+.Subscribe-section {
+  position: relative;
 }
+.Subscribe-section::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 20rem;
+  margin-top: 22rem;
+  background-image: url("./images/up-cat.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.95;
+  pointer-events: none;
+  z-index: -1;
+}
+
 /*=========================================*/
 /*===== Footer =====*/
+.footer {
+  margin-top: 15rem;
+}
 .sns-icons {
 }
 
