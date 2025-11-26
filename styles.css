@@ -819,7 +819,7 @@ header {
 }
 .scroll-move-to-center {
   animation-timeline: view(y);
-  animation-range: calc(2000px - 100vh) calc(2000px - 100vh);
+  animation-range: calc(2000px - 100vh);
   animation-name: move-to-center;
   animation-fill-mode: both;
   animation-timing-function: linear;
