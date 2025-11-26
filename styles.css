@@ -597,6 +597,12 @@ header {
     opacity: 1;
   }
 }
+@keyframes move-to-center {
+  100% {
+    left: 50%;
+    transform: translate(-50%);
+  }
+}
 
 /* -------------------------------------------------------------------------- */
 /*                                media queries                               */
@@ -801,4 +807,17 @@ header {
   animation-fill-mode: both;
   animation-timing-function: linear;
   animation-duration: 1ms; /* 파이어폭스에 스크롤 애니메이션을 적용하려면 필요 */
+}
+.scroll-move-to-center {
+  animation-timeline: view(y);
+  animation-range: calc(2000px - 100vh) calc(2000px - 100vh);
+  animation-name: move-to-center;
+  animation-fill-mode: both;
+  animation-timing-function: linear;
+  animation-duration: 1ms; /* 파이어폭스에 스크롤 애니메이션을 적용하려면 필요 */
+}
+@media (min-width: 768px) {
+  .scroll-move-to-center {
+    animation: none;
+  }
 }
