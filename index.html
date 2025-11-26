@@ -136,20 +136,18 @@
         </div>
 
         <!-- subscribe request -->
-        <div class="email-input-container">
+        <form class="email-input-container">
 
           <!-- subscribe email input -->
           <div class="email-input-group">
-            <div class="email-input-icon-inner">
-              <img src="./images/mail.svg" alt="입력 칸 이메일 아이콘">
-            </div>
-            <input type="text" class="email-input" placeholder="Enter your e-mail address">
+            <input type="email" class="email-input" placeholder="Enter your e-mail address" required>
+            <p class="email-validator-msg">잘못된 이메일 형식입니다.</p>
           </div>
 
           <!-- subscribe button -->
-          <button id="subscribe-btn" class="subscribe-btn accent-btn">Subscribe</button>
+          <button type="submit" id="subscribe-btn" class="subscribe-btn accent-btn">Subscribe</button>
 
-        </div>
+        </form>
 
       </section>
     </div>

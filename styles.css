@@ -41,6 +41,7 @@ a {
   --text-light: #666; /* 밝은 텍스트 */
   --text-lighter: #f2e9d8; /* 더 밝은 텍스트 */
   --a-hover: #ff4444;
+  --text-warning: red;
 
   /* 기타 */
   --border-color: #eee; /* 테두리 색상 */
@@ -468,24 +469,12 @@ header {
   width: 100%;
   gap: 1.25rem;
   justify-content: center;
+  position: relative;
 }
 
 /* subscribe email input */
-.email-input-group {
+.email-input-container {
   position: relative;
-}
-.email-input-icon-inner {
-  position: absolute;
-  width: 1.125rem;
-  aspect-ratio: 1 / 1;
-  top: 50%;
-  left: 1rem;
-  transform: translateY(-50%);
-  display: flex;
-  align-items: center;
-}
-.email-input-icon-inner > img {
-  width: 100%;
 }
 .email-input {
   border-radius: 60px;
@@ -493,10 +482,26 @@ header {
   width: 100%;
   padding-left: 2.5rem;
   box-sizing: border-box;
+  background-image: url("./images/mail.svg");
+  background-repeat: no-repeat;
+  background-position: 2.5% 50%;
 }
 .email-input::placeholder {
   font-size: 0.75rem;
   font-weight: 400;
+}
+.email-input:not(:placeholder-shown):not(:valid) ~ .email-validator-msg {
+  max-height: 1.5rem;
+}
+.email-validator-msg {
+  position: absolute;
+  max-height: 0;
+  overflow: hidden;
+  color: var(--text-warning);
+  left: 0;
+  font-size: 0.875rem;
+  font-weight: 700;
+  transition: all 0.3s ease;
 }
 
 /* subscribe button */
@@ -729,9 +734,6 @@ header {
   .subscribe-card-title {
     font-size: 2rem;
   }
-  .email-input-container {
-    position: relative;
-  }
   .email-input {
     padding: 1rem 1rem;
     padding-left: 2.5rem;
@@ -739,6 +741,8 @@ header {
   .subscribe-btn {
     position: absolute;
     right: 0.25rem;
+    top: 50%;
+    transform: translateY(-50%);
   }
 
   /* --------------------------------- footer --------------------------------- */
