@@ -80,3 +80,15 @@ button.download {
   margin-top: 30px;
   margin-bottom: 30px;
 }
+
+/*누워서 뒹구는 고양이 이미지*/
+div.bed_cat {
+  text-align: center;
+  border-radius: 10px;
+  width: 326px;
+  height: 190px;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
