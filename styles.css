@@ -65,6 +65,11 @@ body {
   font-weight: 400;
 }
 
+.text_xlarge {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
 /* 1.상단 로고 */
 
 .navbar {
@@ -88,6 +93,12 @@ body {
   overflow: hidden;
   height: calc(794px - 76px);
   background-color: var(--head-bg-color);
+}
+
+.head_left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .head_group_top {
@@ -117,8 +128,8 @@ body {
 
 .image_banner {
   margin: 30px;
-  width: 197px;
-  height: 422px;
+  min-width: 197px;
+  min-height: 422px;
 }
 
 .banner_btn {
@@ -340,6 +351,18 @@ input:placeholder-shown {
 }
 
 @media (min-width: 1024px) {
+  .text_xlarge {
+    font-size: 3rem;
+  }
+
+  .text_large {
+    font-size: 2.25rem;
+  }
+
+  .text_xsmall {
+    font-size: 1rem;
+  }
+
   .menu_tab {
     display: none;
   }
@@ -368,5 +391,47 @@ input:placeholder-shown {
 
   .navbar {
     padding: 30px 10vw 0;
+  }
+
+  .head_group_top,
+  .head_group_bottom {
+    text-align: left;
+    margin: 0;
+  }
+
+  .head_group_bottom {
+    text-align: left;
+    margin: 40px 0;
+  }
+
+  .head_left {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 60%;
+    margin: auto;
+  }
+
+  .image_banner {
+    margin: auto;
+    max-width: 415px;
+    max-height: 890px;
+  }
+
+  .head_banner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 10vw 0 15vw;
+    height: 80vh;
+    max-height: 800px;
+  }
+
+  .banner_btn {
+    width: 140px;
+  }
+
+  .head_group_bottom {
+    width: 440px;
   }
 }
