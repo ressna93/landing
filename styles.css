@@ -110,6 +110,7 @@ a {
   align-items: center;
 }
 .accent-window {
+  position: relative;
   width: 18.75rem;
   aspect-ratio: 1 / 1;
   background-color: var(--header-bg-color);
@@ -150,6 +151,11 @@ a {
 .info-window-desc {
   font-size: 0.875rem;
   font-weight: 400;
+}
+.modal-close-btn-inner {
+  position: absolute;
+  top: 5%;
+  right: 5%;
 }
 /* to top */
 .to-top-container {
@@ -772,7 +778,7 @@ header {
   .info-window-title {
     font-size: 2rem;
   }
-  .modal-close-btn {
+  .modal-ok-btn {
     padding: 1rem 1.875rem;
   }
 }

@@ -1,6 +1,7 @@
 // 필요한 요소 선택
 const modal = document.getElementById("my-modal");
 const subscribeBtn = document.getElementById("subscribe-btn");
+const okBtn = document.querySelector(".modal-ok-btn");
 const closeBtn = document.querySelector(".modal-close-btn");
 
 // 1. Subscribe 버튼 클릭 시 모달 표시
@@ -10,6 +11,9 @@ subscribeBtn.addEventListener("click", function (event) {
 });
 
 // 2. 닫기 버튼 클릭 시 모달 숨김
+okBtn.addEventListener("click", function () {
+  modal.classList.add("hidden");
+});
 closeBtn.addEventListener("click", function () {
   modal.classList.add("hidden");
 });
