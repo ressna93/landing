@@ -41,6 +41,7 @@
 /* hero */
 .hero-container > h2 {
   font-size: 2.4rem;
+  margin-top: 6rem;
 }
 
 .boxCat-img {
@@ -102,6 +103,7 @@
 
 /* 구독 폼 */
 .Subscribe-form {
+  position: relative;
   background-color: var(--dark-bg);
   color: var(--text-lighter);
   padding: 3.6rem 3.2rem;
@@ -111,11 +113,10 @@
 
 .Subscribe-form > h3 {
   font-size: 2.4rem;
-  margin-bottom: 1rem;
 }
 
 .Subscribe-form > p {
-  margin-bottom: 2rem;
+  margin: 1rem 0 2rem 0;
 }
 
 .Subscribe-form > input {
@@ -123,6 +124,14 @@
   padding: 1.2rem 7rem 1.2rem 4.8rem;
   border: none;
   border-radius: 6rem;
+}
+
+.Subscribe-icon {
+  position: absolute;
+  top: 66.5%;
+  left: 5rem;
+  width: 1.8rem;
+  height: auto;
 }
 
 .Subscribe-btn {
