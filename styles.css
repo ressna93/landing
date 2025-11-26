@@ -70,7 +70,9 @@ body {
   text-align: left;
 }
 .flex-right {
-  display: inline-flex;
+  display: flex;
+  justify-content: right;
+  margin-right: 2.4rem;
 }
 .text-orange {
   color: #d97652;
