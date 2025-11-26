@@ -68,12 +68,14 @@ p.text_two {
 
 /*버튼*/
 button.download {
+  border-radius: 20px;
+  border: none;
   text-align: center;
   font-size: 14px;
   width: 119px;
   height: 40px;
   background-color: var(--accent-color);
   color: #ffff;
-  border-radius: 20px;
-  border: none;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
