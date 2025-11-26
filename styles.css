@@ -68,8 +68,8 @@ img {
 }
 
 .btn-download {
-  background-color: #fff;
-  color: var(--accent-color);
+  background-color: var(--accent-color);
+  color: var(--border-color);
 }
 
 /* =====================헤더===================== */
@@ -436,4 +436,53 @@ img {
 
 .modal-ok-btn:hover {
   background-color: var(--accent-hover);
+}
+
+@media (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+}
+
+@media (min-width: 880px) {
+  .main-nav {
+    display: flex;
+  }
+  .nav-list {
+    font-size: 16px;
+  }
+
+  .card-section {
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+  }
+  .card-text {
+    flex: 1;
+    text-align: left;
+  }
+  .card-image img {
+    width: 100%;
+  }
+
+  .gallery-title {
+    white-space: nowrap;
+  }
+
+  .gallery-images {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  .gallery-item {
+    min-width: auto;
+    flex: 1;
+  }
+  .gallery-item img {
+    height: auto;
+  }
+  .gallery-slider {
+    max-width: 900px;
+    margin: 0 auto;
+  }
 }
