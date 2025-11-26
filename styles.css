@@ -20,8 +20,13 @@
   --shadow-lg: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
+/*바디*/
+body {
+  margin-top: 0px;
+}
+
 /*헤더*/
-div.header {
+header {
   background-color: var(--header-bg-color);
   width: 390px;
   height: 76px;
