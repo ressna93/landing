@@ -34,6 +34,12 @@
 
 body {
   font-family: "NotoSansLao";
+  margin: 0 0 0 0;
+}
+
+header {
+  background-color: var(--header-bg-color);
+  margin: 0 0 0 0;
 }
 
 .nav-row {
@@ -42,11 +48,27 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin-top: 22px;
+  padding-top: 17px;
+  margin-bottom: 40px;
+}
+
+.nav_logo {
+  width: 92px;
+  height: 33px;
 }
 
 h1 {
-  font-family: ;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+h3 {
+}
+
+.btn-download {
+  background-color: var(--accent-color);
+  color: ;
+  text-align: center;
 }
 
 /* 카드 스와이프 */
