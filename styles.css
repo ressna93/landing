@@ -74,11 +74,23 @@ img { /* 이미지 반응형 기본 설정 */
   flex-wrap: nowrap;
   align-items: center;
 }
-.card-section-imgs {
-  display: flex;
-  flex-direction: row;
-  gap: 0.5rem;
-  flex-wrap: wrap;
+.card-section-main {
+  border-radius: 18px;
+  box-shadow: var(--shadow-md);
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  object-fit: cover;
+}
+.gallery-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+.card-section-sub {
+  border-radius: 18px;
+  box-shadow: var(--shadow-md);
 }
 .subscribe-section {
   display: flex;
