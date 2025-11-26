@@ -1,7 +1,7 @@
 :root {
   /* 기본 색상 */
   --primary-color: #f8b49b; /* 연한 살구색 */
-  --accent-color: #ef835d; /* 강조색 (버튼, 아이콘) */
+  --accent-color: #d97652; /* 강조색 (버튼, 아이콘) */
   --accent-hover: #dc5b28; /* 호버 상태 색상 */
   --header-bg-color: #f2d8d9; /* 헤더/히어로 배경색 */
   --dark-bg: #2c3e50; /* 다크 배경 (구독 섹션) */
@@ -20,12 +20,27 @@
   --shadow-lg: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* header */
 .header {
   width: 100%;
   padding: 12px 16px;
   background-color: var(--header-bg-color);
+  height: 928px; /* 원하는 높이 */
+  overflow: hidden;
 }
+
+.nav_box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 50px;
+}
+
+/* 자두 로고 */
+.zadu {
+  width: 150px;
+  height: 50px;
+}
+
 /* PC버전 메뉴 */
 @media (min-width: 768px) {
   .manu {
@@ -33,19 +48,9 @@
     align-items: center;
     justify-content: space-between;
   }
-  /* 모바일버전 메뉴(햄버거 버튼) */
-}
-.manu {
-  display: none;
 }
 
-/* logo imges */
-.zadu {
-  width: 92px;
-  height: 33px;
-}
-
-/* menu button */
+/* 모바일버전 메뉴(햄버거 버튼) */
 .menu-btn {
   width: 32px;
   height: 23px;
@@ -54,15 +59,14 @@
   border: none;
   cursor: pointer;
 }
-
 .menu-btn span {
   position: absolute;
   height: 3px;
   width: 100%;
   background: #333;
   border-radius: 4px;
-  right: 10px;
 }
+
 /* 햄버거 버튼 */
 .menu-btn span:nth-child(1) {
   top: 0;
@@ -73,21 +77,115 @@
 .menu-btn span:nth-child(3) {
   bottom: 0;
 }
-/* 첫번째 문구 */
+.manu {
+  display: none;
+}
+
+.hero-text {
+  max-width: 360px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* 첫 번째 문구 */
 .header-title {
-  width: 264px;
-  font-family: "Noto Sans Lao", sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
+  width: 100%;
   font-size: 24px;
   font-weight: 700;
   line-height: 24px;
   text-align: center;
   margin: 0 auto;
+  margin-top: 70px;
 }
+/* 두 번째 문구 */
+.header-subtext {
+  font-family: "Noto Sans KR", sans-serif;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+/* 다운로드 버튼 */
+.download_btn {
+  margin-top: 24px;
+  padding: 12px 28px;
+  background-color: var(--accent-color);
+  color: #ffffff;
+  border: none;
+  border-radius: 999px;
+}
+
+.box-cat {
+  display: block;
+  width: 280px;
+  max-width: 100%;
+  margin: 40px auto 0;
+}
+
+.bedroom-cat {
+  background-color: #ffffff;
+  display: block;
+  width: 400px;
+  height: 230px;
+  max-width: 100%;
+  margin: 40px auto 0;
+  border-radius: 18px;
+  object-fit: cover;
+  object-position: 30% 31%;
+}
+
+/* intro */
+.intro {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.intro-text {
+  font-family: "Noto Sans KR", sans-serif;
+  width: 90%;
+  font-size: 29px;
+  font-weight: 700;
+  line-height: 34px;
+  margin: 0 auto;
+  margin-top: 38px;
+  text-align: left;
+  margin-left: 35px;
+}
+
+.intro-subtext {
+  font-family: "Noto Sans KR", sans-serif;
+  width: 100%;
+  text-align: left;
+  margin-left: 35px;
+}
+
+.intro-bt-text {
+  text-align: left;
+  margin-right: 10px;
+  color: var(--accent-color);
+  text-align: center;
+  font-weight: 700;
+  font-size: 29px;
+  margin-top: 70px;
+}
+
+.intro-bt-subtext {
+  font-family: "Noto Sans KR", sans-serif;
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 330px; 
+  line-height: 19px;
+}
+
+/* footer button */
 
 .instagram {
   background-color: black;
   align-items: center;
   justify-content: space-between;
   border-radius: 30px;
-  
 }
