@@ -49,3 +49,8 @@ div.header_right {
   padding-right: 20px;
   padding-top: 20px;
 }
+
+/*본문*/
+p {
+  text-align: center;
+}
