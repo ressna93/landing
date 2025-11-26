@@ -209,6 +209,7 @@ body {
   margin: 0 32px;
   padding: 36px 32px;
   background-color: var(--subscribe-bg-color);
+  margin-bottom: 172px;
 }
 
 .subscribe_top_group {
@@ -248,16 +249,70 @@ input:placeholder-shown {
   justify-self: end;
 }
 
-.mail_icon {
-  position: absolute;
-  top: 30px;
-  left: 16px;
-}
-
 .subscribe_head_text {
   color: var(--bright-text-color);
 }
 
 .subscribe_main_text {
   color: var(--subscribe-text-color);
+}
+
+.footer_main_group {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer_image {
+  position: absolute;
+  z-index: -1;
+  width: 100vw;
+  min-width: 390px;
+  height: 240px;
+  margin-top: -240px;
+  padding: 0;
+}
+
+.footer_group {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  padding: 23px 0px 24px 32px;
+}
+
+.footer_logo {
+  width: 110px;
+  height: 39px;
+}
+
+.icon_group {
+  display: flex;
+  flex-direction: row;
+}
+
+.icon_circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-right: 16px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: var(--social-btn-color);
+}
+
+.footer_mobile_menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 30px;
+  margin-bottom: 12px;
+  padding-right: 32px;
+}
+
+.footer_menu_text {
+  color: var(--placeholder-text-color);
+  margin-bottom: 16px;
 }
