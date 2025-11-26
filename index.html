@@ -3,36 +3,55 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>jado mobile</title>
+    <title>ZADU</title>
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <header class="header">
-      <img class="logo-img" src="images/logo_h.svg" alt="logo-jado" />
-
-      <div class="menu-icon">
-        <span></span>
-        <span></span>
-        <span></span>
+    <header>
+      <div class="header-container">
+        <nav class="fixed-top-nav">
+          <div class="nav-bar">
+            <div class="logo-icon-inner">
+              <img src="./images/logo_h.svg" alt="ZADU 로고" />
+            </div>
+            <div class="hamburger-menu-group">
+              <input
+                id="hamburger-menu-toggle"
+                class="hamburger-menu-toggle hidden"
+                type="checkbox"
+              />
+              <label
+                class="hamburger-menu-toggle-lbl"
+                for="hamburger-menu-toggle"
+              >
+                <img src="./images/menu.svg" alt="내비게이션 메뉴 이미지" />
+              </label>
+              <div class="nav-item-list">
+                <a class="nav-item" href="#">Home</a>
+                <a class="nav-item" href="#">About</a>
+                <a class="nav-item" href="#">Support</a>
+                <button class="download-btn accent-btn">Download</button>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div class="hero-container">
+          <div class="hero-text-group">
+            <p class="hero-title">
+              Lorem Ipsum is simply dummy text of the printing and
+            </p>
+            <p class="hero-introduce">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown
+            </p>
+            <button class="download accent-btn">Download</button>
+          </div>
+          <div class="hero-img-inner">
+            <img src="./images/box-cat.png" alt="box-cat" />
+          </div>
+        </div>
       </div>
     </header>
-
-    <section class="main">
-      <h1>
-        Lorem Ipsum is simply<br />
-        dummy text<br />
-        of the printing and
-      </h1>
-
-      <p>
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text ever
-        since the 1500s, when an unknown
-      </p>
-
-      <a class="btn" href="#">Download</a>
-
-      <img class="main-img" src="/images/box-cat.png" alt="box-cat" />
-    </section>
   </body>
 </html>
