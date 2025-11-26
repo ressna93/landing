@@ -114,6 +114,25 @@ img { /* 이미지 반응형 기본 설정 */
   border: 1px solid var(--border-color);
   border-radius: 40px;
 }
+.footer {
+  display: flex;
+  flex-direction: column;
+}
+.footer-main-img {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+.footer-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+.footer-logo {
+  width: 28.48vw;
+}
 
 .action-btn { /* 변수를 이용해 어느화면이던 버튼 사이즈를 일정하게*/
   color: var(--text-color);
