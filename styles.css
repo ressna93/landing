@@ -32,7 +32,7 @@ img { /* 이미지 반응형 기본 설정 */
   flex-wrap: nowrap;
   background-color: var(--header-bg-color);
   color: var(--text-color);
-  padding: 1.24rem 2rem;
+  padding: 1.24vw 2vw;
 }
 .menu-desktop-btn,  /* 데스크톱 메뉴 숨김 */
 .menu-desktop-link,
@@ -64,10 +64,11 @@ img { /* 이미지 반응형 기본 설정 */
   right: 23vw;
   position: absolute;
   top: 130vw;
-}
+} 
+/* 헤더, 히어로섹션 - 끝 -*/ 
 .card-section {
   display: flex;
-  padding: 2rem;
+  padding: 2vw;
   background-color: #fff;
   position: relative;
   flex-direction: column;
@@ -77,8 +78,8 @@ img { /* 이미지 반응형 기본 설정 */
 .card-section-main {
   border-radius: 18px;
   box-shadow: var(--shadow-lg);
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
   object-fit: cover;
 }
 .gallery-section {
@@ -88,6 +89,15 @@ img { /* 이미지 반응형 기본 설정 */
     justify-content: flex-start;
     align-items: center;
     gap: 20px;
+}
+.gallery-section-text {
+display: flex;
+flex-direction: column;
+flex-wrap: nowrap;
+align-items: flex-end;
+text-align: center;
+gap: 10px;
+padding: 2vw;
 }
 .card-section-sub {
   border-radius: 18px;
@@ -100,15 +110,15 @@ img { /* 이미지 반응형 기본 설정 */
   text-align: start;
   flex-wrap: nowrap;
   align-items: flex-end;
-  padding: 3rem 2rem;
+  padding: 3vw 2vw;
   width: 77%;
   border-radius: 18px;
   background: var(--dark-bg);
   color: var(--text-lighter);
 }
 .e-mail-form {
-  margin: 1rem 0;
-  padding: 0.8rem;
+  margin: 1vw 0;
+  padding: 2vw;
   width: 80%;
   max-width: 400px;
   border: 1px solid var(--border-color);
@@ -121,23 +131,43 @@ img { /* 이미지 반응형 기본 설정 */
 .footer-main-img {
   width: 100%;
   height: auto;
-  position: relative;
 }
 .footer-section {
+  height: 41.4vw;
   display: flex;
   flex-direction: row;
+  padding: 6.2vw 0 6vw 0;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.footer-section-btn {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
-  padding: 2rem;
+  align-items: flex-start;
 }
 .footer-logo {
   width: 28.48vw;
+}
+.footer-svg {
+  display: flex;
+  gap: 16px;
+  height: auto;
+}
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: flex-end;
+  justify-content: center;
+  line-height: 2.8rem;
 }
 
 .action-btn { /* 변수를 이용해 어느화면이던 버튼 사이즈를 일정하게*/
   color: var(--text-color);
   font-size: 1.2rem;
-  padding: 0.8rem 2.5rem;
+  padding: 2.9vw 6vw;
   border: none;
   border-radius: 40px;
   background-color: var(--accent-color);
