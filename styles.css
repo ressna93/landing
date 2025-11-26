@@ -25,13 +25,17 @@ body {
   margin-top: 0px;
 }
 
-/*헤더*/
-header {
+/*상단 화면*/
+div.top {
   background-color: var(--header-bg-color);
   width: 390px;
-  height: 76px;
   text-align: center;
   margin: 0 auto;
+}
+/*헤더*/
+header {
+  width: 390px;
+  height: 76px;
 }
 
 div.header_center {
@@ -53,4 +57,22 @@ div.header_right {
 /*본문*/
 p {
   text-align: center;
+}
+p.text_one {
+  font-size: 24px;
+}
+p.text_two {
+  font-size: 14px;
+}
+
+/*버튼*/
+button.download {
+  text-align: center;
+  font-size: 14px;
+  width: 119px;
+  height: 40px;
+  background-color: var(--accent-color);
+  color: #ffff;
+  border-radius: 20px;
+  border: none;
 }
