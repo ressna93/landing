@@ -1,3 +1,32 @@
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+body {
+  margin: 0;
+  text-align: center;
+  transition: all 1s;
+}
+
+.header-container,
+.main-container {
+  width: 100%;
+}
+.header-container {
+  background-color: var(--header-bg-color);
+}
+@media (max-width: 767px) {
+  .header-container,
+  .main-container {
+    width: 90%;
+    padding: 5%;
+  }
+}
+
 :root {
   /* 기본 색상 */
   --primary-color: #f8b49b; /* 연한 살구색 */
@@ -18,4 +47,49 @@
   --shadow-sm: 0 2px 5px rgba(0, 0, 0, 0.1);
   --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.1);
   --shadow-lg: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.btn {
+  padding: 10px 20px;
+  color: white;
+  font-weight: 600;
+  text-align: center;
+  background-color: var(--accent-color);
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: var(--accent-hover);
+}
+
+.icon {
+}
+.icon-box {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+.icon-box:hover {
+  background-color: var(--accent-hover);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style: none;
+}
+input:focus {
+  outline: none;
+}
+a {
+  display: inline-block;
 }

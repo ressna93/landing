@@ -9,9 +9,11 @@
     <style></style>
   </head>
   <body>
-    <main class="main-container">
-      <!-- 1. header: logo & menu -->
+    <!-- --header-bg -->
+    <section class="header-container">
+      <!-- content : 1층 -->
       <header class="header-box">
+        <!-- 1층 - header -->
         <nav class="nav-box">
           <a class="header-logo" href="#">
             <img class="logo" src="./images/logo-h.png" alt="ZADU_logo" />
@@ -20,9 +22,11 @@
             <li class="manu-list">Home</li>
             <li class="manu-list">About</li>
             <li class="manu-list">Support</li>
-            <li class="btn btn-download">Download</li>
+            <li class="manu-list">
+              <button class="btn btn-download">Download</button>
+            </li>
           </ul>
-          <button class="btn btn-menu" type="button">
+          <button class="icon-box btn-menu" type="button">
             <svg
               class="icon icon-manu"
               width="32"
@@ -55,32 +59,33 @@
             </svg>
           </button>
         </nav>
+        <!-- 1층 - main (박스를 뒤집어 쓴 고양이) -->
+        <div class="header-content-box">
+          <article class="article-box">
+            <ul class="text-box text-bold">
+              <li class="">Lorem Ipsum is simply dummy text</li>
+              <li class="">of the printing and</li>
+            </ul>
+            <ul class="text-box">
+              <li class="">Lorem Ipsum is simply dummy text</li>
+              <li class="">of the printing and typesetting industry.</li>
+              <li class="">Lorem Ipsum has been the industry's</li>
+              <li class="">standard dummy text ever since the 1500s,</li>
+              <li class="">when an unknown</li>
+            </ul>
+          </article>
+          <button class="btn btn-download" type="submit">Download</button>
+          <img
+            class="box-cat"
+            src="./images/box-cat.png"
+            alt="박스를 뒤집어 쓴 고양이"
+          />
+        </div>
       </header>
-      <!-- content : 1층 -->
-      <section class="section-box01">
-        <article class="article-box">
-          <ul class="text-box">
-            <li class="">Lorem Ipsum is simply</li>
-            <li class="">dummy text</li>
-            <li class="">of the printing and</li>
-          </ul>
-          <ul class="text-box">
-            <li class="">Lorem Ipsum is simply dummy text</li>
-            <li class="">of the printing and typesetting industry.</li>
-            <li class="">Lorem Ipsum has been the industry's</li>
-            <li class="">standard dummy text ever since the 1500s,</li>
-            <li class="">when an unknown</li>
-          </ul>
-        </article>
-        <button class="btn btn-download" type="submit">Download</button>
-        <img
-          class="box-cat"
-          src="./images/box-cat.png"
-          alt="박스를 뒤집어 쓴 고양이"
-        />
-      </section>
+    </section>
+    <main class="main-container">
       <!-- content : 2층 -->
-      <section class="section-box02">
+      <section class="section-box section-box02">
         <img class="lying-cat" src="./images/img_4.jpg" alt="누워있는 고양이" />
         <article class="article-box">
           <ul class="text-box">
@@ -97,7 +102,7 @@
         </article>
       </section>
       <!-- content : 3층 -->
-      <section class="section-box03">
+      <section class="section-box section-box03">
         <article class="article-box">
           <ul class="text-box">
             <li class="">dummy text of the printing and dummy</li>
@@ -149,7 +154,7 @@
         <button class="btn" type="submit">Learn More</button>
       </section>
       <!-- content : 4층 (구독 박스) -->
-      <section class="section-box04">
+      <section class="section-box section-box04">
         <article class="article-box">
           <ul class="text-box">
             <li class="">Subscribe to our Blog post</li>
@@ -163,6 +168,7 @@
               Lorem Ipsum has been the industry's standard dummy text
             </li>
           </ul>
+          <!-- mail-input-box -->
           <div class="input-box">
             <!-- mail-icon -->
             <svg
@@ -198,120 +204,134 @@
             <button class="btn btn-subscribe">Subscribe</button>
           </div>
         </article>
+      </section>
+      <!-- content : 4층 (고양이 배경)
+      <section class="section-box05">
         <img class="cat-bg" src="./images/up-cat.png" alt="고양이 배경" />
       </section>
+       -->
       <!-- footer : logo & icon list & menu list -->
-      <footer class="footer-box">
-        <a class="icon-box" href="#">
-          <svg
-            class="icon icon-arrow-up"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M13.096 7.18477C11.7929 7.18477 10.5732 7.54601 9.53402 8.17587V2H5V20.6457H9.53402V20.0089C10.5732 20.6364 11.7929 21 13.096 21C16.9079 21 20 17.9063 20 14.0924C20 10.2762 16.9102 7.18477 13.096 7.18477ZM12.4271 16.8781C10.8301 16.8781 9.53402 15.5814 9.53402 13.9835C9.53402 12.3857 10.8301 11.089 12.4271 11.089C14.0241 11.089 15.3202 12.3857 15.3202 13.9835C15.3202 15.5837 14.0241 16.8781 12.4271 16.8781Z"
-              fill="white"
-            />
-          </svg>
-        </a>
-        <div class="">
-          <a class="footer-logo" href="#">
-            <img class="logo" src="./images/logo-h.png" alt="ZADU_logo" />
+      <!-- content : 5층 footer -->
+      <section class="section-box05">
+        <footer class="footer-box">
+          <a class="icon-box" href="#">
+            <svg
+              class="icon icon-arrow-up"
+              xmlns="http://www.w3.org/2000/svg"
+              width="40"
+              height="40"
+              viewBox="0 0 40 40"
+              fill="none"
+            >
+              <g clip-path="url(#clip0_6427_2712)">
+                <path
+                  d="M12.35 25.6833L20 18.0499L27.65 25.6833L30 23.3333L20 13.3333L10 23.3333L12.35 25.6833Z"
+                  fill="#767676"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_6427_2712">
+                  <rect width="40" height="40" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
           </a>
-          <ul class="icon-list-box">
-            <li class="icon-box">
-              <svg
-                class="icon icon-blog"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M13.096 7.18477C11.7929 7.18477 10.5732 7.54601 9.53402 8.17587V2H5V20.6457H9.53402V20.0089C10.5732 20.6364 11.7929 21 13.096 21C16.9079 21 20 17.9063 20 14.0924C20 10.2762 16.9102 7.18477 13.096 7.18477ZM12.4271 16.8781C10.8301 16.8781 9.53402 15.5814 9.53402 13.9835C9.53402 12.3857 10.8301 11.089 12.4271 11.089C14.0241 11.089 15.3202 12.3857 15.3202 13.9835C15.3202 15.5837 14.0241 16.8781 12.4271 16.8781Z"
-                  fill="white"
-                />
-              </svg>
-            </li>
-            <li class="icon-box">
-              <svg
-                class="icon icon-instagram"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M17 2H7C4.23858 2 2 4.23858 2 7V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V7C22 4.23858 19.7614 2 17 2Z"
-                  stroke="white"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M16 11.3701C16.1234 12.2023 15.9812 13.0523 15.5937 13.7991C15.2062 14.5459 14.5931 15.1515 13.8416 15.5297C13.0901 15.908 12.2384 16.0397 11.4077 15.906C10.5771 15.7723 9.80971 15.3801 9.21479 14.7852C8.61987 14.1903 8.22768 13.4229 8.09402 12.5923C7.96035 11.7616 8.09202 10.91 8.47028 10.1584C8.84854 9.40691 9.45414 8.7938 10.2009 8.4063C10.9477 8.0188 11.7977 7.87665 12.63 8.00006C13.4789 8.12594 14.2648 8.52152 14.8716 9.12836C15.4785 9.73521 15.8741 10.5211 16 11.3701Z"
-                  stroke="white"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M17.5 6.5H17.51"
-                  stroke="white"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </li>
-            <li class="icon-box">
-              <svg
-                class="icon icon-facebook"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M17 2H14C12.6739 2 11.4021 2.52678 10.4645 3.46447C9.52678 4.40215 9 5.67392 9 7V10H6V14H9V22H13V14H16L17 10H13V7C13 6.73478 13.1054 6.48043 13.2929 6.29289C13.4804 6.10536 13.7348 6 14 6H17V2Z"
-                  fill="white"
-                />
-              </svg>
-            </li>
-            <li class="icon-box">
-              <svg
-                class="icon icon-youtube"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M22.54 6.42C22.4212 5.94541 22.1792 5.51057 21.8386 5.15941C21.498 4.80824 21.0707 4.55318 20.6 4.42C18.88 4 12 4 12 4C12 4 5.11996 4 3.39996 4.46C2.92921 4.59318 2.50194 4.84824 2.16131 5.19941C1.82068 5.55057 1.57875 5.98541 1.45996 6.46C1.14518 8.20556 0.991197 9.97631 0.999961 11.75C0.988741 13.537 1.14273 15.3213 1.45996 17.08C1.59092 17.5398 1.83827 17.9581 2.17811 18.2945C2.51794 18.6308 2.93878 18.8738 3.39996 19C5.11996 19.46 12 19.46 12 19.46C12 19.46 18.88 19.46 20.6 19C21.0707 18.8668 21.498 18.6118 21.8386 18.2606C22.1792 17.9094 22.4212 17.4746 22.54 17C22.8523 15.2676 23.0063 13.5103 23 11.75C23.0112 9.96295 22.8572 8.1787 22.54 6.42Z"
-                  fill="white"
-                />
-                <path
-                  d="M9.75 15.02L15.5 11.75L9.75 8.47998V15.02Z"
-                  fill="#F29D52"
-                />
-              </svg>
-            </li>
+          <div class="">
+            <a class="footer-logo" href="#">
+              <img class="logo" src="./images/logo-h.png" alt="ZADU_logo" />
+            </a>
+            <ul class="icon-list-box">
+              <li class="icon-box">
+                <svg
+                  class="icon icon-blog"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M13.096 7.18477C11.7929 7.18477 10.5732 7.54601 9.53402 8.17587V2H5V20.6457H9.53402V20.0089C10.5732 20.6364 11.7929 21 13.096 21C16.9079 21 20 17.9063 20 14.0924C20 10.2762 16.9102 7.18477 13.096 7.18477ZM12.4271 16.8781C10.8301 16.8781 9.53402 15.5814 9.53402 13.9835C9.53402 12.3857 10.8301 11.089 12.4271 11.089C14.0241 11.089 15.3202 12.3857 15.3202 13.9835C15.3202 15.5837 14.0241 16.8781 12.4271 16.8781Z"
+                    fill="white"
+                  />
+                </svg>
+              </li>
+              <li class="icon-box">
+                <svg
+                  class="icon icon-instagram"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M17 2H7C4.23858 2 2 4.23858 2 7V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V7C22 4.23858 19.7614 2 17 2Z"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M16 11.3701C16.1234 12.2023 15.9812 13.0523 15.5937 13.7991C15.2062 14.5459 14.5931 15.1515 13.8416 15.5297C13.0901 15.908 12.2384 16.0397 11.4077 15.906C10.5771 15.7723 9.80971 15.3801 9.21479 14.7852C8.61987 14.1903 8.22768 13.4229 8.09402 12.5923C7.96035 11.7616 8.09202 10.91 8.47028 10.1584C8.84854 9.40691 9.45414 8.7938 10.2009 8.4063C10.9477 8.0188 11.7977 7.87665 12.63 8.00006C13.4789 8.12594 14.2648 8.52152 14.8716 9.12836C15.4785 9.73521 15.8741 10.5211 16 11.3701Z"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M17.5 6.5H17.51"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </li>
+              <li class="icon-box">
+                <svg
+                  class="icon icon-facebook"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M17 2H14C12.6739 2 11.4021 2.52678 10.4645 3.46447C9.52678 4.40215 9 5.67392 9 7V10H6V14H9V22H13V14H16L17 10H13V7C13 6.73478 13.1054 6.48043 13.2929 6.29289C13.4804 6.10536 13.7348 6 14 6H17V2Z"
+                    fill="white"
+                  />
+                </svg>
+              </li>
+              <li class="icon-box">
+                <svg
+                  class="icon icon-youtube"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M22.54 6.42C22.4212 5.94541 22.1792 5.51057 21.8386 5.15941C21.498 4.80824 21.0707 4.55318 20.6 4.42C18.88 4 12 4 12 4C12 4 5.11996 4 3.39996 4.46C2.92921 4.59318 2.50194 4.84824 2.16131 5.19941C1.82068 5.55057 1.57875 5.98541 1.45996 6.46C1.14518 8.20556 0.991197 9.97631 0.999961 11.75C0.988741 13.537 1.14273 15.3213 1.45996 17.08C1.59092 17.5398 1.83827 17.9581 2.17811 18.2945C2.51794 18.6308 2.93878 18.8738 3.39996 19C5.11996 19.46 12 19.46 12 19.46C12 19.46 18.88 19.46 20.6 19C21.0707 18.8668 21.498 18.6118 21.8386 18.2606C22.1792 17.9094 22.4212 17.4746 22.54 17C22.8523 15.2676 23.0063 13.5103 23 11.75C23.0112 9.96295 22.8572 8.1787 22.54 6.42Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M9.75 15.02L15.5 11.75L9.75 8.47998V15.02Z"
+                    fill="#F29D52"
+                  />
+                </svg>
+              </li>
+            </ul>
+          </div>
+          <ul class="footer-manu">
+            <li class="manu-list">About</li>
+            <li class="manu-list">Blog</li>
+            <li class="manu-list">Support</li>
+            <li class="manu-list">Terms of Use</li>
           </ul>
-        </div>
-        <ul class="footer-manu">
-          <li class="manu-list">About</li>
-          <li class="manu-list">Blog</li>
-          <li class="manu-list">Support</li>
-          <li class="manu-list">Terms of Use</li>
-        </ul>
-      </footer>
+        </footer>
+      </section>
     </main>
   </body>
 </html>
