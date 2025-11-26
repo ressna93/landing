@@ -200,6 +200,85 @@ body {
 .btn-learnmore:hover {
   background-color: var(--accent-hover);
 }
+.Subscribe-Section {
+  position: relative;
+  z-index: 0;
+}
+.Subscribe-box {
+  background-color: var(--dark-bg);
+  color: var(--border-color);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 32.6rem;
+  aspect-ratio: 1/1;
+  border-radius: 1.8rem;
+  margin-top: 5rem;
+  margin-left: 3rem;
+}
+.Subscribe-Section::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -40%;
+  width: 100%;
+  height: 60%;
+  background: url("images/up-cat.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.6;
+  z-index: -1;
+}
+.Subscribe-title {
+  max-width: 20rem;
+  font-size: 2.4rem;
+  font-weight: bold;
+  padding-left: 3rem;
+  margin-bottom: 0;
+}
+.Subscribe-contents {
+  font-size: 1.4rem;
+  padding-inline: 3rem;
+}
+.subscribe-form {
+  display: flex;
+  flex-direction: column;
+  width: 30rem;
+  gap: 2rem;
+  align-items: center;
+}
+.Subscribe-input {
+  position: relative;
+  background: white;
+  border-radius: 6rem;
+  padding: 1.2rem 1.5rem;
+  display: flex;
+  align-items: center;
+  width: 26rem;
+  height: 4rem;
+  left: 1rem;
+}
+.mail-icon {
+  width: 1.8rem;
+  aspect-ratio: 1/1;
+}
+.input-email {
+  margin-left: 2rem;
+  border: none;
+  font-size: 1.2rem;
+}
+.btn-Subscribe {
+  background-color: var(--accent-color);
+  width: 11rem;
+  height: 4rem;
+  border-radius: 4rem;
+  align-self: flex-end;
+  margin-bottom: 3rem;
+}
+
+.btn-Subscribe:hover {
+  background-color: var(--accent-hover);
+}
 @media (min-width: 768px) {
   .navbar {
     display: flex;
