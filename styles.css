@@ -135,12 +135,17 @@ img { /* 이미지 반응형 기본 설정 */
   position: absolute;
 }
 .e-mail-form {
+  display: flex;
+  gap: 10px;
   margin: 1vw 0;
-  padding: 2vw;
+  padding: 2vw 6vw;
   width: 80%;
   max-width: 400px;
   border: 1px solid var(--border-color);
   border-radius: 40px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
 }
 /* 구독 섹션 - 끝 - */
 
