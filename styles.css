@@ -76,7 +76,7 @@ img { /* 이미지 반응형 기본 설정 */
 }
 .card-section-main {
   border-radius: 18px;
-  box-shadow: var(--shadow-md);
+  box-shadow: var(--shadow-lg);
   margin-top: 2rem;
   margin-bottom: 2rem;
   object-fit: cover;
@@ -87,16 +87,24 @@ img { /* 이미지 반응형 기본 설정 */
     flex-wrap: nowrap;
     justify-content: flex-start;
     align-items: center;
+    gap: 20px;
 }
 .card-section-sub {
   border-radius: 18px;
-  box-shadow: var(--shadow-md);
+  width: 82%;
+  box-shadow: var(--shadow-lg);
 }
 .subscribe-section {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
+  text-align: start;
+  flex-wrap: nowrap;
+  align-items: flex-end;
+  padding: 3rem 2rem;
+  width: 77%;
+  border-radius: 18px;
+  background: var(--dark-bg);
+  color: var(--text-lighter);
 }
 .e-mail-form {
   margin: 1rem 0;
@@ -106,6 +114,7 @@ img { /* 이미지 반응형 기본 설정 */
   border: 1px solid var(--border-color);
   border-radius: 40px;
 }
+
 .action-btn { /* 변수를 이용해 어느화면이던 버튼 사이즈를 일정하게*/
   color: var(--text-color);
   font-size: 1.2rem;
