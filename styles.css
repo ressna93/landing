@@ -28,6 +28,7 @@ body {
 /*상단 화면 전체*/
 div.top {
   background-color: var(--header-bg-color);
+  overflow: hidden;
   width: 390px;
   height: 794px;
   text-align: center;
