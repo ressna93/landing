@@ -3,15 +3,19 @@
   --nav-bg-color: #f2d8d9;
   --head-bg-color: #f2d8d9;
   --main-bg-color: #ffffff;
+  --subscribe-bg-color: #263140;
 
   /* 폰트 색상 */
   --main-text-color: #000000;
   --bright-text-color: #ffffff;
+  --subscribe-text-color: #f2e9d8;
   --accent-text-color: #d97652;
+  --placeholder-text-color: #767676;
 
   /* 버튼 색상 */
   --main-btn-color: #d97652;
   --social-btn-color: #f29d52;
+
   /* 그림자 색상 */
   --image-shadow: rgba(0, 0, 0, 0.25);
 }
@@ -80,7 +84,6 @@ body {
 }
 
 .learn_btn {
-  float: right;
   margin-top: 9px;
   width: 126px;
   justify-self: end;
@@ -169,6 +172,7 @@ body {
 }
 
 .cat_gallary {
+  margin-bottom: 50px;
   padding: 0 32px;
 }
 
@@ -195,4 +199,65 @@ body {
 .cat_gallary_container {
   display: grid;
   grid-template-columns: 1fr;
+}
+
+.subscribe_container {
+  box-sizing: border-box;
+  width: 326px;
+  height: 348px;
+  border-radius: 18px;
+  margin: 0 32px;
+  padding: 36px 32px;
+  background-color: var(--subscribe-bg-color);
+}
+
+.subscribe_top_group {
+  margin-top: 20px;
+}
+
+.subscribe_bottom_group {
+  display: grid;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.subscribe_address {
+  border: none;
+  border-radius: 60px;
+  width: 262px;
+  height: 40px;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.subscribe_address::placeholder {
+  padding: 12px 48px;
+  font-size: 0.75rem;
+  color: var(--placeholder-text-color);
+}
+
+input:placeholder-shown {
+  background-image: url(/images/mail.svg);
+  background-repeat: no-repeat;
+  background-position: 16px center;
+  background-size: 22px 22px;
+}
+
+.subscribe_btn {
+  width: 117px;
+  justify-self: end;
+}
+
+.mail_icon {
+  position: absolute;
+  top: 30px;
+  left: 16px;
+}
+
+.subscribe_head_text {
+  color: var(--bright-text-color);
+}
+
+.subscribe_main_text {
+  color: var(--subscribe-text-color);
 }
