@@ -3,6 +3,8 @@
 /* -------------------------------------------------------------------------- */
 body {
   margin: 0;
+  font-family: Arial, sans-serif;
+  color: var(--text-color);
 }
 p {
   margin: 0;
