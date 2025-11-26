@@ -226,12 +226,12 @@ header {
 }
 
 /* nav logo */
-.logo-icon-inner {
+.logo-icon-btn {
   width: 5.75rem;
   aspect-ratio: 5.75 / 2;
   cursor: pointer;
 }
-.logo-icon-inner > img {
+.logo-icon-btn > img {
   width: 100%;
 }
 
@@ -541,10 +541,10 @@ header {
 }
 
 /* footer logo */
-.footer-logo-icon-inner {
+.footer-logo-icon-btn {
   width: 7rem;
 }
-.footer-logo-icon-inner > img {
+.footer-logo-icon-btn > img {
   width: 100%;
 }
 
