@@ -5,7 +5,7 @@
   --accent-hover: #dc5b28; /* 호버 상태 색상 */
   --header-bg-color: #f2d8d9; /* 헤더/히어로 배경색 */
   --dark-bg: #2c3e50; /* 다크 배경 (구독 섹션) */
-
+  --dummy-color: #d97652;
   /* 텍스트 색상 */
   --text-color: #333; /* 기본 텍스트 */
   --text-light: #666; /* 밝은 텍스트 */
@@ -107,6 +107,66 @@ body {
   height: 42rem;
 }
 
+.card-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 4rem;
+}
+.card-image {
+  width: clamp(32.6rem, 30vw, 66rem);
+  aspect-ratio: 32 / 19;
+  box-shadow: var(--shadow-md);
+  border-radius: 0.8rem;
+}
+.card-section.card-text {
+  flex: 1;
+}
+.card-text {
+  margin-left: 3rem;
+}
+.card-text-title {
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+.card-text-contents {
+  font-size: 1.4rem;
+}
+
+.Gallery-Section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.Gallery-text-title {
+  font-size: 2.4rem;
+  color: var(--dummy-color);
+  font-weight: bold;
+}
+
+.Gallery-text-contents {
+  font-size: 1.6rem;
+}
+.accent {
+  color: var(--dummy-color);
+  font-weight: bold;
+}
+.Gallery-image-box {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+.Gallery-image {
+  width: clamp(26rem, 26vw, 37.8rem);
+  aspect-ratio: 1/1;
+  border-radius: 1.8rem;
+  box-shadow: var(--shadow-lg);
+}
+
 @media (min-width: 768px) {
   .navbar {
     display: flex;
@@ -151,6 +211,15 @@ body {
     margin-right: 10%;
     margin-left: auto;
   }
+  .card-section {
+    flex-direction: row;
+  }
+  .card-text-title {
+    font-size: 3.6rem;
+  }
+  .card-text-contents {
+    font-size: 1.6rem;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -165,45 +234,5 @@ body {
   .title-image {
     width: 41.5rem;
     height: 76rem;
-  }
-}
-
-.card-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  margin-top: 4rem;
-}
-.card-image {
-  width: clamp(32.6rem, 30vw, 66rem);
-  aspect-ratio: 32 / 19;
-  box-shadow: var(--shadow-md);
-  border-radius: 0.8rem;
-}
-.card-section.card-text {
-  flex: 1;
-}
-.card-text {
-  margin-left: 3rem;
-}
-.card-text-title {
-  font-size: 2.4rem;
-  font-weight: bold;
-}
-.card-text-contents {
-  font-size: 1.4rem;
-}
-
-@media (min-width: 768px) {
-  .card-section {
-    flex-direction: row;
-  }
-  .card-text-title {
-    font-size: 3.6rem;
-  }
-  .card-text-contents {
-    font-size: 1.6rem;
   }
 }
