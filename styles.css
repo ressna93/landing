@@ -30,7 +30,6 @@ body {
   padding: 20px;
   font-size: 1rem;
   color: #2e2525;
-  position: fixed;
   top: 0px;
   left: -0px;
 }
@@ -38,8 +37,6 @@ body {
   display: inline-flex;
   width: 37px;
   height: 36px;
-  top: 15.56px;
-  left: 36.39px;
   border-width: 1px;
   margin-left: 50px;
 }
@@ -76,19 +73,19 @@ body {
   color: white;
   border-radius: 56px;
   text-align: center;
+  margin-right: 50px;
 }
 .content {
   background-color: pink;
   display: flex;
-  align-items: center;
   gap: 10px;
   width: 100%;
   padding: 0px;
   font-size: 1rem;
   color: #2e2525;
-  position: fixed;
   top: 100px;
   left: -0px;
+  justify-content: space-evenly;
 }
 .text-box {
   align-items: center;
@@ -104,8 +101,29 @@ body {
 
 .main-image {
   display: inline-flex;
-  align-items: center;
-  position: relative;
+}
+
+.box-cat {
+  position: absolute;
   width: auto;
-  height: auto;
+  height: 50%;
+}
+.card-body {
+  display: flex;
+  padding-top: 50px;
+  color: #2e2525;
+}
+.body-image {
+  width: 660px;
+  height: 390px;
+  border-radius: 30px;
+}
+
+.card-textbody {
+  margin: 10px;
+}
+
+.body-text {
+  font-weight: bolder;
+  font-size: 20px;
 }
