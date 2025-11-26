@@ -42,6 +42,7 @@ img { /* 이미지 반응형 기본 설정 */
 .menu-mb-btn {
   background: var(--header-bg-color);
   border: none;
+  cursor: pointer;
 }/* 모바일 메뉴버튼을 눌러서 메뉴를 활성화하는건 패스 */
 .main-logo {
   width: 24.5vw;
@@ -115,17 +116,23 @@ img { /* 이미지 반응형 기본 설정 */
 /* 갤러리 섹션 - 끝 - */
 
 /* 구독 섹션 - 시작 - */
+.subscribe-container {
+  display: flex;
+  justify-content: space-evenly;
+  height: 80vw;
+}
 .subscribe-section {
   display: flex;
   flex-direction: column;
   text-align: start;
   flex-wrap: nowrap;
   align-items: flex-end;
-  padding: 3vw 2vw;
-  width: 77%;
+  padding: 5vw 8vw;
+  width: 68%;
   border-radius: 18px;
   background: var(--dark-bg);
   color: var(--text-lighter);
+  position: absolute;
 }
 .e-mail-form {
   margin: 1vw 0;
@@ -176,6 +183,7 @@ img { /* 이미지 반응형 기본 설정 */
   align-items: flex-end;
   justify-content: center;
   line-height: 2.8rem;
+
 }
 /* 푸터 섹션 - 끝 - */
 
@@ -190,20 +198,31 @@ img { /* 이미지 반응형 기본 설정 */
   border-radius: 40px;
   background-color: var(--accent-color);
   transition: background-color 0.3s ease;
+  cursor: pointer;
 }
 .action-btn:hover {
+  background-color: var(--accent-hover);
+}
+.social-btn { /* svg를 버튼화 하기위해 버튼 기본 스타일 제거 */
+  border: none;
   background-color: var(--accent-color);
+  width: 2.285714285714286rem;
+  height: 2.285714285714286rem;
+  border-radius: 50%;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
 }
 .image-left {
   box-shadow: var(--shadow-md);
 }
-.social-icon { /* 소셜 아이콘 */
-  background-color: var(--accent-color);
+.footer-svg { /* 소셜 아이콘 */
   border-radius: 50%;
   transition: background-color 0.3s ease;
 }
 .social-icon:hover {
-  background-color: var(--accent-color);
+  border-radius: 50%;
+  background-color: var(--accent-hover);
 }
 .social-icon svg {
   width: 24px;
@@ -215,6 +234,10 @@ img { /* 이미지 반응형 기본 설정 */
 .footer-bottom a,
 .main-nav a {
   transition: all 0.3s ease;
+}
+a {
+  text-decoration: none;
+  color: var(--text-light);
 }
 /* 종합 베이스  - 끝 -*/
 
