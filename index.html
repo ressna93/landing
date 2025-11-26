@@ -115,7 +115,9 @@
               placeholder="Enter your e-mail address"
               class="Subscribe-email"
             />
-            <button class="btn Subscribe-btn">Subscribe</button>
+            <button class="btn Subscribe-btn" id="subscribe-btn">
+              Subscribe
+            </button>
           </div>
           <!-- 메인 컨텐츠 아래 고양이 이미지 -->
           <div class="bottom-img"></div>
@@ -149,5 +151,43 @@
         </div>
       </footer>
     </div>
+    <!-- 모달 -->
+    <div
+      class="d-flex item-center justify-center Smodal-set hidden"
+      id="Smodal-set"
+    >
+      <div class="d-flex flex-col item-center justify-center Subscribe-modal">
+        <img src="./images/cat-subscribe.png" alt="수줍은 고양이" />
+        <h3>Thank you!</h3>
+        <p>Lorem Ipsum is simply dummy text of the printing industry.</p>
+        <button class="btn" id="modal-close-btn">OK! I Love ZADU</button>
+      </div>
+    </div>
+
+    <!-- 모달용 자바 -->
+    <script>
+      // 필요한 요소 선택
+      const modal = document.getElementById("Smodal-set");
+      const subscribeBtn = document.getElementById("subscribe-btn");
+      const closeBtn = document.getElementById("modal-close-btn");
+
+      // 1. Subscribe 버튼 클릭 시 모달 표시
+      subscribeBtn.addEventListener("click", function (event) {
+        event.preventDefault(); // 폼 제출 방지
+        modal.classList.remove("hidden");
+      });
+
+      // 2. 닫기 버튼 클릭 시 모달 숨김
+      closeBtn.addEventListener("click", function () {
+        modal.classList.add("hidden");
+      });
+
+      // 3. 오버레이 클릭 시 모달 숨김
+      modal.addEventListener("click", function (event) {
+        if (event.target === modal) {
+          modal.classList.add("hidden");
+        }
+      });
+    </script>
   </body>
 </html>
