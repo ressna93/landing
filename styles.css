@@ -70,6 +70,7 @@ body {
   background-color: var(--header-bg-color);
   gap: 2rem;
   height: 70rem;
+  overflow: hidden;
 }
 .title-container {
   display: flex;
@@ -164,5 +165,45 @@ body {
   .title-image {
     width: 41.5rem;
     height: 76rem;
+  }
+}
+
+.card-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 4rem;
+}
+.card-image {
+  width: clamp(32.6rem, 30vw, 66rem);
+  aspect-ratio: 32 / 19;
+  box-shadow: var(--shadow-md);
+  border-radius: 0.8rem;
+}
+.card-section.card-text {
+  flex: 1;
+}
+.card-text {
+  margin-left: 3rem;
+}
+.card-text-title {
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+.card-text-contents {
+  font-size: 1.4rem;
+}
+
+@media (min-width: 768px) {
+  .card-section {
+    flex-direction: row;
+  }
+  .card-text-title {
+    font-size: 3.6rem;
+  }
+  .card-text-contents {
+    font-size: 1.6rem;
   }
 }
