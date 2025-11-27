@@ -82,9 +82,11 @@
               </p>
             </div>
             <!-- Hero Section > button -->
-            <button class="btn btn-download bg-orange" type="button">
-              Download
-            </button>
+            <div class="btn-box">
+              <button class="btn btn-download bg-orange" type="button">
+                Download
+              </button>
+            </div>
           </article>
           <!-- Hero Section > image -->
           <div class="hero-cat-box">
@@ -101,13 +103,20 @@
       <!-- 2층: Card Section -->
       <section class="section-box section-card">
         <!-- Card Section > image -->
-        <img class="lying-cat" src="./images/img_4.jpg" alt="누워있는 고양이" />
+        <div class="lying-cat-box border-radius">
+          <img
+            class="lying-cat"
+            src="./images/img_4.jpg"
+            alt="누워있는 고양이"
+          />
+        </div>
         <!-- Card Section > text -->
         <article class="article-box">
-          <h2 class="font-bold">Lorem Ipsum is simply dummy text of the printing and dummy text</h2>
-          </div>
+          <h2 class="font-bold text-left">
+            Lorem Ipsum is simply dummy text of the printing and dummy text
+          </h2>
           <div class="text-box">
-            <p class="">
+            <p class="text-left">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry.
             </p>
@@ -118,11 +127,14 @@
       <section class="section-box section-gallery">
         <!-- Gallery Section > top > text -->
         <article class="article-box">
-          <h1 class="text-bold color-orange">dummy text of the printing and dummy</h1>
+          <h1 class="text-bold color-orange">
+            dummy text of the printing and dummy
+          </h1>
           <div class="text-box">
             <p class="">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
+              Lorem Ipsum is simply
+              <span class="color-orange">dummy text</span> of the printing and
+              typesetting industry.
             </p>
             <p class="">
               Lorem Ipsum has been the industry's standard dummy text ever since
@@ -130,96 +142,114 @@
             </p>
           </div>
         </article>
+
         <!-- Gallery Section > images -->
-        <div class="img-box">
-          <img
-            class="cat-photo01"
-            src="./images/img_1.jpg"
-            alt="캣 타워 고양이"
-          />
-          <img
-            class="cat-photo02"
-            src="./images/img_2.jpg"
-            alt="뒷 모습 고양이"
-          />
-          <img
-            class="cat-photo03"
-            src="./images/img_3.jpg"
-            alt="정면 고양이"
-          />
+        <div class="gallery-img-box">
+          <div class="gallery-img-inner-box">
+            <div class="gallery-img border-radius">
+              <img
+                class="cat-tower"
+                src="./images/img_1.jpg"
+                alt="캣 타워 고양이"
+              />
+            </div>
+            <div class="gallery-img border-radius">
+              <img
+                class="cat-back"
+                src="./images/img_2.jpg"
+                alt="뒷 모습 고양이"
+              />
+            </div>
+            <div class="gallery-img border-radius">
+              <img
+                class="cat-front"
+                src="./images/img_3.jpg"
+                alt="정면 고양이"
+              />
+            </div>
+          </div>
         </div>
+
         <!-- Gallery Section > bottom > text -->
-        <article class="article-box">
+        <article class="article-box gallery-article-bottom-box">
           <div class="text-box">
-            <p class="">
+            <p class="text-left">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry.
             </p>
-            <p class="">
+            <p class="text-left">
               Lorem Ipsum has been the industry's standard dummy text ever since
               the 1500s, when an unknown
             </p>
-            <p class="">
+            <p class="text-left">
               Ipsum is simply dummy text of the printing and typesetting
               industry.
             </p>
           </div>
-          <button class="btn btn-More bg-orange" type="button">Learn More</button>
-        </article>
-      </section>
-      <!-- 4층: Subscribe Section -->
-      <section class="section-box section-subscribe">
-        <!-- Subscribe Section > text -->
-        <article class="article-box">
-          <h2 class="orange-title color-white">Subscribe to our Blog post</h2>
-          <div class="text-box">
-            <p class="">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
-            </p>
-            <p class="">
-              Lorem Ipsum has been the industry's standard dummy text
-            </p>
-          </div>
-        </article>
-        <!-- Subscribe Section > input box -->
-        <div class="input-box">
-          <!-- input box > mail-icon -->
-          <svg
-            class="icon mail-icon"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z"
-              stroke="#767676"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-            <path
-              d="M22 6L12 13L2 6"
-              stroke="#767676"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </svg>
-          <!-- input box > email input -->
-          <input
-            class=""
-            type="email"
-            placeholder="Enter your e-mail address"
-          />
-          <!-- input box > email button -->
-          <button class="btn btn-subscribe bg-orange" type="button">
-            Subscribe
+          <button class="btn btn-More bg-orange" type="button">
+            Learn More
           </button>
-        </div>
+        </article>
       </section>
+
+      <!-- subscribe-bg -->
+      <div class="subscribe-container">
+        <!-- 4층: Subscribe Section -->
+        <section class="section-box section-subscribe border-radius">
+          <!-- Subscribe Section > text -->
+          <article class="article-box subscribe-article-box">
+            <h2 class="orange-title color-white text-left">
+              Subscribe to our Blog post
+            </h2>
+            <div class="text-box">
+              <p class="color-white text-left">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
+              </p>
+              <p class="color-white text-left">
+                Lorem Ipsum has been the industry's standard dummy text
+              </p>
+            </div>
+          </article>
+          <!-- Subscribe Section > input box -->
+          <div class="input-box">
+            <!-- input box > mail-icon -->
+            <svg
+              class="icon mail-icon"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z"
+                stroke="#767676"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M22 6L12 13L2 6"
+                stroke="#767676"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <!-- input box > email input -->
+            <input
+              class="section-emali-input text-left"
+              type="email"
+              placeholder="Enter your e-mail address"
+            />
+            <!-- input box > email button -->
+            <button class="btn btn-subscribe bg-orange" type="button">
+              Subscribe
+            </button>
+          </div>
+        </section>
+      </div>
       <!-- 5층: footer -->
       <footer class="footer-box">
         <!-- icon: arrow-up -->

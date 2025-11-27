@@ -1,5 +1,5 @@
 /* content size */
-@media (max-width: 1399px) {
+@media (max-width: 767px) {
   .header-box,
   .section-box,
   .footer-box {
@@ -7,16 +7,22 @@
     margin: 5px;
   }
 }
-@media (min-width: 1400px) {
+@media (min-width: 768px) {
   .header-box,
   .section-box,
   .footer-box {
-    width: 1400px;
+    max-width: 1280px;
+  }
+  .header-box,
+  .footer-box {
     margin: 0 auto;
+  }
+  .section-box {
+    margin: 100px auto 0 auto;
   }
 }
 
-/* header */
+/* header > nav */
 .nav-box {
   display: flex;
   align-items: center;
@@ -25,7 +31,7 @@
 .logo {
   width: 92px;
 }
-.manu-list {
+.menu-list {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -33,11 +39,14 @@
   font-size: 1.1rem;
   cursor: pointer;
 }
-.manu-list .btn-download {
+.menu-list .btn-download {
   margin-left: 20px;
 }
+.btn-menu {
+  background: transparent;
+}
 @media (max-width: 767px) {
-  .header-manu {
+  .header-menu {
     display: none;
   }
 }
@@ -45,7 +54,7 @@
   .logo {
     width: 149px;
   }
-  .header-manu {
+  .header-menu {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -59,76 +68,145 @@
 .article-box {
   margin: 30px 0;
 }
-
-.text-box {
-  padding: 15px;
-  text-align: center;
-}
-.text-bold li {
+/* all font size */
+h1,
+h2 {
   font-size: 1.7rem;
+  background-color: rgb(255, 74, 74);
 }
-.text-box-list {
-  font-size: 1rem;
+.text-box p {
+  font-size: 1rm;
+  background-color: rgb(255, 164, 164);
+}
+.section-gallery p {
+  font-size: 1.1rem;
+}
+.section-emali-input {
+  font-size: 0.857rem;
 }
 @media (min-width: 768px) {
-  .text-box li {
-    text-align: left;
+  /* all font size */
+  h1 {
+    font-size: 3rem;
   }
-  .text-bold li {
-    font-size: 3.4rem;
+  h2 {
+    font-size: 2.25rem;
   }
-  .text-box-list {
-    font-size: 1.1rem;
+  .section-subscribe p {
+    font-size: 0.875rem;
+  }
+  .section-emali-input {
+    font-size: 1rem;
   }
 }
 
-/* header main > Hero Section */
+/* header > Hero Section */
 .header-hero-box {
   display: flex;
   align-items: center;
-  justify-content: center;
-
+  justify-content: space-between;
   flex-direction: column;
   gap: 10px;
-
-  position: relative;
   overflow: hidden;
+  background-color: brown;
+}
+.hero-article-box {
+  width: 280px;
+  background-color: rgb(146, 0, 0);
 }
 @media (min-width: 768px) {
   .header-hero-box {
     flex-direction: row;
   }
-  .hero-article-box,
-  .hero-cat-box {
-    flex: 1;
-    max-width: 50%;
+  .hero-article-box {
+    width: 740px;
+    padding-left: 30px;
+  }
+  .hero-article-box h1,
+  .hero-article-box p {
+    text-align: left;
+  }
+  .hero-article-box .btn-box {
+    justify-content: flex-start;
   }
 }
-.hero-article-box .btn-download {
-  display: flex;
+@media (max-width: 767px) {
+  .hero-article-box .btn-box {
+    justify-content: center;
+  }
 }
-.hero-cat-box {
-  overflow: hidden;
+.hero-article-box .btn-box {
+  display: flex;
 }
 .box-cat {
   width: 197px;
   height: 422px;
-  margin-bottom: -4.5rem;
+  margin-bottom: -7.5rem;
 }
 @media (min-width: 768px) {
   .box-cat {
     width: 415px;
     height: 766px;
-    margin-bottom: -7rem;
+    margin-bottom: -10rem;
   }
 }
 
-/* Subscribe Section */
-.section-subscribe {
+/* 2층: Card Section */
+.lying-cat-box {
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+  width: 326px;
+  height: 190px;
+  margin: 0 auto;
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+}
+.lying-cat {
+  object-fit: cover;
+}
+
+/* 3층: Gallery Section */
+.gallery-img-box {
+  display: flex;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.gallery-img-inner-box {
+  display: flex;
+  gap: 4.5rem;
+  box-sizing: border-box;
+}
+.gallery-img {
+  width: 260px;
+  height: 260px;
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+}
+.gallery-article-bottom-box {
+  display: flex;
+}
+@media (min-width: 768px) {
+  .gallery-img {
+    width: 378px;
+    height: 378px;
+  }
+}
+
+/* 4층: Subscribe Section */
+.subscribe-container {
   width: 100%;
   height: 340px;
   background: url("../images/up-cat.png") no-repeat center;
   background-size: 100%;
+}
+.section-subscribe {
+  display: flex;
+  height: 200px;
+  background-color: var(--dark-bg);
+  box-sizing: border-box;
+}
+.subscribe-article-box {
 }
 
 /* footer sns icon size */
