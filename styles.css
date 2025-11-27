@@ -285,11 +285,10 @@ body {
   background-color: var(--accent-hover);
 }
 
-.hidden {
-  display: none;
-}
 .modal-overlay {
   position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   background: var(--modal-bg);
@@ -298,37 +297,55 @@ body {
   align-items: center;
   z-index: 1000;
 }
-.modal-content {
+
+.hidden {
+  display: none;
+}
+/* 실제 모달 박스 */
+.modal-box {
   position: relative;
   width: 40rem;
-  aspect-ratio: 3 / 2;
-  border-radius: 3rem;
-  padding: 2rem 5rem;
-  background-color: var(--header-bg-color);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  padding: 3rem 4rem;
+  background: var(--header-bg-color);
+  border-radius: 20px;
   text-align: center;
 }
+
+/* 닫기 버튼 X */
+.modal-close {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 2.4rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
 .modal-title {
-  font-size: 3.6rem;
-  color: var(--dummy-color);
+  font-size: 3rem;
+  margin: 1rem 0;
 }
-.modal-content {
+
+.modal-text {
   font-size: 1.4rem;
+  margin-bottom: 2rem;
 }
+
 .modal-ok {
-  width: 18.7rem;
-  height: 5.6rem;
-  border-radius: 4rem;
+  width: 18rem;
+  height: 5rem;
+  border-radius: 30px;
   font-size: 1.6rem;
   font-weight: bold;
 }
+
 .modal-image {
-  width: 11rem;
+  width: 10rem;
   aspect-ratio: 1/1;
+  object-fit: cover;
 }
+
 @media (min-width: 768px) {
   .navbar {
     display: flex;
