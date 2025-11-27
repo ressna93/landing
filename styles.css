@@ -132,11 +132,11 @@ a {
   align-items: center;
   gap: 1.25rem;
 }
-.ok-modal-dialog-img-inner {
+.ok-modal-dialog-img-wrapper {
   width: 3.75rem;
   aspect-ratio: 1 / 1;
 }
-.ok-modal-dialog-img-inner > img {
+.ok-modal-dialog-img-wrapper > img {
   width: 100%;
 }
 .info-modal-dialog-text-group {
@@ -156,7 +156,7 @@ a {
   font-size: 0.875rem;
   font-weight: 400;
 }
-.modal-close-btn-inner {
+.modal-close-btn-wrapper {
   position: absolute;
   top: 5%;
   right: 5%;
@@ -319,11 +319,11 @@ header {
 }
 
 /* hero image */
-.hero-img-inner {
+.hero-img-wrapper {
   width: 12.25rem;
   margin-bottom: -6rem;
 }
-.hero-img-inner > img {
+.hero-img-wrapper > img {
   width: 100%;
 }
 
@@ -346,14 +346,14 @@ header {
 }
 
 /* main card image */
-.main-card-img-inner {
+.main-card-img-wrapper {
   min-width: 20.375rem;
   aspect-ratio: 20.375 / 11.875;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: var(--shadow-md);
 }
-.main-card-img-inner > img {
+.main-card-img-wrapper > img {
   width: 100%;
   margin-top: -3rem;
 }
@@ -670,7 +670,7 @@ header {
   .hero-introduce {
     font-size: 1rem;
   }
-  .hero-img-inner {
+  .hero-img-wrapper {
     width: 50%;
     flex-shrink: 0;
     margin-bottom: -10rem;
@@ -690,7 +690,7 @@ header {
     align-items: center;
     gap: 0;
   }
-  .main-card-img-inner {
+  .main-card-img-wrapper {
     width: 50%;
   }
   .main-card-content {
@@ -790,7 +790,7 @@ header {
     width: 37.5rem;
     aspect-ratio: 1.5 / 1;
   }
-  .ok-modal-dialog-img-inner {
+  .ok-modal-dialog-img-wrapper {
     width: 6.875rem;
   }
   .info-modal-dialog-title {
