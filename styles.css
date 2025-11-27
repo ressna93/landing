@@ -354,10 +354,12 @@ a {
   border-radius: 8px;
   overflow: hidden;
   box-shadow: var(--shadow-md);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .main-card-img-wrapper > img {
   width: 100%;
-  margin-top: -3rem;
 }
 
 /* main card text */
@@ -677,7 +679,6 @@ a {
   }
   .hero-img-wrapper {
     width: 50%;
-    flex-shrink: 0;
     margin-bottom: -10rem;
   }
 
