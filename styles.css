@@ -610,7 +610,7 @@ img {
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1023px) {
   .hamburger {
     display: none;
   }
@@ -663,7 +663,6 @@ img {
   }
   .subscribe-section {
     width: 960px;
-    height: 270px;
     margin: 0 auto;
     padding: 2.5rem 3rem;
     border-radius: 20px;
@@ -816,7 +815,6 @@ img {
   }
   .subscribe-section {
     width: 1280px;
-    height: 200px;
     margin: 0 auto;
     padding: 2.5rem 3rem;
     border-radius: 20px;
