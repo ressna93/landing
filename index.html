@@ -7,39 +7,60 @@
     <link rel="stylesheet" href="./css/styles.css" />
     <title>조준환 - 반응형 랜딩 페이지 제작 실습</title>
   </head>
+
   <body>
-    <!-- <div class="d-flex flex-col page-wrapper"> -->
     <!-- nav -->
     <header class="background">
-      <div
+      <nav
         class="d-flex flex-row justify-between page-wrapper navbar-container"
       >
         <img src="./images/logo_h.svg" alt="ZADU타이틀" class="header-logo" />
-        <button class="d-flex flex-col justify-between nav-icon-btn">
-          <span class="nav-line"></span>
-          <span class="nav-line"></span>
-          <span class="nav-line"></span>
-        </button>
-      </div>
+        <!-- 모바일용 햄버거 메뉴 -->
+        <div class="mobile-only">
+          <button class="d-flex flex-col justify-between nav-icon-btn">
+            <span class="nav-line"></span>
+            <span class="nav-line"></span>
+            <span class="nav-line"></span>
+          </button>
+        </div>
+
+        <!-- 모바일 이외 메뉴 -->
+        <div class="non-mobile">
+          <div class="d-flex item-center non-mobile-menu-wapper">
+            <div class="d-flex">
+              <a href="#">Home</a>
+              <a href="#">About</a>
+              <a href="#">Support</a>
+            </div>
+            <button class="btn">Download</button>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <main>
-      <!-- hero -->
+      <!-- hero section -->
       <section class="background">
         <div class="d-flex flex-col item-center hero-container">
-          <h2>
-            Lorem Ipsum is simply <br />
-            dummy text <br />
-            of the printing and
-          </h2>
-          <p>
-            Lorem Ipsum is simply dummy text <br />
-            of the printing and typesetting industry. <br />
-            Lorem Ipsum has been the industry's <br />
-            standard dummy text ever since the 1500s, <br />
-            when an unknown
-          </p>
-          <button class="btn">Download</button>
+          <div class="d-flex flex-col item-center">
+            <h2>
+              Lorem Ipsum is simply <br />
+              <span> dummy text</span>
+              <span>of the printing and</span>
+            </h2>
+            <div class="hero-text-box">
+              <p>
+                Lorem Ipsum is simply dummy text
+                <span> of the printing and typesetting industry.</span>
+              </p>
+              <p>
+                Lorem Ipsum has been the industry's
+                <span> standard dummy text ever since the 1500s,</span> when an
+                unknown
+              </p>
+            </div>
+            <button class="btn">Download</button>
+          </div>
           <img
             src="./images/box-cat.png"
             alt="박스 고양이"
@@ -50,78 +71,94 @@
 
       <section>
         <div class="d-flex flex-col page-wrapper main-content">
-          <img src="./images/img_4.jpg" alt="뭐냐옹" />
-          <h2>
-            Lorem Ipsum is simply <br />
-            dummy text of the printing <br />
-            and dummy text
-          </h2>
-          <p>
-            Lorem Ipsum is simply dummy text of the <br />
-            printing and typesetting industry.
-          </p>
+          <div>
+            <img src="./images/img_4.jpg" alt="뭐냐옹" class="main-top-cat" />
 
-          <h2>
-            dummy text of the printing <br />
-            and dummy
-          </h2>
-
-          <p>
-            Lorem Ipsum is simply dummy text of the <br />
-            printing and typesetting industry. <br />
-            Lorem Ipsum has been the industry's <br />
-            standard dummy text ever since the 1500s, <br />
-            when an unknown
-          </p>
-
-          <!-- 고양이 사진 모음집 -->
-          <div class="d-flex">
-            <img src="./images/img_1.jpg" alt="캣탑 고양이" class="cats-img" />
-            <img
-              src="./images/img_2.jpg"
-              alt="콘센트 고양이"
-              class="cats-img"
-            />
-            <img
-              src="./images/img_3.jpg"
-              alt="쳐다보는 고양이"
-              class="cats-img"
-            />
+            <div>
+              <h2>
+                Lorem Ipsum is simply <br />
+                dummy text of the printing <br />
+                and dummy text
+              </h2>
+              <p>
+                Lorem Ipsum is simply dummy text of the
+                <span> printing and typesetting industry.</span>
+              </p>
+            </div>
           </div>
 
-          <div class="text-box">
-            <p>
-              Lorem Ipsum is simply dummy text of the <br />
-              printing and typesetting industry. <br />
-              Lorem Ipsum has been the industry's <br />
-              standard dummy text ever since the 1500s, <br />
-              when an unknown <br />
-              Ipsum is simply dummy text of the printing <br />
-              and typesetting industry.
-            </p>
-            <button class="btn">Learn More</button>
+          <div>
+            <div class="d-flex flex-col hero-middle-text">
+              <h2>dummy text of the printing and dummy</h2>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
+              </p>
+              <p>
+                Lorem Ipsum has been the industry's standard dummy text ever
+                since the 1500s, when an unknown
+              </p>
+            </div>
+
+            <!-- 고양이 사진 모음집 -->
+            <div class="d-flex">
+              <img
+                src="./images/img_1.jpg"
+                alt="캣탑 고양이"
+                class="cats-img"
+              />
+              <img
+                src="./images/img_2.jpg"
+                alt="콘센트 고양이"
+                class="cats-img"
+              />
+              <img
+                src="./images/img_3.jpg"
+                alt="쳐다보는 고양이"
+                class="cats-img"
+              />
+            </div>
+
+            <div class="text-box">
+              <p>
+                Lorem Ipsum is simply dummy text of the
+                <span> printing and typesetting industry.</span>
+              </p>
+              <p>
+                Lorem Ipsum has been the industry's standard dummy text ever
+                since the 1500s, when an unknown
+              </p>
+              <p>
+                Ipsum is simply dummy text of the printing and typesetting
+                industry.
+              </p>
+              <button class="btn">Learn More</button>
+            </div>
           </div>
 
           <div class="d-flex flex-col Subscribe-form">
-            <h3>
-              Subscribe to our <br />
-              Blog post
-            </h3>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-            </p>
-            <img
-              src="./images/mail.svg"
-              alt="메일 아이콘"
-              class="Subscribe-icon"
-            />
-            <input
-              type="email"
-              id="Subscribe-email"
-              placeholder="Enter your e-mail address"
-              class="Subscribe-email"
-            />
+            <div>
+              <h3>Subscribe to our <span> Blog post</span></h3>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
+              </p>
+              <p>Lorem Ipsum has been the industry's standard dummy text</p>
+            </div>
+
+            <div class="subscribe-input-box">
+              <img
+                src="./images/mail.svg"
+                alt="메일 아이콘"
+                class="Subscribe-icon"
+              />
+              <input
+                type="email"
+                id="Subscribe-email"
+                placeholder="Enter your e-mail address"
+              />
+            </div>
+
             <button class="btn Subscribe-btn" id="subscribe-btn">
               Subscribe
             </button>
@@ -151,14 +188,16 @@
         </div>
       </div>
 
-      <div class="d-flex flex-col right-footer">
-        <a href="#">About</a>
-        <a href="#">Blog</a>
-        <a href="#">Support</a>
-        <a href="#">Teams of Use</a>
+      <div class="mobile-only">
+        <div class="d-flex flex-col right-footer">
+          <a href="#">About</a>
+          <a href="#">Blog</a>
+          <a href="#">Support</a>
+          <a href="#">Teams of Use</a>
+        </div>
       </div>
     </footer>
-    <!-- </div> -->
+
     <!-- 모달 -->
     <div
       class="d-flex item-center justify-center Smodal-set hidden"
@@ -183,7 +222,7 @@
       // 1. Subscribe 버튼 클릭 시 모달 표시
       subscribeBtn.addEventListener("click", function (event) {
         event.preventDefault(); // 폼 제출 방지
-        modal.classList.remove("hidden");
+        modal.classList.remove("hidden"); //*모델 클래스 리스트 중 hidden제거*
       });
 
       // 2. 닫기 버튼 클릭 시 모달 숨김

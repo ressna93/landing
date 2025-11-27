@@ -13,8 +13,6 @@
 /* nav */
 .navbar-container {
   padding: 2rem;
-  /* width: 100%;
-  background-color: var(--header-bg-color); */
 }
 
 .header-logo {
@@ -39,16 +37,20 @@
 
 /* hero */
 .hero-container {
-  /* background-color: var(--header-bg-color); */
   gap: 3rem;
   text-align: center;
-  height: 80rem;
   overflow: hidden;
-  /* width: 100%; */
 }
 
-.hero-container > h2 {
+.hero-container div {
+  gap: 3rem;
+}
+.hero-container div h2 {
   margin-top: 6rem;
+}
+
+.hero-text-box {
+  width: 44rem;
 }
 
 .boxCat-img {
@@ -58,12 +60,12 @@
 /* main-content */
 .main-content {
   padding: 4rem 3.2rem;
-  /* gap: 4rem; */
   position: relative;
-  overflow: hidden;
+  overflow-x: hidden;
+  margin-bottom: -10rem;
 }
 
-.main-content > img {
+.main-top-cat {
   width: 32.6rem;
   height: 19rem;
   border-radius: 1.8rem;
@@ -74,7 +76,7 @@
   margin: 4rem 0 1.5rem 0;
 }
 
-.main-content h2:nth-of-type(2) {
+.main-content > div:nth-child(2) h2 {
   text-align: center;
   color: var(--text-orange);
   margin: 5.5rem 0 3rem 0;
@@ -82,6 +84,10 @@
 .main-content p:nth-of-type(2),
 .main-content > div:nth-of-type(2) p {
   font-size: 1.6rem;
+}
+
+.hero-middle-text {
+  text-align: center;
 }
 
 /* 메인 콘텐츠 고양이 사진 */
@@ -94,31 +100,41 @@
 
 .text-box {
   position: relative;
-  padding-bottom: 4rem;
-  margin-bottom: 3rem;
+  /* padding-bottom: 4rem; */
+  margin-bottom: 7rem;
 }
 
 .text-box button {
   position: absolute;
-  right: 1rem;
-  bottom: 1rem;
+  top: 100%;
+  left: 60%;
+  /* transform: translate(-50%, -50%); */
 }
 
 /* 구독 폼 */
 .Subscribe-form {
-  position: relative;
+  /* position: relative; */
   background-color: var(--dark-bg);
   color: var(--text-lighter);
   padding: 3.6rem 3.2rem;
+  padding-bottom: 0;
   border-radius: 1.8rem;
-  margin-bottom: -2rem;
 }
 
-.Subscribe-form > p {
+.Subscribe-form div {
   margin: 1rem 0 2rem 0;
 }
 
-.Subscribe-form > input {
+.Subscribe-form div > h3 {
+  margin-bottom: 1rem;
+}
+
+.subscribe-input-box {
+  position: relative;
+}
+
+/* 우선순위 : 클래스 10점 가상 클래스 10점 태그 *3 3점 */
+.Subscribe-form > div:nth-child(2) input {
   font-size: 1.2rem;
   padding: 1.2rem 7rem 1.2rem 4.8rem;
   border: none;
@@ -127,25 +143,26 @@
 
 .Subscribe-icon {
   position: absolute;
-  top: 66.5%;
-  left: 5rem;
+  top: 50%;
+  left: 10%;
+  transform: translate(-50%, -50%);
   width: 1.8rem;
   height: auto;
 }
 
 .Subscribe-btn {
-  margin: 2rem 0 0 14.5rem;
+  margin: 0 3.2rem 3rem 17.7rem;
 }
 
 /* 메인 컨텐츠 아래 고양이 백그라운드 */
 .bottom-img {
-  margin-top: -4rem;
+  margin-top: -10rem;
   background-image: url(../images/up-cat.png);
   height: 24rem;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  z-index: -1;
+  z-index: -10;
 }
 
 /* footer */
@@ -165,7 +182,7 @@
 
 .footer-btn {
   background-color: var(--accent-color);
-  border-radius: 5rem;
+  border-radius: 50%;
   width: 3.2rem;
   height: 3.2rem;
   padding: 0;
@@ -224,6 +241,180 @@
   margin-bottom: 2.3rem;
 }
 
+/* 반응형 */
+.mobile-only {
+  display: block;
+}
+
+.non-mobile {
+  display: none;
+}
+
+.non-mobile-menu-wapper {
+  gap: 4rem;
+}
+
+.non-mobile-menu-wapper > div {
+  gap: 3rem;
+}
+
+.non-mobile-menu-wapper div a {
+  font-size: 1.6rem;
+}
+
 /* 데스크탑 */
 @media screen and (min-width: 768px) {
+  .page-wrapper {
+    max-width: 192rem;
+  }
+
+  .mobile-only {
+    display: none;
+  }
+
+  .non-mobile {
+    display: block;
+  }
+
+  span {
+    display: inline;
+  }
+
+  p {
+    font-size: 1.6rem;
+  }
+
+  h2,
+  h3 {
+    font-size: 3.6rem;
+  }
+
+  .btn {
+    font-size: 1.6rem;
+    padding: 1.5rem 3rem;
+  }
+
+  /* 네비바와 고양이의 위치가 맞지않음 수정요함 */
+  .navbar-container {
+    padding: 3rem 32rem 3.2rem 17.4rem;
+  }
+
+  .hero-container {
+    flex-direction: row;
+    gap: 12.8rem;
+    justify-content: center;
+  }
+
+  .hero-container > div {
+    align-items: flex-start;
+    text-align: start;
+  }
+
+  .header-logo {
+    width: 15rem;
+  }
+
+  .boxCat-img {
+    width: 41.5rem;
+    margin: 6.2rem 0 -14rem 0;
+  }
+
+  .hero-container div h2 {
+    font-size: 4.8rem;
+    margin-top: 6rem;
+    text-align: none;
+  }
+
+  .main-content {
+    padding: 8rem 32rem 3rem 32rem;
+    margin-bottom: -15.3rem;
+  }
+
+  .main-content > div:first-child {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 11rem;
+  }
+
+  .main-top-cat {
+    width: 66rem;
+    height: 39rem;
+  }
+
+  .main-content > div:nth-child(1) h2 {
+    padding-bottom: 1.5rem;
+  }
+
+  .cats-img {
+    margin: 8.8rem 7.2rem 9rem 0;
+    width: 37.8rem;
+    height: 37.8rem;
+  }
+
+  .text-box button {
+    left: 70%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .Subscribe-form {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5rem 6rem;
+  }
+
+  #Subscribe-email {
+    font-size: 1.6rem;
+    padding: 2rem 27rem 2rem 7rem;
+  }
+
+  .Subscribe-icon {
+    left: 7%;
+    width: 2.4rem;
+  }
+
+  .Subscribe-btn {
+    margin-left: -20rem;
+    margin-bottom: 1rem;
+    z-index: 10;
+  }
+
+  .bottom-img {
+    height: 34rem;
+  }
+
+  /* 푸터 */
+  .left-footer {
+    flex-direction: row;
+    width: 100%;
+    padding: 4.2rem 32rem;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .left-footer > img {
+    width: 23rem;
+  }
+
+  .footer-btn {
+    width: 4.2rem;
+    height: 4.2rem;
+  }
+
+  .footer-btn > img {
+    width: 2.4rem;
+  }
+
+  /* 모달 */
+  .Subscribe-modal {
+    width: 60rem;
+    height: 40rem;
+  }
+
+  .Subscribe-modal > img {
+    width: 11rem;
+  }
 }
