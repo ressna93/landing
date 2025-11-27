@@ -101,7 +101,7 @@
     <div class="">
 
       <!-- --------------------------------- nav --------------------------------- -->
-      <nav class="fixed w-full bg-[var(--header-bg-color)] h-[var(--fixed-nav-height-md)] flex items-center top-0">
+      <nav class="fixed w-full bg-[var(--header-bg-color)] h-[var(--fixed-nav-height-md)] flex items-center top-0 z-10">
         <div class="w-full flex justify-between p-4 box-border">
 
           <!-- nav logo -->
@@ -157,7 +157,7 @@
   <!-- ----------------------------------------------------------------------- -->
   <!--                                  main                                   -->
   <!-- ----------------------------------------------------------------------- -->
-  <main class="">
+  <main class="pb-40">
     <div class="px-8 py-10 flex flex-col justify-center gap-14">
 
       <!-- ------------------------------ main card ------------------------------ -->
@@ -254,27 +254,31 @@
     <div class="">
 
       <!-- ----------------------------- footer menu ----------------------------- -->
-      <div class="">
-        <div class="">
+      <div class="flex justify-between p-5">
+        <div class="flex flex-col justify-between">
 
           <!-- footer logo -->
-          <button type="button" class="" tabindex="0">
+          <button type="button" class=" w-28" tabindex="0">
             <img src="./images/logo_h.svg" alt="ZADU 로고">
           </button>
 
           <!-- footer sns icons -->
-          <div class="">
-            <button type="button" class="">
-              <img src="./images/blog.svg" alt="블로그 버튼 아이콘">
+          <div class="flex gap-4">
+            <button type="button"
+              class="bg-[var(--accent-color)] rounded-full w-8 aspect-square flex justify-center items-center">
+              <img class="w-[1.125rem] aspect-square" src="./images/blog.svg" alt="블로그 버튼 아이콘">
             </button>
-            <button type="button" class="">
-              <img src="./images/instagram.svg" alt="인스타그램 버튼 아이콘">
+            <button type="button"
+              class="bg-[var(--accent-color)] rounded-full w-8 aspect-square flex justify-center items-center">
+              <img class="w-[1.125rem] aspect-square" src="./images/instagram.svg" alt="인스타그램 버튼 아이콘">
             </button>
-            <button type="button" class="">
-              <img src="./images/facebook.svg" alt="페이스북 버튼 아이콘">
+            <button type="button"
+              class="bg-[var(--accent-color)] rounded-full w-8 aspect-square flex justify-center items-center">
+              <img class="w-[1.125rem] aspect-square" src="./images/facebook.svg" alt="페이스북 버튼 아이콘">
             </button>
-            <button type="button" class="">
-              <img src="./images/youtube.svg" alt="유튜브 버튼 아이콘">
+            <button type="button"
+              class="bg-[var(--accent-color)] rounded-full w-8 aspect-square flex justify-center items-center">
+              <img class="w-[1.125rem] aspect-square" src="./images/youtube.svg" alt="유튜브 버튼 아이콘">
             </button>
           </div>
 
@@ -284,7 +288,7 @@
         <div class="">
 
           <!-- footer site map -->
-          <div class="">
+          <div class="flex flex-col gap-4 items-end text-[var(--text-light)]">
             <a href="#">About</a>
             <a href="#">Blog</a>
             <a href="#">Support</a>
@@ -300,7 +304,7 @@
   <!-- ----------------------------------------------------------------------- -->
   <!--                                 to top                                  -->
   <!-- ----------------------------------------------------------------------- -->
-  <div class="">
+  <div class="hidden">
     <a href="#top">
       <button type="button" class="" tabindex="-1">
         <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
