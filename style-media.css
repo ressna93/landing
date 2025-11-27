@@ -6,9 +6,6 @@
     font-size: 1.7rem;
   }
 
-  .text-orange {
-    font-size: 36px;
-  }
   .nav-menu {
     display: flex;
     position: absolute;
@@ -35,7 +32,7 @@
     display: flex;
     flex-direction: row;
     gap: 0.7rem;
-    font-size: 1.14rem;
+    font-size: 1.1rem;
   }
   .hero-text-bold {
     align-items: flex-start;
@@ -45,7 +42,7 @@
   .hero-text-regular {
     align-items: flex-start;
     text-align: left;
-    font-size: 1.14rem;
+    font-size: 1.1rem;
   }
   .down-btn {
     display: flex;
@@ -71,6 +68,7 @@
     flex-direction: row;
     justify-content: center;
     gap: 5rem;
+    margin-top: 3rem;
   }
   .card-cat-img {
     width: 370px;
@@ -79,13 +77,48 @@
   /*-------------------------*/
   /* gallery-section */
   /*-------------------------*/
-  .image-gal {
+  .gal-text {
+    margin-top: 4rem;
+  }
+  .gal-text-orange {
     display: flex;
+    flex-direction: row;
+    text-align: center;
+    color: var(--btn-text-orange);
+    font-size: 2.3rem;
+    gap: 0.5rem;
   }
 
+  .gal-subtext-flex {
+    flex-direction: row;
+  }
+  .image-gal {
+    display: flex;
+    gap: 2rem;
+    margin: 2rem 0 3.5rem 0;
+  }
+  .image-gal img {
+    width: 300px;
+    height: 300px;
+  }
   .btn-hamburger {
     display: none;
   }
+  .gal-bottom {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 3.5rem;
+  }
+  .gal-subtext-flex-left {
+    flex-direction: row;
+  }
+
+  .learn-btn {
+    height: 10%;
+  }
+  /*=========================================*/
+  /*===== Footer =====*/
   .bottom {
     display: none;
   }
