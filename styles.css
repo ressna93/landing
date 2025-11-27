@@ -99,3 +99,21 @@ img.bed_cat {
   right: -10px;
   bottom: -120px;
 }
+
+/*본문2*/
+
+div.text_container {
+  text-align: center;
+  width: 390px;
+  margin: auto;
+}
+
+p.text_three {
+  text-align: left;
+  font-size: 24px;
+}
+
+p.text_four {
+  font-size: 14px;
+  text-align: left;
+}
