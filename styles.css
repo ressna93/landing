@@ -464,10 +464,26 @@ img {
     margin: 0 auto;
   }
   .subscribe-section {
-    width: 400px;
+    width: 100%;
+    max-width: 860px;
     margin: 0 auto;
     padding: 2rem;
-    padding-bottom: 2rem;
+  }
+  .subscribe-form {
+    flex: 1;
+    padding: 0;
+    display: flex;
+  }
+  .subscribe-input-wrap {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+  }
+  .subscribe-btn {
+    position: absolute;
+    right: 60px;
   }
 }
 
@@ -949,4 +965,16 @@ img {
   }
 }
 
-/* 푸터 업버튼 추가 필요  */
+/* Subscribe input 안에 버튼을 넣으려다가 발생했던 문제 점들 */
+/* 문제 1 subscribe-section {
+    width: 4@@ px; 에서 width: 100%로 수정해서 해결  */
+/* ------------------------------------------------------- */
+/* 문제 2 absolute 버튼 기준이 input-wrap이 아니었고 
+버튼을 input 안에 넣어야 할땐 
+.subscribe-input-wrap { position: relative; }
+.subscribe-btn { position: absolute; }
+이 조합이 필수인데
+subscribe-input-wrap에서 position: relative가 빠졌었고 이때문에 
+버튼 기준점이 subscribe-section으로 이동해버림
+그래서 결과물이 계속 안 좋았던 것  */
+/* ------------------------------------------------------- */
