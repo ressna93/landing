@@ -158,56 +158,59 @@
   <!--                                  main                                   -->
   <!-- ----------------------------------------------------------------------- -->
   <main class="">
-    <div class="">
+    <div class="px-8 py-10 flex flex-col justify-center gap-14">
 
       <!-- ------------------------------ main card ------------------------------ -->
-      <section class="">
+      <section class="flex flex-col justify-center gap-10">
 
         <!-- main card image -->
-        <div class="">
+        <div class="aspect-[1.715/1] overflow-hidden flex justify-center items-center rounded-2xl shadow-2xl">
           <img src="./images/img_4.jpg" alt="메인 고양이 사진">
         </div>
 
         <!-- main card text -->
-        <div class="">
-          <p class="">Lorem Ipsum is simplydummy text of the printing and dummy text</p>
-          <p class="">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        <div class="flex flex-col gap-4">
+          <p class="text-2xl font-bold">Lorem Ipsum is simplydummy text of the printing and dummy text</p>
+          <p class="text-sm">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
         </div>
 
       </section>
 
       <!-- ------------------------------- galary -------------------------------- -->
-      <section class="">
+      <section class="flex flex-col gap-10">
 
         <!-- galary text -->
-        <div class="">
-          <p class="">dummy text of the printing and dummy</p>
-          <p class="">Lorem Ipsum is simply <strong class="">dummy text</strong> of the printing and
+        <div class="flex flex-col gap-8 text-center">
+          <p class="text-2xl font-bold text-[var(--accent-color)]">dummy text of the printing and dummy</p>
+          <p class="">Lorem Ipsum is simply <strong class="text-[var(--accent-color)]">dummy text</strong> of the
+            printing and
             typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when
             an unknown</p>
         </div>
 
         <!-- galary cards -->
         <div class="">
-          <div class="">
-            <div class="">
-              <img src="./images/img_1.jpg" alt="갤러리 고양이 사진1" loading="lazy">
+          <div class="flex gap-5">
+            <div class="aspect-square w-64 rounded-2xl overflow-hidden shadow-2xl">
+              <img class="w-full" src="./images/img_1.jpg" alt="갤러리 고양이 사진1" loading="lazy">
             </div>
-            <div class="">
-              <img src="./images/img_2.jpg" alt="갤러리 고양이 사진2" loading="lazy">
+            <div class="aspect-square w-64 rounded-2xl overflow-hidden shadow-2xl">
+              <img class="w-full" src="./images/img_2.jpg" alt="갤러리 고양이 사진2" loading="lazy">
             </div>
-            <div class="">
-              <img src="./images/img_3.jpg" alt="갤러리 고양이 사진3" loading="lazy">
+            <div class="aspect-square w-64 rounded-2xl overflow-hidden shadow-2xl">
+              <img class="w-full" src="./images/img_3.jpg" alt="갤러리 고양이 사진3" loading="lazy">
             </div>
           </div>
         </div>
 
         <!-- galary more text -->
-        <div class="">
+        <div class="flex flex-col items-start gap-2">
           <p class="">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
             Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown Ipsum is simply
             dummy text of the printing and typesetting industry.</p>
-          <button type="button" class="">Learn More</button>
+          <button type="button"
+            class="bg-[var(--accent-color)] px-6 py-3 text-[var(--btn-text)] text-sm font-bold rounded-full cursor-pointer self-end">Learn
+            More</button>
         </div>
 
       </section>
