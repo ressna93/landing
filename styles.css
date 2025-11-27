@@ -61,6 +61,7 @@ a {
   /* content 범위 */
   --content-w-md: 768px;
   --content-w-lg: 1024px;
+  --responsive-content-w-lg: min(90vw, var(--content-w-lg));
 
   /* modal */
   --modal-bg: rgba(0, 0, 0, 0.6);
@@ -624,7 +625,7 @@ header {
   }
   /* ----------------------------------- nav ---------------------------------- */
   .nav-bar {
-    max-width: min(90vw, var(--content-w-lg));
+    max-width: var(--responsive-content-w-lg);
     height: var(--fixed-nav-height-lg);
   }
   .hamburger-menu-toggle-lbl {
@@ -654,7 +655,7 @@ header {
   .hero-container {
     flex-direction: row;
     margin: 0 auto;
-    max-width: min(90vw, var(--content-w-lg));
+    max-width: var(--responsive-content-w-lg);
   }
   .hero-text-group {
     width: 50%;
@@ -677,7 +678,7 @@ header {
 
   /* ---------------------------------- main ---------------------------------- */
   .main-container {
-    max-width: min(90vw, var(--content-w-lg));
+    max-width: var(--responsive-content-w-lg);
     margin: 0 auto;
     padding: 0rem;
     padding-top: 2rem;
@@ -720,6 +721,7 @@ header {
     overflow: visible;
   }
   .galary-card-list-inner {
+    width: var(--responsive-content-w-lg);
     gap: 4.5rem;
     justify-content: center;
     animation: none;
@@ -773,7 +775,7 @@ header {
     justify-content: center;
   }
   .footer-main-menu {
-    max-width: min(90vw, var(--content-w-lg));
+    max-width: var(--responsive-content-w-lg);
     flex: 1;
     flex-direction: row;
     justify-content: space-between;
