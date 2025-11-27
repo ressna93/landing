@@ -208,8 +208,8 @@ body {
   flex-direction: row;
   overflow: hidden;
   gap: 20px;
-  margin-bottom: 19px;
-  padding-bottom: 20px;
+  margin-bottom: 14px;
+  padding-bottom: 25px;
 }
 
 .image-cat {
@@ -573,6 +573,7 @@ input:placeholder-shown {
     flex-direction: row;
     gap: 72px;
     margin-bottom: 90px;
+    overflow: visible;
   }
 
   .image-cat {
