@@ -19,3 +19,9 @@
   --shadow-md: 0 0px 0px rgba(0, 0, 0, 0.2);
   --shadow-lg: 0px 10px 20px rgba(0, 0, 0, 0.25);
 }
+@font-face {
+    font-family: 'OngleipParkDahyeon';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2411-3@1.0/Ownglyph_ParkDaHyun.woff2') format('woff2');
+    font-weight: normal;
+    font-display: swap;
+}
