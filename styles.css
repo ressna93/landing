@@ -127,8 +127,9 @@ img { /* 이미지 반응형 기본 설정 */
   text-align: start;
   flex-wrap: nowrap;
   align-items: flex-end;
-  padding: 5vw 8vw;
+  padding: 4vw 7vw;
   width: 68%;
+  bottom: -422vw;
   border-radius: 18px;
   background: var(--dark-bg);
   color: var(--text-lighter);
