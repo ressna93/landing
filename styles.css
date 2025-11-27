@@ -234,5 +234,43 @@ h1,
   font-size: 10px;
   width: 70%;
 }
+.blog {
+  position: relative;
+}
+.blog::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 400px;
+  margin-top: 352px;
+  background-image: url("./images/up-cat.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.95;
+  pointer-events: none;
+  z-index: -1;
+}
 
 /*푸터*/
+
+.footer {
+  margin-top: 270px;
+  padding: 16px 32px 16px;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  justify-content: space-between;
+}
+.footer-icon {
+  display: inline-flex;
+  flex-direction: column;
+  margin-left: 10px;
+  gap: 3rem;
+  justify-content: center;
+}
+.footer-image {
+  display: inline-flex;
+  width: 150px;
+  margin-left: 10px;
+  justify-content: space-between;
+}
