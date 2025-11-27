@@ -65,11 +65,6 @@ body {
   font-weight: 400;
 }
 
-.text_xlarge {
-  font-size: 1.5rem;
-  font-weight: 700;
-}
-
 /* 1.상단 로고 */
 
 .navbar {
@@ -351,10 +346,6 @@ input:placeholder-shown {
 }
 
 @media (min-width: 1024px) {
-  .text_xlarge {
-    font-size: 3rem;
-  }
-
   .text_large {
     font-size: 2.25rem;
   }
@@ -362,6 +353,14 @@ input:placeholder-shown {
   .text_xsmall {
     font-size: 1rem;
   }
+
+  .btn {
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 15px 29px;
+  }
+
+  /* 1. 상단 로고, 네비바, 배너 */
 
   .menu_tab {
     display: none;
@@ -371,12 +370,6 @@ input:placeholder-shown {
     display: flex;
     gap: 30px;
     align-items: center;
-  }
-
-  .btn {
-    font-weight: 700;
-    font-size: 1rem;
-    padding: 15px 29px;
   }
 
   .hidden_btn {
@@ -402,6 +395,10 @@ input:placeholder-shown {
   .head_group_bottom {
     text-align: left;
     margin: 40px 0;
+  }
+
+  .head_group_top > .text_large {
+    font-size: 3rem;
   }
 
   .head_left {
@@ -433,5 +430,29 @@ input:placeholder-shown {
 
   .head_group_bottom {
     width: 440px;
+  }
+
+  /* 2.메인 컨텐츠 */
+  .cat_info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 80px;
+  }
+
+  .top_image_box {
+    width: 660px;
+    height: 390px;
+  }
+
+  .info_text_group {
+    width: 510px;
+    margin-left: 110px;
+  }
+
+  /* 3.메인 강조 설명 */
+
+  .cat_description > .text_large {
+    font-size: 3rem;
   }
 }
