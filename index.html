@@ -9,10 +9,12 @@
 
   <body>
     <!-- 1. 상단 로고, 네비바 -->
+
     <header>
       <nav class="navbar">
         <img class="head-logo" src="/images/logo_h.svg" alt="ZADU로고" />
-        <img class="menu-tab" src="/images/menu_tab.png" alt="메뉴탭" />
+        <button class="menu-tab" type="button"></button>
+        <!-- <img class="menu-tab" src="/images/menu_tab.png" alt="메뉴탭" /> -->
         <div class="hidden-menu">
           <p class="text-small">Home</p>
           <p class="text-small">About</p>
@@ -20,7 +22,9 @@
           <button type="button" class="btn">Download</button>
         </div>
       </nav>
+
       <!-- 1.5 상단 배너 -->
+
       <div class="head-banner">
         <div class="head-left">
           <div class="head-group-top">
@@ -48,6 +52,7 @@
     </header>
 
     <!-- 2.메인 컨텐츠 -->
+
     <section class="cat-info">
       <div class="top-image-box">
         <img src="/images/img_4.jpg" alt="누워있는고양이" />
@@ -64,6 +69,7 @@
     </section>
 
     <!-- 3.메인 강조 설명 -->
+
     <section class="cat-description">
       <p class="text-large accent-color">
         dummy text of the printing and dummy
@@ -82,6 +88,7 @@
     </section>
 
     <!-- 4.고양이 갤러리 -->
+
     <section class="cat-gallary">
       <div class="image-gallary">
         <img class="image-cat" src="/images/img_1.jpg" alt="캣타워위고양이" />
@@ -107,6 +114,7 @@
     </section>
 
     <!-- 5.후원 -->
+
     <section class="subscribe">
       <div class="subscribe-container">
         <div class="subscribe-top-group">
@@ -142,6 +150,7 @@
       </div>
 
       <!-- 하단 그림 메뉴 -->
+
       <div class="footer-group">
         <img class="footer-logo" src="/images/logo_h.png" alt="ZADU로고" />
         <div class="icon-group">
@@ -230,6 +239,7 @@
       </div>
 
       <!-- 하단 텍스트 메뉴 -->
+
       <div class="footer-mobile-menu">
         <p class="text-xsmall footer-menu-text">About</p>
         <p class="text-xsmall footer-menu-text">Blog</p>
@@ -260,7 +270,6 @@
     <!---------------스크립트---------------->
 
     <script>
-      // 필요한 요소 선택
       const modal = document.getElementById("modal");
       const subscribeBtn = document.getElementById("subscribe-btn");
       const closeBtn = document.querySelector(".modal-close-btn");

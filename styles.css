@@ -119,8 +119,21 @@ body {
 .menu-tab {
   width: 32px;
   height: 32px;
+  background: url(./images/menu_tab.png) no-repeat center/cover;
+  border: none;
   cursor: pointer;
+  transition: 0.1s ease;
 }
+
+.menu-tab:active {
+  transform: scale(0.95);
+}
+
+/* .menu-tab {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+} */
 
 .image-banner {
   margin: 30px;
