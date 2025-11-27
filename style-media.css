@@ -1,15 +1,12 @@
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
   .header {
     padding: 2.5rem;
   }
   .Bold {
-    font-size: 36px;
+    font-size: 32px;
   }
   .text-orange {
-    font-size: 40px;
+    font-size: 36px;
   }
   .nav-menu {
     display: flex;
@@ -20,11 +17,51 @@
     z-index: 3;
     text-align: center;
     align-items: center;
-    padding: 1.5rem;
+    padding: 1rem;
     font-size: 16px;
   }
   .zadu-logo {
     margin: 0 1rem 0 1rme;
+  }
+  .zadu-logo img {
+    width: 8rem;
+    height: 2.7rem;
+  }
+  .hero-text-contents {
+    margin: -4rem 0 1rem 0;
+  }
+  .hero-dummy-text {
+    display: flex;
+    flex-direction: row;
+    gap: 0.7rem;
+    font-size: 1.14rem;
+  }
+  .hero-text-bold {
+    align-items: flex-start;
+    text-align: left;
+    font-size: 2.2rem;
+  }
+  .hero-text-regular {
+    align-items: flex-start;
+    text-align: left;
+    font-size: 1.14rem;
+  }
+  .down-btn {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+  }
+  .hero-section {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    margin-top: -1rem;
+  }
+  .box-cat {
+    width: 15rem;
+    margin-top: 0;
   }
   .image-gal {
     display: flex;
