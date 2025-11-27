@@ -221,7 +221,7 @@
 
       <!-- --------------------------- subscribe card ---------------------------- -->
       <section
-        class="relative flex flex-col gap-5 bg-[var(--dark-bg)] px-8 py-9 rounded-2xl after:bg-[url(./images/up-cat.png)] after:absolute after:bg-cover after:w-screen after:h-60 after:left-1/2 after:top-3/4 after:-translate-x-1/2 after:bg-no-repeat after:bg-center after:-z-10 md:flex-row md:gap-36 md:after:h-80 md:after:w-screen md:after:top-1/2">
+        class="relative flex flex-col gap-5 bg-[var(--dark-bg)] px-8 py-9 rounded-2xl after:bg-[url(./images/up-cat.png)] after:absolute after:bg-cover after:w-screen after:h-60 after:left-1/2 after:top-3/4 after:-translate-x-1/2 after:bg-no-repeat after:bg-center after:-z-10 md:flex-row md:after:h-80 md:after:w-screen md:after:top-1/2">
 
         <!-- subscribe text -->
         <div class="flex flex-col gap-2 text-white md:w-1/2">
@@ -231,7 +231,7 @@
         </div>
 
         <!-- subscribe request -->
-        <form class="flex flex-col justify-start gap-5 md:w-1/2 md:justify-center">
+        <form class="flex flex-col justify-start gap-5 md:w-1/2 md:justify-center md:min-w-80">
 
           <!-- subscribe email input -->
           <div class="w-full">
@@ -322,28 +322,32 @@
   <!-- ----------------------------------------------------------------------- -->
   <!--                                  modal                                  -->
   <!-- ----------------------------------------------------------------------- -->
-  <div id="my-modal" class="hidden">
+  <div id="my-modal"
+    class="hidden flex justify-center items-center fixed top-0 left-0 z-20 bg-[var(--modal-bg)] w-full h-full">
 
     <!-- ------------------------------- modal-dialog -------------------------------- -->
     <div class="">
-      <div class="">
+      <div
+        class="relative w-80 aspect-square rounded-2xl bg-[var(--header-bg-color)] flex flex-col justify-center items-center p-10 gap-5 md:w-[37.5rem] md:aspect-[1.5/1]">
 
         <!-- modal-dialog image -->
-        <div class="">
+        <div class="w-16 aspect-square md:w-28">
           <img src="./images/cat-subscribe.png" alt="모달 고양이 이미지">
         </div>
 
         <!-- modal-dialog text -->
-        <div class="">
-          <p class="">Thank you!</p>
-          <p class="">Lorem Ipsum is simply dummy text of the printing industry.</p>
+        <div class="text-center space-y-1">
+          <p class="text-2xl font-bold text-[var(--accent-color)] md:text-4xl">Thank you!</p>
+          <p class="text-sm">Lorem Ipsum is simply dummy text of the printing industry.</p>
         </div>
 
         <!-- ok button -->
-        <button type="button" class="modal-ok-btn">OK! I Love ZADU</button>
+        <button type="button"
+          class="modal-ok-btn bg-[var(--accent-color)] px-6 py-3 text-[var(--btn-text)] text-sm font-bold rounded-full cursor-pointer md:px-7 md:py-4">OK!
+          I Love ZADU</button>
 
         <!-- close button -->
-        <div class="">
+        <div class="absolute top-4 right-4">
           <button type="button" class="modal-close-btn">
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M0 0 L20 20 M20 0 L0 20" stroke="currentColor" stroke-width="2" />
