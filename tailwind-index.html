@@ -216,26 +216,30 @@
       </section>
 
       <!-- --------------------------- subscribe card ---------------------------- -->
-      <section class="">
+      <section
+        class="relative flex flex-col gap-5 bg-[var(--dark-bg)] px-8 py-9 rounded-2xl after:bg-[url(./images/up-cat.png)] after:absolute after:w-screen after:h-60 after:left-1/2 after:top-3/4 after:-translate-x-1/2 after:bg-no-repeat after:bg-center after:-z-10">
 
         <!-- subscribe text -->
-        <div class="">
-          <p class="">Subscribe to our Blog post</p>
-          <p class="">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        <div class="flex flex-col gap-2 text-white">
+          <p class="text-2xl font-bold">Subscribe to our Blog post</p>
+          <p class="text-sm">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
             Lorem Ipsum has been the industry's standard dummy text</p>
         </div>
 
         <!-- subscribe request -->
-        <form class="">
+        <form class="flex flex-col justify-start gap-5">
 
           <!-- subscribe email input -->
-          <div class="">
-            <input type="email" class="" placeholder="Enter your e-mail address" required>
-            <p class="">잘못된 이메일 형식입니다.</p>
+          <div class="w-full">
+            <input type="email"
+              class="w-full bg-white placeholder:text-[var(--text-light)] bg-[url(./images/mail.svg)] bg-no-repeat bg-position-[center_left_1.125rem] bg-size-[1.125rem_1.125rem] placeholder:text-xs py-2 pl-12 rounded-full"
+              placeholder="Enter your e-mail address" required>
+            <p class="hidden">잘못된 이메일 형식입니다.</p>
           </div>
 
           <!-- subscribe button -->
-          <button type="button" id="subscribe-btn" class="">Subscribe</button>
+          <button type="button" id="subscribe-btn"
+            class="bg-[var(--accent-color)] px-6 py-3 text-[var(--btn-text)] text-sm font-bold rounded-full cursor-pointer self-end">Subscribe</button>
 
         </form>
 
