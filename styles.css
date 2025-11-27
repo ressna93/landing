@@ -50,17 +50,17 @@ body {
   transform: scale(0.95);
 }
 
-.text_large {
+.text-large {
   font-size: 1.5rem;
   font-weight: 700;
 }
 
-.text_small {
+.text-small {
   font-size: 1rem;
   font-weight: 400;
 }
 
-.text_xsmall {
+.text-xsmall {
   font-size: 0.875rem;
   font-weight: 400;
 }
@@ -77,11 +77,11 @@ body {
   background-color: var(--head-bg-color);
 }
 
-.hidden_menu {
+.hidden-menu {
   display: none;
 }
 
-.head_banner {
+.head-banner {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -90,50 +90,50 @@ body {
   background-color: var(--head-bg-color);
 }
 
-.head_left {
+.head-left {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.head_group_top {
+.head-group-top {
   display: flex;
   flex-direction: column;
   text-align: center;
   margin: 40px 60px 0;
 }
 
-.head_group_bottom {
+.head-group-bottom {
   display: flex;
   flex-direction: column;
   text-align: center;
   margin: 30px 50px;
 }
 
-.head_logo {
+.head-logo {
   width: 92px;
   height: 33px;
 }
 
-.menu_tab {
+.menu-tab {
   width: 32px;
   height: 32px;
   cursor: pointer;
 }
 
-.image_banner {
+.image-banner {
   margin: 30px;
   min-width: 197px;
   min-height: 422px;
 }
 
-.banner_btn {
+.banner-btn {
   width: 119px;
 }
 
 /* 2.메인 컨텐츠 */
 
-.cat_info {
+.cat-info {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -141,7 +141,7 @@ body {
   margin-bottom: 55px;
 }
 
-.top_image_box {
+.top-image-box {
   width: 326px;
   height: 190px;
   border-radius: 18px;
@@ -150,19 +150,19 @@ body {
   box-shadow: 10px 10px 20px var(--image-shadow);
 }
 
-.top_image_box img {
+.top-image-box img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.info_text {
+.info-text {
   margin-top: 15px;
 }
 
 /* 3.강조 설명 */
 
-.cat_description {
+.cat-description {
   display: flex;
   flex-direction: column;
   padding: 0 32px;
@@ -171,12 +171,12 @@ body {
   margin-bottom: 40px;
 }
 
-.accent_color {
+.accent-color {
   font-weight: 700;
   color: var(--accent-text-color);
 }
 
-.description_text {
+.description-text {
   text-align: center;
   overflow-wrap: break-word;
   margin-top: 30px;
@@ -184,12 +184,12 @@ body {
 
 /* 4.고양이 갤러리 */
 
-.cat_gallary {
+.cat-gallary {
   margin-bottom: 50px;
   padding-left: 32px;
 }
 
-.image_gallary {
+.image-gallary {
   display: flex;
   flex-direction: row;
   overflow: hidden;
@@ -197,25 +197,25 @@ body {
   margin-bottom: 39px;
 }
 
-.image_cat {
+.image-cat {
   width: 260px;
   height: 260px;
   box-shadow: 10px 10px 20px var(--image-shadow);
   border-radius: 18px;
 }
 
-.gallary_text {
+.gallary-text {
   text-align: start;
   overflow-wrap: break-word;
 }
 
-.cat_gallary_container {
+.cat-gallary-container {
   display: grid;
   grid-template-columns: 1fr;
   padding-right: 32px;
 }
 
-.learn_btn {
+.learn-btn {
   margin-top: 9px;
   width: 126px;
   justify-self: end;
@@ -226,9 +226,10 @@ body {
 .subscribe {
   display: flex;
   justify-content: center;
+  margin-bottom: 172px;
 }
 
-.subscribe_container {
+.subscribe-container {
   box-sizing: border-box;
   width: 326px;
   height: 348px;
@@ -236,20 +237,19 @@ body {
   margin: 0 32px;
   padding: 36px 32px;
   background-color: var(--subscribe-bg-color);
-  margin-bottom: 172px;
 }
 
-.subscribe_top_group {
+.subscribe-top-group {
   margin-top: 20px;
 }
 
-.subscribe_bottom_group {
+.subscribe-bottom-group {
   display: grid;
   margin-bottom: 30px;
   position: relative;
 }
 
-.subscribe_address {
+.subscribe-address {
   border: none;
   border-radius: 60px;
   width: 262px;
@@ -258,7 +258,7 @@ body {
   text-align: center;
 }
 
-.subscribe_address::placeholder {
+.subscribe-address::placeholder {
   padding: 12px 48px;
   font-size: 0.75rem;
   color: var(--placeholder-text-color);
@@ -271,28 +271,28 @@ input:placeholder-shown {
   background-size: 22px 22px;
 }
 
-.subscribe_btn {
+.subscribe-btn {
   width: 117px;
   justify-self: end;
 }
 
-.subscribe_head_text {
+.subscribe-head-text {
   color: var(--bright-text-color);
 }
 
-.subscribe_main_text {
+.subscribe-main-text {
   color: var(--subscribe-text-color);
 }
 
 /* 6. 푸터 하단 메뉴 */
 
-.footer_main_group {
+.footer-main-group {
   position: relative;
   display: flex;
   justify-content: space-between;
 }
 
-.footer_image {
+.footer-image {
   position: absolute;
   z-index: -1;
   width: 100vw;
@@ -302,7 +302,7 @@ input:placeholder-shown {
   padding: 0;
 }
 
-.footer_group {
+.footer-group {
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -310,17 +310,17 @@ input:placeholder-shown {
   padding: 23px 0px 24px 32px;
 }
 
-.footer_logo {
+.footer-logo {
   width: 110px;
   height: 39px;
 }
 
-.icon_group {
+.icon-group {
   display: flex;
   flex-direction: row;
 }
 
-.icon_circle {
+.icon-circle {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -332,7 +332,7 @@ input:placeholder-shown {
   background-color: var(--social-btn-color);
 }
 
-.footer_mobile_menu {
+.footer-mobile-menu {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -341,7 +341,7 @@ input:placeholder-shown {
   padding-right: 32px;
 }
 
-.footer_menu_text {
+.footer-menu-text {
   color: var(--placeholder-text-color);
   margin-bottom: 16px;
 }
@@ -349,11 +349,11 @@ input:placeholder-shown {
 /* PC 사이즈 */
 
 @media (min-width: 1024px) {
-  .text_large {
+  .text-large {
     font-size: 2.25rem;
   }
 
-  .text_xsmall {
+  .text-xsmall {
     font-size: 1rem;
   }
 
@@ -366,22 +366,22 @@ input:placeholder-shown {
 
   /* 1. 상단 로고, 네비바, 배너 */
 
-  .menu_tab {
+  .menu-tab {
     display: none;
   }
 
-  .hidden_menu {
+  .hidden-menu {
     display: flex;
     gap: 30px;
     align-items: center;
   }
 
-  .hidden_btn {
+  .hidden-btn {
     margin-right: 10px;
     width: 140px;
   }
 
-  .head_logo {
+  .head-logo {
     width: 149px;
     height: 53px;
   }
@@ -390,22 +390,22 @@ input:placeholder-shown {
     padding: 30px 10vw 0;
   }
 
-  .head_group_top,
-  .head_group_bottom {
+  .head-group-top,
+  .head-group-bottom {
     text-align: left;
     margin: 0;
   }
 
-  .head_group_bottom {
+  .head-group-bottom {
     text-align: left;
     margin: 40px 0;
   }
 
-  .head_group_top > .text_large {
+  .head-group-top > .text-large {
     font-size: 3rem;
   }
 
-  .head_left {
+  .head-left {
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -413,13 +413,13 @@ input:placeholder-shown {
     margin: auto;
   }
 
-  .image_banner {
+  .image-banner {
     margin: auto;
     max-width: 415px;
     max-height: 890px;
   }
 
-  .head_banner {
+  .head-banner {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -428,17 +428,17 @@ input:placeholder-shown {
     max-height: 800px;
   }
 
-  .banner_btn {
+  .banner-btn {
     width: 140px;
   }
 
-  .head_group_bottom {
+  .head-group-bottom {
     width: 440px;
   }
 
   /* 2.메인 컨텐츠 */
 
-  .cat_info {
+  .cat-info {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -446,50 +446,88 @@ input:placeholder-shown {
     padding: 30px 10vw 0;
   }
 
-  .top_image_box {
+  .top-image-box {
     width: 660px;
     height: 390px;
   }
 
-  .info_text_group {
+  .info-text-group {
     width: 510px;
     margin-left: 110px;
   }
 
   /* 3.메인 강조 설명 */
 
-  .cat_description {
+  .cat-description {
     margin-bottom: 88px;
   }
 
-  .cat_description > .text_large {
+  .cat-description > .text-large {
     font-size: 3rem;
   }
 
   /* 4. 고양이 갤러리 */
 
-  .cat_gallary {
+  .cat-gallary {
     justify-items: center;
   }
 
-  .image_gallary {
+  .image-gallary {
     display: flex;
     flex-direction: row;
     gap: 72px;
     margin-bottom: 90px;
   }
 
-  .image_cat {
+  .image-cat {
     width: 378px;
     height: 378px;
   }
-  .cat_gallary_container {
+  .cat-gallary-container {
     display: flex;
     flex-direction: row;
     gap: 52px;
   }
 
-  .learn_btn {
+  .learn-btn {
     width: 147px;
+  }
+
+  /* 5.후원 */
+
+  .subscribe-container {
+    display: flex;
+    max-width: 1280px;
+    width: 80vw;
+  }
+
+  .subscribe-bottom-group {
+    display: flex;
+    position: relative;
+  }
+
+  .subscribe-address {
+    width: 530px;
+    height: 60px;
+  }
+
+  .subscribe-btn {
+    width: 136px;
+    position: absolute;
+    right: 6px;
+    top: 26px;
+  }
+
+  .subscribe-address::placeholder {
+    text-align: left;
+    padding: 20px 0 20px 68px;
+    font-size: 1rem;
+  }
+
+  input:placeholder-shown {
+    background-image: url(/images/mail.svg);
+    background-repeat: no-repeat;
+    background-position: 30px center;
+    background-size: 26px 26px;
   }
 }
