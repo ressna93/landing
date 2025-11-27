@@ -38,36 +38,17 @@ p {
   overflow: hidden;
 }
 
-.nav_box {
+.nav-box {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-right: 50px;
-}
-/* pc */
-@media (min-width: 768px) {
-  .nav-menu {
-    display: block;
-    
-  }
 }
 
 /* 자두 로고 */
 .zadu {
   width: 150px;
   height: 50px;
-}
-
-/* PC버전 메뉴 */
-@media (min-width: 768px) {
-  .menu-btn {
-    width: 32px;
-    height: 23px;
-    position: relative;
-    background: none;
-    border: none;
-    cursor: pointer;
-  }
 }
 
 /* 모바일버전 메뉴(햄버거 버튼) */
@@ -79,6 +60,7 @@ p {
   border: none;
   cursor: pointer;
 }
+
 .nav-menu {
   display: none;
 }
@@ -320,4 +302,26 @@ p {
   align-items: flex-end;
   gap: 1rem;
   color: var(--text-light);
+}
+
+/* pc */
+@media (min-width: 1024px) {
+  .nav-menu {
+    display: flex;
+    gap: 2.5rem;
+    align-items: center;
+  }
+  .menu-btn {
+    display: none;
+  }
+  .nav-box {
+    padding: 0 11.8rem;
+  }
+  .download {
+    padding: 0.7rem 1.75rem;
+    background-color: #d97652;
+    color: #ffffff;
+    border: none;
+    border-radius: 1.25rem;
+  }
 }
