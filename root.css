@@ -23,4 +23,10 @@
 input {
   background: none;
   border: none;
+  color: var(--text-lighter);
+}
+input:focus-visible {
+  outline: none;
+  border: none;
+
 }
