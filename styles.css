@@ -244,6 +244,11 @@ input:focus-visible {
   max-height: 90%;
   position: relative;
 }
+.modal-image {
+  width: 30%;
+  height: auto;
+  padding-top: 5%;
+}
 /*모달 섹션 - 끝 - */
 
 /* 모바일 반응형 - 끝 - */
