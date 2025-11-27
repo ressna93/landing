@@ -23,3 +23,37 @@ body {
     font-family: arial, sans-serif;
     color: #333
 }
+.container {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+.header {
+    background-color: #f2d8d9;
+    width: auto;
+    height: 76px;
+}
+.navigation-bar {
+    display: flex;
+}
+.download-btn-pc {
+    background-color: #d97652;
+    border: none;
+    padding: 11px 24px;
+    border-radius: 40px;
+    color: white;
+}
+
+/*790px이하*/
+@media (max-width: 790px) {
+    .downloa-btn-pc {
+        display: none;
+    }
+}
+/*791px이상*/
+@media (min-width: 791px) {
+    .header-logo img {
+        width: 149px;
+        height: 53px;
+    }
+}
