@@ -33,12 +33,15 @@ img {
 }
 /*헤더*/
 .header {
+    display: grid;
     background-color: #f2d8d9;
+    width:
     max-width: 100%;
     height: 76px;
 }
 .navigation-bar {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     margin: 0 20px;
@@ -59,11 +62,44 @@ img {
     font-weight: bold;
     cursor: pointer;
     margin-top: 20px;
+    width: 140px;
+    height: 50px;
+    font-size: 16px;
 }
 .download-btn-pc:hover {
     background-color: #dc5b28;;
 }
 
+/*히어로*/
+.hero {
+    background-color: #f2d8d9;
+}
+.hero-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.download-btn-both {
+    background-color: #d97652;
+    border: none;
+    padding: 11px 24px;
+    border-radius: 40px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.download-btn-both:hover {
+    background-color: #dc5b28;;
+}
+.hero-text h1 {
+    font-size:48px;
+    font-weight: 700;
+}
+.hero-text p {
+    font-size: 18px;
+    text-align: left;
+}
 /*790px이하*/
 @media (max-width: 790px) {
     .header-logo img {
@@ -76,7 +112,22 @@ img {
     .navigation-pc-bar {
         display: none;
     }
+    .hero-inner {
+        flex-direction: column
+    }
+    .hero-text {
+        text-align: center;
+    }
+    .conditional-break {
+        display: block;
+    }
+    .download-btn-both {
+        width: 119px;
+        height: 40px;
+        font-size: 14px;
+    }
 }
+
 /*791px이상*/
 @media (min-width: 791px) {
     .header-logo img {
@@ -86,5 +137,13 @@ img {
     .hamburger-btn-m {
         display: none;
         margin-top: 20px;
+    }
+    .conditional-break2 {
+        display: block;
+    }
+    .download-btn-both {
+        width: 140px;
+        height: 50px;
+        font-size: 16px;
     }
 }
