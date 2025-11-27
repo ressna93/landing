@@ -4,20 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
     <title>Welcome to ZADU</title>
   </head>
   <body>
     <header>
       <nav class="nav-row">
         <img src="images/logo_h.png" alt="로고" class="nav_logo" />
-        <img src="images/menu.svg" alt="햄버거메뉴" class="nav_menu" />
+        <button class="nav_menu">
+          <img src="images/menu.svg" alt="햄버거메뉴" />
+        </button>
       </nav>
       <h1>
         <span>Lorem Ipsum is simply</span>
         <span>dummy text</span>
         of the printing and
       </h1>
-      <h3 style="margin-left: 63px; margin-right: 63px">
+      <h3>
         Lorem Ipsum is simply dummy text of the printing and typesetting
         industry. Lorem Ipsum has been the industry's standard dummy text ever
         since the 1500s, when an unknown
@@ -25,27 +31,29 @@
       <button type="button" class="btn btn-download">Download</button>
       <img src="images/box-cat.png" alt="박스캣" class="box-cat" />
     </header>
-    <img src="images/img_4.png" alt="눕캣" class="lying-cat" />
-    <h1 style="margin-left: 50px">
-      Lorem Ipsum is simply<br />dummy text of the printing<br />and dummy text
-    </h1>
-    <h3 style="margin-left: 50px">
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-    </h3>
-    <h1
-      style="color: var(--accent-color); text-align: center; margin-left: 50px"
-    >
-      dummy text of the printing and dummy
-    </h1>
-    <p style="text-align: center">
-      Lorem Ipsum is simply
-      <span
-        style="color: var(--accent-color); font-weight: 700; display: inline"
-        >dummy text </span
-      >of the printing and typesetting industry. Lorem Ipsum has been the
-      industry's standard dummy text ever since the 1500s, when an unknown
-    </p>
-    <div class="card-section-wrapper">
+    <div class="main-content">
+      <img src="images/img_4.png" alt="눕캣" class="lying-cat" />
+      <h1>
+        Lorem Ipsum is simply<br />dummy text of the printing<br />and dummy
+        text
+      </h1>
+      <h3>
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry.
+      </h3>
+      <h1 style="color: var(--accent-color); text-align: center">
+        dummy text of the printing and dummy
+      </h1>
+      <p style="text-align: center">
+        Lorem Ipsum is simply
+        <span
+          style="color: var(--accent-color); font-weight: 700; display: inline"
+          >dummy text </span
+        >of the printing and typesetting industry. Lorem Ipsum has been the
+        industry's standard dummy text ever since the 1500s, when an unknown
+      </p>
+    </div>
+    <div class="swiper">
       <div class="swipe-container">
         <div class="card">
           <img src="images/img_1.png" alt="캣타워" class="cat-tower" />
@@ -58,6 +66,16 @@
         </div>
       </div>
     </div>
+
+    <!--- Swiper JS --->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        direction: "vertical",
+        loop: true,
+      });
+    </script>
+
     <div class="learn-more">
       <p>
         Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -68,8 +86,8 @@
       </p>
       <button type="button" class="btn btn-learn-more">Learn More</button>
     </div>
-    <form class="subscribe">
-      <h1 style="color: white">
+    <form>
+      <h1>
         Subscribe to our<br />
         Blog post
       </h1>

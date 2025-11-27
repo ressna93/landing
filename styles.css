@@ -34,16 +34,23 @@
 
 body {
   font-family: "NotoSansLao";
-  margin: 0 0 0 0;
+  margin: 0;
 }
+
+/* header */
 
 header {
   background-color: var(--header-bg-color);
-  margin: 0 0 0 0;
+  margin: 0;
   text-align: center;
   height: 770px;
   position: relative;
   overflow: hidden;
+}
+
+header h3 {
+  margin-left: 63px;
+  margin-right: 63px;
 }
 
 .nav-row {
@@ -59,6 +66,11 @@ header {
 .nav_logo {
   width: 92px;
   height: 33px;
+}
+
+.nav_menu {
+  border: none;
+  background-color: transparent;
 }
 
 h1 {
@@ -103,29 +115,36 @@ h3 {
   z-index: 1;
 }
 
+/* main content */
+
+.main-content {
+  margin-left: 36px;
+  margin-right: 36px;
+}
+
 .lying-cat {
   width: 350px;
   height: 205px;
   border-radius: 18px;
   box-shadow: var(--shadow-lg);
   display: block;
-  margin: 40px auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 p {
-  margin-left: 50px;
   font-size: 1rem;
 }
 
 /* 카드 스와이프 */
 
-.card-section-wrapper {
+.swiper {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-.slider-container {
+.swipe-container {
   display: flex;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
@@ -134,7 +153,7 @@ p {
   scrollbar-width: none;
 }
 
-.slider-container::-webkit-scrollbar {
+.swipe-container::-webkit-scrollbar {
   display: none;
 }
 
@@ -174,12 +193,18 @@ p {
   background-color: var(--accent-hover);
 }
 
-.subscribe {
+form {
   background-color: var(--dark-bg);
   border-radius: 18px;
   width: 326px;
   height: 348px;
   margin: 40px auto;
+  padding: 32px auto;
+}
+
+.subscribe h1 {
+  color: white;
+  text-align: left;
 }
 
 .footer_logo {
