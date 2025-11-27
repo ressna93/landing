@@ -163,14 +163,7 @@ a {
 }
 /* to top */
 .to-top-container {
-  position: fixed;
-  bottom: 5%;
-  right: 5%;
-  width: 3.125rem;
-  aspect-ratio: 1 / 1;
-  background-color: white;
-  border: 1px solid var(--border-color);
-  border-radius: 50%;
+  display: none;
 }
 .to-top-btn {
   width: 100%;
@@ -789,6 +782,21 @@ a {
   }
   .footer-site-map-item-list {
     display: none;
+  }
+
+  /* --------------------------------- to top --------------------------------- */
+  .to-top-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    width: 3.125rem;
+    aspect-ratio: 1 / 1;
+    background-color: white;
+    border: 1px solid var(--border-color);
+    border-radius: 50%;
   }
 
   /* ---------------------------------- modal --------------------------------- */
