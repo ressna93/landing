@@ -147,7 +147,6 @@ img {
 }
 .gallery-cards {
     display: flex;
-    justify-content: flex-start;
     flex-wrap: nowrap;
     gap: 20px;
 }
@@ -156,11 +155,41 @@ img {
 }
 .gallery-btn {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    gap: 20px;
 }
 .gallery-btn button {
+    background-color: #d97652;
+    border: none;
+    padding: 11px 24px;
+    border-radius: 40px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+.gallery-btn button:hover {
+    background-color: #dc5b28;;
+}
+.gallery-text2 {
+    text-align: left;
+}
+
+/*구독*/
+.subscribe {
+    padding: auto;
+}
+.subscribe-box {
+    display: flex;
+    background-color: #263140;
+    color: #FFFFFF;
+    align-items: center;
+    box-sizing: border-box;
+    border-radius: 16px;
+}
+.subscribe-box span {
+    color: #f2e9d8;
+    font-size: 14px;
+}
+.subscribe-btn {
     background-color: #d97652;
     border: none;
     padding: 11px 24px;
@@ -171,8 +200,15 @@ img {
     margin-top: 20px;
     flex-shrink: 0;
 }
-.gallery-text2 {
-    text-align: left;
+.subscribe-form {
+    display: flex;
+}
+.input-wrapper input {
+    width: 100%;
+}
+.input-wrapper svg.input-icon {
+    position: absolute;
+    left: 14px;
 }
 
 /*790px이하*/
@@ -208,7 +244,10 @@ img {
         min-width: 326px;
         min-height: 190px;
     }
-    .gallery-cards img {
+    .gallery-cards {
+        justify-content: flex-start;
+    }
+    .gallery-cards img {  
         width: 260px;
         height: 260px;
     }
@@ -217,8 +256,30 @@ img {
     }
     .gallery-btn button {
         margin-top: auto;
+        margin-left: auto;
         width: 126px;
         height: 40px;
+    }
+    .subscribe-box {
+        flex-direction: column;
+        width: 70%;
+        min-width: 326px;
+        min-height: 348px;
+        padding: 16px 8px;
+        margin: auto;
+        gap: 20px;
+    }
+    .subscribe-box h4 {
+        font-size: 24px;
+    }
+    .subscribe-form {
+        align-items: center;
+        flex-direction: column;
+    }
+    .input-wrapper input {        
+        width: 262px;
+        padding: 16px 8px;
+        border-radius: 24px;
     }
 }
 
@@ -244,16 +305,24 @@ img {
         max-width: 660px;
         height: 390px;
     }
+    .gallery-cards {
+        justify-content: center;
+    }
     .gallery-cards img {
         width: 378px;
         height: 378px;
     }
     .gallery-btn {
-        margin: 89px auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 89px auto 0;
     }
     .gallery-btn button {
-        margin: auto;
         width: 147px;
         height: 50px;
+    }
+    .subscribe-box h4 {
+        font-size: 36px;
     }
 }
