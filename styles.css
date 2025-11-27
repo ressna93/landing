@@ -57,35 +57,7 @@ a {
   flex-direction: column;
 }
 /*-------------------------*/
-/* =======flex======= */
-.flex-col-center {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-.flex-row-center {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-.flex-col-left {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-}
-.flex-right {
-  display: flex;
-  justify-content: right;
-  margin-right: 2.4rem;
-}
-/*-------------------------*/
-/* =======text======= */
-.text-orange {
-  color: var(--btn-text-orange);
-  font-family: "NotosansB";
-}
+/* =======font/color======= */
 .accent-orange {
   color: var(--btn-text-orange);
   font-family: "NotosansB";
@@ -96,22 +68,9 @@ a {
   font-size: 1.7rem;
   line-height: 1.3;
 }
-.Bold-white {
-  color: white;
-  font-family: "NotosansB";
-  font-size: 1.7rem;
-  margin: 2.6rem 0 -0.1rem 2.4rem;
-  line-height: 1.3;
-}
 .Regular {
   font-family: "Notosans";
   line-height: 1.5;
-}
-.Regular-sub-text {
-  color: var(--sub-text-color);
-  font-family: "Notosans";
-  line-height: 1.7;
-  margin-left: 2.4rem;
 }
 /*=========================================*/
 /*===== header =====*/
@@ -297,17 +256,47 @@ a {
 /*-------------------------*/
 /* subscribe-section */
 /*-------------------------*/
+.subscribe-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
 .subscribe-box {
   background-color: var(--dark-bg);
   width: 23.3rem;
   height: 25rem;
   margin-top: 3rem;
-  border-radius: 1rem;
+  border-radius: 1.5rem;
   position: relative;
   z-index: 0;
 }
-
+.subscribe-title {
+  color: white;
+  font-family: "NotosansB";
+  font-size: 1.7rem;
+  margin: 2.6rem 0 -0.1rem 2.4rem;
+  line-height: 1.3;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.subscribe-text {
+  color: var(--sub-text-color);
+  font-family: "Notosans";
+  line-height: 1.7;
+  margin-left: 2.4rem;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
 .email {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.email-box {
   border-radius: 3.5rem;
   background-color: white;
   width: 18rem;
@@ -328,6 +317,12 @@ a {
 
 .email-tab {
   border: none;
+}
+
+.button-subscribe {
+  display: flex;
+  justify-content: right;
+  margin-right: 2.4rem;
 }
 .subscribe-btn {
   background-color: var(--btn-text-orange);
