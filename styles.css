@@ -25,11 +25,9 @@ body {
 }
 img {
     max-width: 100%;
-    height: 0 auto;
 }
 .container {
     width: 100%;
-    max-width: auto;
 }
 
 /*헤더*/
@@ -41,17 +39,25 @@ img {
 }
 .navigation-bar {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
-    margin: 0 20px;
 }
 .navigation-pc-bar {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    padding-top: 20px;
+    margin-left: auto;
+    margin-right: 6rem;
+}
+.navigation-pc-bar a {
+    text-decoration: none;
     font-size: 16px;
     color: #000000;
 }
 .header-logo img {
     display: block;
+    margin-left: 2rem;
 }
 .download-btn-pc {
     background-color: #d97652;
@@ -65,6 +71,7 @@ img {
     width: 140px;
     height: 50px;
     font-size: 16px;
+    margin-right: 2rem;
 }
 .download-btn-pc:hover {
     background-color: #dc5b28;;
@@ -222,6 +229,10 @@ img {
     }
     .navigation-pc-bar {
         display: none;
+    }
+    .hamburger-btn-m {
+        margin-left: auto;
+        margin-right: 2rem;
     }
     .hero-inner {
         flex-direction: column
