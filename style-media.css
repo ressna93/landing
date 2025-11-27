@@ -1,10 +1,35 @@
 @media (min-width: 768px) {
-  .image-gal {
-    display: flex;
+  html {
+    font-size: 16px;
+  }
+  .header {
+    padding: 2.5rem;
+  }
+  .Bold {
+    font-size: 36px;
+  }
+  .text-orange {
+    font-size: 40px;
   }
   .nav-menu {
     display: flex;
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 3;
+    text-align: center;
+    align-items: center;
+    padding: 1.5rem;
+    font-size: 16px;
   }
+  .zadu-logo {
+    margin: 0 1rem 0 1rme;
+  }
+  .image-gal {
+    display: flex;
+  }
+
   .btn-hamburger {
     display: none;
   }

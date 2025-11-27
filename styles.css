@@ -92,6 +92,11 @@ body {
   font-family: "Notosans";
   line-height: 1.5;
 }
+.accent-orange {
+  color: var(--btn-text-orange);
+  font-family: "NotosansB";
+  line-height: 1.5;
+}
 .Bold-white {
   color: white;
   font-family: "NotosansB";
@@ -126,7 +131,7 @@ body {
 }
 
 .nav-menu {
-  gap: 2rem;
+  gap: 3rem;
   display: none;
 }
 
@@ -256,10 +261,10 @@ body {
   font-size: 1rem;
   cursor: pointer;
 }
-.Subscribe-section {
+.subscribe-section {
   position: relative;
 }
-.Subscribe-section::after {
+.subscribe-section::after {
   content: "";
   position: absolute;
   background: url("./images/up-cat.png") no-repeat center bottom;
