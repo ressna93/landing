@@ -29,8 +29,9 @@ img {
 }
 .container {
     width: 100%;
-    max-width: 1920px;
+    max-width: auto;
 }
+
 /*헤더*/
 .header {
     display: grid;
@@ -103,12 +104,14 @@ img {
 
 /*카드*/
 .card {
+    display: flex;
     padding: 80px;
 }
 .card-inner {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    gap: 20px;
 }
 .card-text h2 {
     font-size: 30px;
@@ -141,6 +144,35 @@ img {
 }
 .yellow-text {
     color: #d97652;
+}
+.gallery-cards {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    gap: 20px;
+}
+.gallery-cards img {
+    border-radius: 18px;
+}
+.gallery-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 20px;
+}
+.gallery-btn button {
+    background-color: #d97652;
+    border: none;
+    padding: 11px 24px;
+    border-radius: 40px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+    flex-shrink: 0;
+}
+.gallery-text2 {
+    text-align: left;
 }
 
 /*790px이하*/
@@ -176,6 +208,18 @@ img {
         min-width: 326px;
         min-height: 190px;
     }
+    .gallery-cards img {
+        width: 260px;
+        height: 260px;
+    }
+    .gallery-btn {
+        margin: 39px 32px;
+    }
+    .gallery-btn button {
+        margin-top: auto;
+        width: 126px;
+        height: 40px;
+    }
 }
 
 /*791px이상*/
@@ -199,5 +243,17 @@ img {
     .card-img {
         max-width: 660px;
         height: 390px;
+    }
+    .gallery-cards img {
+        width: 378px;
+        height: 378px;
+    }
+    .gallery-btn {
+        margin: 89px auto;
+    }
+    .gallery-btn button {
+        margin: auto;
+        width: 147px;
+        height: 50px;
     }
 }
