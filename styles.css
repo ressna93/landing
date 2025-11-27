@@ -168,6 +168,7 @@ body {
   padding: 0 32px;
   align-items: center;
   text-align: center;
+  margin-bottom: 40px;
 }
 
 .accent_color {
@@ -178,7 +179,7 @@ body {
 .description_text {
   text-align: center;
   overflow-wrap: break-word;
-  margin: 30px 0 40px;
+  margin-top: 30px;
 }
 
 /* 4.고양이 갤러리 */
@@ -192,13 +193,13 @@ body {
   display: flex;
   flex-direction: row;
   overflow: hidden;
+  gap: 20px;
+  margin-bottom: 39px;
 }
 
 .image_cat {
   width: 260px;
   height: 260px;
-  margin-right: 20px;
-  margin-bottom: 39px;
   box-shadow: 10px 10px 20px var(--image-shadow);
   border-radius: 18px;
 }
@@ -345,6 +346,8 @@ input:placeholder-shown {
   margin-bottom: 16px;
 }
 
+/* PC 사이즈 */
+
 @media (min-width: 1024px) {
   .text_large {
     font-size: 2.25rem;
@@ -358,6 +361,7 @@ input:placeholder-shown {
     font-weight: 700;
     font-size: 1rem;
     padding: 15px 29px;
+    height: 50px;
   }
 
   /* 1. 상단 로고, 네비바, 배너 */
@@ -418,7 +422,7 @@ input:placeholder-shown {
   .head_banner {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     padding: 0 10vw 0 15vw;
     height: 80vh;
     max-height: 800px;
@@ -433,11 +437,13 @@ input:placeholder-shown {
   }
 
   /* 2.메인 컨텐츠 */
+
   .cat_info {
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin-top: 80px;
+    padding: 30px 10vw 0;
   }
 
   .top_image_box {
@@ -452,7 +458,38 @@ input:placeholder-shown {
 
   /* 3.메인 강조 설명 */
 
+  .cat_description {
+    margin-bottom: 88px;
+  }
+
   .cat_description > .text_large {
     font-size: 3rem;
+  }
+
+  /* 4. 고양이 갤러리 */
+
+  .cat_gallary {
+    justify-items: center;
+  }
+
+  .image_gallary {
+    display: flex;
+    flex-direction: row;
+    gap: 72px;
+    margin-bottom: 90px;
+  }
+
+  .image_cat {
+    width: 378px;
+    height: 378px;
+  }
+  .cat_gallary_container {
+    display: flex;
+    flex-direction: row;
+    gap: 52px;
+  }
+
+  .learn_btn {
+    width: 147px;
   }
 }
