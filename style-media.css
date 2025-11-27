@@ -1,10 +1,11 @@
-@media (min-width: 768px) {
+@media (min-width: 775px) {
   .header {
     padding: 2.5rem;
   }
   .Bold {
-    font-size: 32px;
+    font-size: 1.7rem;
   }
+
   .text-orange {
     font-size: 36px;
   }
@@ -63,6 +64,21 @@
     width: 15rem;
     margin-top: 0;
   }
+  /*-------------------------*/
+  /* card-section */
+  /*-------------------------*/
+  .card-section {
+    flex-direction: row;
+    justify-content: center;
+    gap: 5rem;
+  }
+  .card-cat-img {
+    width: 370px;
+  }
+
+  /*-------------------------*/
+  /* gallery-section */
+  /*-------------------------*/
   .image-gal {
     display: flex;
   }

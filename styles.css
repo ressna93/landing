@@ -210,16 +210,29 @@ a {
 /* card-section */
 /*-------------------------*/
 .card-section {
-  position: relative;
   margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
-.card-section img {
+.card-cat-img {
   width: 326px;
-  height: 190px;
+}
+.card-cat-img img {
+  width: 100%;
   border-radius: 1.3rem;
   box-shadow: var(--shadow);
 }
-
+.card-text-contents {
+  margin: 1rem 0 2rem 0;
+  gap: -0.5rem;
+}
+.card-text {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
 /*-------------------------*/
 /* gallery-section */
 /*-------------------------*/
