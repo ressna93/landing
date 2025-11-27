@@ -146,9 +146,17 @@ p {
 }
 
 .card img {
-  width: 100%;
-  height: 300px;
+  width: 260px;
+  height: 260px;
+  border-radius: 18px;
+  box-shadow: var(--shadow-lg);
   object-fit: 12px;
+}
+
+/* learn-more */
+
+.learn-more {
+  margin-right: 32px;
 }
 
 .btn-learn-more {
@@ -160,6 +168,10 @@ p {
   border-radius: 40px;
   border: none;
   float: right;
+}
+
+.btn-learn-more:hover {
+  background-color: var(--accent-hover);
 }
 
 .subscribe {
