@@ -52,8 +52,8 @@ a {
   --shadow-lg: 0 4px 15px rgba(0, 0, 0, 0.1);
 
   /* 상단 fixed 크기 */
-  --fixed-nav-height-md: 3rem;
-  --fixed-nav-height-lg: 4.75rem;
+  --fixed-nav-height-md: 4.75rem;
+  --fixed-nav-height-lg: 6.375rem;
 
   /* 갤러리 */
   --galary-card-size: 16.25rem;
@@ -211,8 +211,9 @@ header {
   top: 0;
   width: 100%;
   background-color: var(--header-bg-color);
-  box-sizing: border-box;
   z-index: 100;
+  box-sizing: border-box;
+  height: var(--fixed-nav-height-md);
 }
 .nav-bar {
   display: flex;
@@ -222,6 +223,7 @@ header {
   margin: 0 auto;
   /* 햄버거 메뉴 nav-item-list가 참조 */
   position: relative;
+  box-sizing: border-box;
   height: var(--fixed-nav-height-md);
 }
 .nav-bar a {
@@ -624,6 +626,9 @@ header {
     margin-top: var(--fixed-nav-height-lg);
   }
   /* ----------------------------------- nav ---------------------------------- */
+  .fixed-top-nav {
+    height: var(--fixed-nav-height-lg);
+  }
   .nav-bar {
     max-width: var(--responsive-content-w-lg);
     height: var(--fixed-nav-height-lg);
