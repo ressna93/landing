@@ -245,27 +245,36 @@ body {
 .email-tab {
   border: none;
 }
+.subscribe-btn {
+  background-color: var(--btn-text-orange);
+  text-align: center;
+  border-radius: 2.88rem;
+  color: white;
+  border-color: var(--primary-color);
+  padding: 0.7rem 1.7rem 0.7rem 1.7rem;
+  font-family: "NotosansB";
+  font-size: 1rem;
+  cursor: pointer;
+}
 .Subscribe-section {
   position: relative;
 }
 .Subscribe-section::after {
   content: "";
   position: absolute;
-  width: 100%;
-  height: 20rem;
-  margin-top: 22rem;
-  background-image: url("./images/up-cat.png");
-  background-repeat: no-repeat;
+  background: url("./images/up-cat.png") no-repeat center bottom;
   background-size: cover;
   opacity: 0.95;
   pointer-events: none;
   z-index: -1;
+  width: 100%;
+  height: 22rem;
+  margin-top: 22rem;
 }
-
 /*=========================================*/
 /*===== Footer =====*/
 .footer {
-  margin-top: 15rem;
+  margin-top: 17rem;
   padding: 1rem 0 2rem 1rem;
   display: flex;
   flex-direction: row;
