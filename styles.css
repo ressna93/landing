@@ -30,6 +30,7 @@ img {
 }
 
 .page {
+  position: relative;
   max-width: 100%;
   margin: 0 auto;
 }
@@ -124,11 +125,6 @@ img {
   justify-content: center;
   padding: 0;
   cursor: pointer;
-}
-
-.hamburguer svg {
-  width: 32px;
-  height: 32px;
 }
 
 /* ==========================================히어로 */
@@ -303,6 +299,24 @@ img {
   border-radius: 40px;
   box-shadow: var(--shadow-md);
   display: inline-block;
+}
+.arrow-up {
+  position: absolute;
+  right: 24px;
+  bottom: 230px;
+  width: 48px;
+  height: 48px;
+  color: var(--text-light);
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.arrow-up:hover {
+  color: var(--text-color);
+  background-color: var(--border-color);
 }
 
 /* 푸터 */
@@ -613,7 +627,11 @@ img {
     white-space: nowrap;
   }
 }
-
+@media (max-width: 1440px) {
+  .arrow-up {
+    display: none;
+  }
+}
 @media (min-width: 1023px) {
   .hamburger {
     display: none;
@@ -906,6 +924,9 @@ img {
   .footer-lefttop {
     align-items: flex-start;
   }
+
+  /* 모달구분선------------------------------- */
+  /* ------------------------------------------ */
   .modal-dialog {
     width: 600px;
     height: 400px;
