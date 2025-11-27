@@ -222,7 +222,7 @@ body {
   content: "";
   position: absolute;
   right: 0;
-  bottom: -40%;
+  bottom: -50%;
   width: 100%;
   height: 60%;
   background: url("images/up-cat.png") no-repeat;
@@ -345,7 +345,56 @@ body {
   aspect-ratio: 1/1;
   object-fit: cover;
 }
+.footer-container {
+  position: absolute;
+  margin: 0 auto;
+  margin-top: 15rem;
+  z-index: 1;
+  width: 100%;
+  height: 17.7rem;
+  display: flex;
+  justify-content: space-between;
+}
 
+.footer-logo {
+  width: 11rem;
+  height: 3rem;
+}
+.footer-logo-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.footer-icons {
+  display: flex;
+  flex-direction: row;
+}
+.btn-snsicon {
+  display: flex;
+  margin: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  width: 3.2rem;
+  background-color: var(--accent-color);
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+}
+.footer-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: right;
+  font-size: 1.4rem;
+  gap: 0.5rem;
+  margin-right: 1rem;
+}
+.footer-link {
+  color: var(--text-light);
+  text-decoration: none;
+}
 @media (min-width: 768px) {
   .navbar {
     display: flex;
