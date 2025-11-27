@@ -366,7 +366,36 @@ input:placeholder-shown {
   color: var(--placeholder-text-color);
   margin-bottom: 16px;
 }
+
+/* 6.5 상단 복귀 버튼 */
+
+.top {
+  display: none;
+  position: relative;
+  opacity: 80%;
+}
+
+.top-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid #c4c4c4;
+  background-color: #ffffff;
+  position: fixed;
+  z-index: 1000;
+  bottom: 50px;
+  right: 24px;
+}
+
+.top:hover {
+  opacity: 1;
+}
+
 /* 7.modal */
+
 .modal {
   display: flex;
   justify-content: center;
@@ -378,6 +407,7 @@ input:placeholder-shown {
   position: fixed;
   z-index: 999;
 }
+
 .modal-content {
   position: relative;
   display: flex;
@@ -665,6 +695,12 @@ input:placeholder-shown {
     height: auto;
     display: block;
   }
+
+  /* 6.5 상단 복귀 버튼 */
+  .top {
+    display: block;
+  }
+
   /* 7.modal */
 
   .modal-content {
