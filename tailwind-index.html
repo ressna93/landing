@@ -6,6 +6,91 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <title>ZADU</title>
+  <style type="text/tailwindcss">
+    @layer base {
+    /* -------------------------------------------------------------------------- */
+    /*                                    reset                                   */
+    /* -------------------------------------------------------------------------- */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: var(--text-color);
+      overflow-x: hidden;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    button {
+      padding: 0;
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+    }
+
+    input {
+      border: none;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    /* -------------------------------------------------------------------------- */
+    /*                                  variables                                 */
+    /* -------------------------------------------------------------------------- */
+    :root {
+      /* 기본 색상 */
+      /* 연한 살구색 */
+      --primary-color: #f8b49b;
+      /* 강조색 (버튼, 아이콘) */
+      --accent-color: #ef835d;
+      /* 호버 상태 색상 */
+      --accent-hover: #dc5b28;
+      /* 헤더/히어로 배경색 */
+      --header-bg-color: #f2d8d9;
+      /* 다크 배경 (구독 섹션) */
+      --dark-bg: #2c3e50;
+
+      /* 텍스트 색상 */
+      --text-color: #333;
+      /* 기본 텍스트 */
+      --text-light: #666;
+      /* 밝은 텍스트 */
+      --text-lighter: #f2e9d8;
+      /* 더 밝은 텍스트 */
+      --a-hover: #ff4444;
+      --text-warning: red;
+      --btn-text: white;
+
+      /* 테두리 색상 */
+      --border-color: #eee;
+
+      /* 그림자 효과 */
+      --shadow-sm: 0 2px 5px rgba(0, 0, 0, 0.1);
+      --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.1);
+      --shadow-lg: 0 4px 15px rgba(0, 0, 0, 0.1);
+
+      /* 상단 fixed 크기 */
+      --fixed-nav-height-md: 4.75rem;
+      --fixed-nav-height-lg: 6.375rem;
+
+      /* 갤러리 */
+      --galary-card-size: 16.25rem;
+
+      /* content 범위 */
+      --content-w-md: 768px;
+      --content-w-lg: 1024px;
+      --responsive-content-w-lg: min(90vw, var(--content-w-lg));
+
+      /* modal */
+      --modal-bg: rgba(0, 0, 0, 0.6);
+    }
+  }
+  </style>
 </head>
 
 <body>
@@ -16,11 +101,11 @@
     <div class="">
 
       <!-- --------------------------------- nav --------------------------------- -->
-      <nav class="">
-        <div class="">
+      <nav class="fixed w-full bg-[var(--header-bg-color)] h-[var(--fixed-nav-height-md)] flex items-center top-0">
+        <div class="w-full flex justify-between p-4 box-border">
 
           <!-- nav logo -->
-          <button type="button" class="">
+          <button type="button" class="w-[5.75rem]">
             <img src="./images/logo_h.svg" alt="ZADU 로고">
           </button>
 
@@ -28,13 +113,13 @@
           <div role="button" class="">
 
             <!-- hamburger menu -->
-            <input id="hamburger-menu-toggle" class="" type="checkbox">
+            <input id="hamburger-menu-toggle" class="hidden" type="checkbox">
             <label class="" for="hamburger-menu-toggle">
               <img src="./images/menu.svg" alt="내비게이션 메뉴 이미지">
             </label>
 
             <!-- nav items -->
-            <div class="" tabindex="0">
+            <div class="hidden" tabindex="0">
               <div class=""><a href="#">Home</a></div>
               <div class=""><a href="#">About</a></div>
               <div class=""><a href="#">Support</a></div>
@@ -47,18 +132,21 @@
       </nav>
 
       <!-- -------------------------------- hero --------------------------------- -->
-      <div class="">
+      <div
+        class="mt-[var(--fixed-nav-height-md)] bg-[var(--header-bg-color)] flex flex-col items-center justify-center gap-[1.875rem] overflow-hidden">
 
         <!-- hero text -->
-        <div class="">
-          <p class="">Lorem Ipsum is simply dummy text of the printing and</p>
-          <p class="">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+        <div class="flex flex-col text-center justify-center items-center mx-[3.75rem] gap-[1.875rem] pt-10">
+          <p class="text-2xl font-bold">Lorem Ipsum is simply dummy text of the printing and</p>
+          <p class="text-sm">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem
             Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown</p>
-          <button type="button" class="">Download</button>
+          <button type="button"
+            class="bg-[var(--accent-color)] px-6 py-3 text-[var(--btn-text)] text-sm font-bold rounded-full cursor-pointer">Download</button>
         </div>
 
         <!-- hero image -->
-        <div class="">
+        <div class="w-[12.25rem] -mb-16">
           <img src="./images/box-cat.png" alt="박스 쓴 고양이 대문 이미지">
         </div>
 
@@ -69,7 +157,7 @@
   <!-- ----------------------------------------------------------------------- -->
   <!--                                  main                                   -->
   <!-- ----------------------------------------------------------------------- -->
-  <main>
+  <main class="">
     <div class="">
 
       <!-- ------------------------------ main card ------------------------------ -->
