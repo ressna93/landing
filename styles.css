@@ -306,9 +306,28 @@ a {
 
 /* 데스크톱 */
 @media (min-width: 768px) { 
+  .header-nav {
+    height: 2vw;
+    padding: 1vw 4vw;
+  }
+  .main-logo {
+    width: 2vw;
+  }
+  .main-mb-btn {
+    display: none;
+  }
+  .hero-content {
+    display: flex;
+  }
+  .hero-text {
+    font-size: 1rem;
+  }
   .hero-section {
     display: flex;
     flex-direction: row;
+  }
+  .hero-image {
+    width: 2vw;
   }
   .menu-desktop-btn,  /* 데스크톱 메뉴 보임 */
   .menu-desktop-link,
