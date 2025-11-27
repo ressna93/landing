@@ -98,3 +98,6 @@ img {
 .color-white {
   color: var(--text-white);
 }
+.font-bold {
+  font-weight: 700;
+}
