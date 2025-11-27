@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <!-- 헤더 -->
+     <!-- ---------------------------- -->
+     <!--            헤더               -->
+     <!-- ---------------------------- -->
     <header class="landing">
       <nav class="navbar">
         <div class="nav-logo">
@@ -22,7 +24,10 @@
         </ul>
       </nav>
     </header>
-    <!-- 히어로 섹션 -->
+     
+     <!-- ---------------------------- -->
+     <!--      히어로 섹션               -->
+     <!-- ---------------------------- -->
     <div class="hero-section">
       <div class="title-container">
         <p class="title">
@@ -63,6 +68,10 @@
         </p>
       </div>
     </div>
+     
+     <!-- ---------------------------- -->
+     <!--         갤러리 색션            -->
+     <!-- ---------------------------- -->
     <div class="gallery-section">
       <div class="gallery-text-box">
           <p class="gallery-text-title">dummy text of the printing and dummy</p>
@@ -81,6 +90,10 @@ Ipsum is simply dummy text of the printing and typesetting industry. </p>
          <button type="button" class="btn-learnmore">Learn More</button>
       </div>
     </div>
+     
+     <!-- ---------------------------- -->
+     <!--            구독섹션           -->
+     <!-- ---------------------------- -->
     <div class="subscribe-section">
       <div class="subscribe-box">
         <div class="left-column">
@@ -98,9 +111,24 @@ Ipsum is simply dummy text of the printing and typesetting industry. </p>
            <input class="input-email" type="email" placeholder="Enter your e-mail address" required />
          </div>
         </form>
-        <button type="button" class="btn-subscribe">Subscribe</button>
+        <button type="button" class="btn-subscribe" id="openmodalbtn">Subscribe</button>
       </div>
      </div> 
+     <!-- ---------------------------- -->
+     <!--            모달               -->
+     <!-- ---------------------------- -->
+    <div id="modalcontent" class="modal-overlay">
+      <div class="modal-content">
+          <div>
+            <img class="modal-image"src="images/cat-subscribe.png"alt="홍조띄운 고양이 얼굴사진"/>
+            <h2 class="modal-title">Thank You!</h2>
+            <p class="modal-content">Lorem Ipsum is simply dummy text of the printing industry. </p>
+            <button class="modal-ok">OK! I Love ZADU</button>
+            <button class="modal-close">&times;</button>
+          </div>
+      </div>
+    </div> 
+    <script src="./script.js"></script>
   </body>
 </html>
     
