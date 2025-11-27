@@ -22,14 +22,13 @@
 
 /*바디*/
 body {
-  margin-top: 0px;
+  margin: 0px;
 }
 
 /*상단 화면 전체*/
 div.top {
   background-color: var(--header-bg-color);
   overflow: hidden;
-  width: 390px;
   height: 794px;
   text-align: center;
   margin: 0 auto;
