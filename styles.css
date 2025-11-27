@@ -2,13 +2,13 @@
   /* 기본 색상 */
   --primary-color: #f8b49b; /* 연한 살구색 */
   --accent-color: #d97652; /* 강조색 (버튼, 아이콘) */
-  --accent-hover: #dc5b28; /* 호버 상태 색상 */
+  --accent-hover: #f29d52; /* 호버 상태 색상 */
   --header-bg-color: #f2d8d9; /* 헤더/히어로 배경색 */
-  --dark-bg: #2c3e50; /* 다크 배경 (구독 섹션) */
+  --dark-bg: #263140; /* 다크 배경 (구독 섹션) */
 
   /* 텍스트 색상 */
   --text-color: #333; /* 기본 텍스트 */
-  --text-light: #666; /* 밝은 텍스트 */
+  --text-light: #767676; /* 밝은 텍스트 */
   --text-lighter: #f2e9d8; /* 더 밝은 텍스트 */
 
   /* 기타 */
@@ -20,11 +20,21 @@
   --shadow-lg: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
+html {
+  font-size: 16px;
+}
+
+body,
+p {
+  margin: 0;
+}
+
 .header {
   width: 100%;
   padding: 12px 16px;
+  box-sizing: border-box;
   background-color: var(--header-bg-color);
-  height: 928px; /* 원하는 높이 */
+  height: 885px;
   overflow: hidden;
 }
 
@@ -33,6 +43,13 @@
   align-items: center;
   justify-content: space-between;
   margin-right: 50px;
+}
+/* pc */
+@media (min-width: 768px) {
+  .nav-menu {
+    display: block;
+    
+  }
 }
 
 /* 자두 로고 */
@@ -43,10 +60,13 @@
 
 /* PC버전 메뉴 */
 @media (min-width: 768px) {
-  .manu {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  .menu-btn {
+    width: 32px;
+    height: 23px;
+    position: relative;
+    background: none;
+    border: none;
+    cursor: pointer;
   }
 }
 
@@ -59,25 +79,7 @@
   border: none;
   cursor: pointer;
 }
-.menu-btn span {
-  position: absolute;
-  height: 3px;
-  width: 100%;
-  background: #333;
-  border-radius: 4px;
-}
-
-/* 햄버거 버튼 */
-.menu-btn span:nth-child(1) {
-  top: 0;
-}
-.menu-btn span:nth-child(2) {
-  top: 10px;
-}
-.menu-btn span:nth-child(3) {
-  bottom: 0;
-}
-.manu {
+.nav-menu {
   display: none;
 }
 
@@ -93,20 +95,20 @@
   width: 100%;
   font-size: 24px;
   font-weight: 700;
-  line-height: 24px;
+  line-height: 1.5rem;
   text-align: center;
   margin: 0 auto;
-  margin-top: 70px;
+  margin-top: 2rem;
 }
 /* 두 번째 문구 */
 .header-subtext {
   font-family: "Noto Sans KR", sans-serif;
   width: 100%;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 400;
   text-align: center;
   margin: 0 auto;
-  margin-top: 30px;
+  margin-top: 1.5rem;
 }
 /* 다운로드 버튼 */
 .download_btn {
@@ -138,51 +140,46 @@
   object-position: 30% 31%;
 }
 
-
-.intro {
-  max-width: 500px;
-  margin: 0 auto;
+.intro-section {
+  display: flex;
+  flex-direction: column;
+  padding: 2.5rem;
+  gap: 2rem;
 }
 
-.intro-text {
+.intro-title {
   font-family: "Noto Sans KR", sans-serif;
   width: 90%;
   font-size: 29px;
   font-weight: 700;
   line-height: 34px;
-  margin: 0 auto;
-  margin-top: 38px;
-  text-align: left;
-  margin-left: 35px;
 }
 
-.intro-subtext {
+.intro-description {
   font-family: "Noto Sans KR", sans-serif;
   width: 100%;
   text-align: left;
-  margin-left: 35px;
 }
 
-.intro-bt-text {
+.highlight-title {
   margin-right: 10px;
   color: var(--accent-color);
   text-align: center;
   font-weight: 700;
   font-size: 29px;
-  margin-top: 70px;
 }
 
-.intro-bt-subtext {
+.highlight-text {
   font-family: "Noto Sans KR", sans-serif;
   text-align: center;
   margin: 0 auto;
   width: 100%;
-  max-width: 330px; 
+  max-width: 330px;
   line-height: 19px;
   font-weight: 500;
 }
 
-.highlight{
+.highlight {
   color: var(--accent-color);
 }
 
@@ -191,17 +188,18 @@
   display: flex;
   gap: 10px;
   padding: 10px 0;
+  overflow: hidden;
 }
 
 .img-row img {
-  width: 340px;   
+  width: 340px;
   height: auto;
-  border-radius: 12px; 
-  object-fit: cover; 
+  border-radius: 12px;
+  object-fit: cover;
 }
 
 .cat-tower {
-width: 20px;
+  width: 20px;
   height: auto;
   margin-left: 35px;
 }
@@ -210,48 +208,116 @@ width: 20px;
   font-family: "Noto Sans KR", sans-serif;
   margin-left: 35px;
   line-height: 26px;
+  padding-right: 2rem;
 }
 
 .learn-more {
-  margin-top: 24px;
   padding: 12px 28px;
   background-color: var(--accent-color);
   border: none;
-  border-radius: 999px;
+  border-radius: 20px;
   color: #ffffff;
-  margin-left: 335px;
+  margin-left: 310px;
 }
 
 /* 섹션 3 */
-.bt-btn {
-  margin-top: 24px;
-  padding: 12px 28px;
+.blog-cta {
   background-color: var(--dark-bg);
-  border: none;
-  border-radius: 13px;
+  border-radius: 24px;
   color: #ffffff;
-   width: 440px;
-  height: 470px;
-}
-
-.blog-post {
-  text-align: left;
+  border: none;
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  margin-left: 10px;
-  font-weight: 700;
-  font-size: 29px;
-  width: 240px;
-  height: 300px;
+  gap: 2rem;
+  padding: 3rem 2rem;
+  font-size: 2rem;
+  margin: 3rem;
+  z-index: 1;
+  position: relative;
 }
 
+.blog-cta-title {
+  font-weight: 700;
+}
+
+.blog-cta-text {
+  font-size: 0.875rem;
+}
+
+.email-wrap {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 20px;
+  padding: 10px 15px;
+  gap: 12px;
+}
+
+.mail-icon {
+  width: 18px;
+}
+
+#user-email-input {
+  border: none;
+  outline: none;
+  font-size: 0.875rem;
+  width: 100%;
+}
+
+.subscribe-bt {
+  padding: 12px 26px;
+  border: none;
+  border-radius: 20px;
+  background: var(--accent-color);
+  color: #fff;
+  font-weight: 600;
+  align-self: flex-end;
+}
+
+/* footer */
+.footer-box {
+  display: flex;
+  justify-content: space-between;
+
+  flex-direction: column;
+}
+
+.up-cat {
+  display: block;
+  max-width: 100%;
+  margin-top: -8rem;
+}
 
 /* footer button */
-
-.instagram {
-  background-color: black;
-  align-items: center;
+.footer-container {
+  display: flex;
   justify-content: space-between;
-  border-radius: 30px;
+  padding: 1rem;
+}
+
+.zadu {
+}
+
+.sns-icon {
+  display: flex;
+  gap: 1rem;
+}
+
+.sns-circle {
+  background: var(--accent-hover);
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 1rem;
+  color: var(--text-light);
 }
