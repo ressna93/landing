@@ -16,6 +16,15 @@ img { /* 이미지 반응형 기본 설정 */
   max-width: 100%;
   height: auto;
 }
+input {
+  background: none;
+  border: none;
+  color: var(--text-lighter);
+}
+input:focus-visible {
+  outline: none;
+  border: none;
+}
 /* 기본 부모 - 끝 - */
 
 /* 모바일 반응형 - 시작 - */
