@@ -212,7 +212,7 @@ width: 20px;
   line-height: 26px;
 }
 
-.learn_more {
+.learn-more {
   margin-top: 24px;
   padding: 12px 28px;
   background-color: var(--accent-color);
@@ -222,26 +222,28 @@ width: 20px;
   margin-left: 335px;
 }
 
-.bt_btn {
+/* 섹션 3 */
+.bt-btn {
   margin-top: 24px;
   padding: 12px 28px;
   background-color: var(--dark-bg);
   border: none;
   border-radius: 13px;
   color: #ffffff;
+   width: 440px;
+  height: 470px;
 }
 
-.blog_post {
+.blog-post {
   text-align: left;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   gap: 10px;
-  margin-left: 40px;
+  margin-left: 10px;
   font-weight: 700;
   font-size: 29px;
-  width: 400px;
-  height: 370px;
+  width: 240px;
+  height: 300px;
 }
 
 
