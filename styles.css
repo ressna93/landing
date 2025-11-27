@@ -18,6 +18,7 @@
 
   /* 그림자 색상 */
   --image-shadow: rgba(0, 0, 0, 0.25);
+  --modal-box-shadow: rgba(0, 0, 0, 0.2);
 }
 
 html {
@@ -352,6 +353,50 @@ input:placeholder-shown {
   color: var(--placeholder-text-color);
   margin-bottom: 16px;
 }
+/* 7.modal */
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 999;
+}
+.modal-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 300px;
+  height: 300px;
+  gap: 5px;
+  border-radius: 30px;
+  box-shadow: 0px 0px 20px 0px var(--modal-box-shadow);
+  background-color: var(--nav-bg-color);
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+
+.modal-cat-image {
+  width: 60px;
+  height: 62px;
+  margin-bottom: 15px;
+}
+
+.modal-close-btn {
+  width: 161px;
+  height: 45px;
+  margin-top: 18px;
+}
+
+.hidden {
+  display: none;
+}
 
 /*----------------------- PC 사이즈 ------------------------------*/
 
@@ -606,5 +651,25 @@ input:placeholder-shown {
     width: 24px;
     height: auto;
     display: block;
+  }
+  /* 7.modal */
+
+  .modal-content {
+    width: 600px;
+    height: 400px;
+    gap: 12px;
+    padding: 0 40px;
+  }
+
+  .modal-cat-image {
+    width: 110px;
+    height: 112px;
+    margin-bottom: 12px;
+  }
+
+  .modal-close-btn {
+    width: 187px;
+    height: 56px;
+    margin-top: 24px;
   }
 }

@@ -127,7 +127,9 @@
             type="email"
             placeholder="Enter your e-mail address"
           />
-          <button type="button" class="btn subscribe-btn">Subscribe</button>
+          <button type="button" id="subscribe-btn" class="btn subscribe-btn">
+            Subscribe
+          </button>
         </div>
       </div>
     </section>
@@ -235,5 +237,51 @@
         <p class="text-xsmall footer-menu-text">Terms of Use</p>
       </div>
     </footer>
+
+    <!-------------- 7.modal -------------->
+
+    <div id="modal" class="modal hidden">
+      <div class="modal-content">
+        <img
+          class="modal-cat-image"
+          src="./images/cat-subscribe.png"
+          alt="부끄고양이"
+        />
+        <p class="text-large accent-color">Thank you!</p>
+        <p class="text-xsmall">
+          Lorem Ipsum is simply dummy text of the printing industry.
+        </p>
+        <button type="button" id="modal-close-btn" class="btn modal-close-btn">
+          OK! I Love ZADU
+        </button>
+      </div>
+    </div>
+
+    <!---------------스크립트---------------->
+
+    <script>
+      // 필요한 요소 선택
+      const modal = document.getElementById("modal");
+      const subscribeBtn = document.getElementById("subscribe-btn");
+      const closeBtn = document.querySelector(".modal-close-btn");
+
+      // 1. Subscribe 버튼 클릭 시 모달 표시
+      subscribeBtn.addEventListener("click", function (event) {
+        event.preventDefault();
+        modal.classList.remove("hidden");
+      });
+
+      // 2. 닫기 버튼 클릭 시 모달 숨김
+      closeBtn.addEventListener("click", function () {
+        modal.classList.add("hidden");
+      });
+
+      // 3. 오버레이 클릭 시 모달 숨김
+      modal.addEventListener("click", function (event) {
+        if (event.target === modal) {
+          modal.classList.add("hidden");
+        }
+      });
+    </script>
   </body>
 </html>
