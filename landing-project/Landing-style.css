@@ -126,21 +126,19 @@ img {
   display: flex;
   flex-wrap: nowrap;
   gap: 20px; 
-  margin-bottom: 40px; 
-  justify-items: center;
+  margin-bottom: 40px;
 }
 .gallery-card {
-  object-fit: cover;
   border-radius: 18px; 
+  width: 100%;
+  max-width: 378px;
   overflow: hidden;
-  width: 378px;
-  height: 378px;
+  aspect-ratio:  1 / 1;
 }
 .gallery-card img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  display: block;
 }
 .text2-btn {
   display: flex;
@@ -186,7 +184,6 @@ img {
   align-items: center;
   padding: 30px 40px; 
   border-radius: 18px;
-  align-items: center;
   max-width: 75%;
   box-sizing: border-box;
 }
@@ -359,20 +356,20 @@ nav.pc-only a {
   .gallery-cards {
     display: flex;
     overflow-x: auto;
+    flex-wrap: nowrap;
     gap: 20px;
-    margin-top: 5rem;
+    padding-bottom: 20px;
     grid-template-columns: 1fr; 
   }
   .gallery-card {
-    flex: 0 0 auto;
     width: 60vw;
+    flex: 0 0 auto;
+    max-width: none;
+    aspect-ratio: 1 / 1;
   }
   .text2-btn {
-    flex-direction: row;
-    align-items: end;
-  }
-  .gallery-learn-more-btn {
-    align-self: auto;
+    flex-direction: column;
+    align-items: flex-end;
     text-align: center;
   }
 }
@@ -403,14 +400,14 @@ nav.pc-only a {
     margin-left: 20px;
   }
   .intro-img {
-    width: 660px;
-    height: 390px;
+    max-width: 660px;
+    width: 100%;
+    height: auto;
   }
   .conditional-break2 {
     display: block;
   }
   .gallery-cards {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 4rem;
     margin: 20px auto;
   }
