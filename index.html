@@ -121,7 +121,7 @@
                 stroke-linecap="round" 
                 stroke-linejoin="round"/>
           </svg><input type="email" placeholder="Enter your email"></form>
-          <button type="button" class="action-btn">Subscribe</button>
+          <button type="button" class="action-btn " id="subscribe-btn">Subscribe</button>
         </div>
       </div>
         <!-- 구독 섹션 - 끝 - -->
@@ -170,10 +170,41 @@
         <!-- 푸터 섹션 - 끝 - -->
 
         <!-- 모달 섹션 - 시작 - -->
-      <modal-component>
-
-      </modal-component>
+      <div class="modal-container hidden" id="my-modal">
+        <div class="modal-content">
+          <img src="./images/cat-subscribe.png" 
+               alt="thx-Subscribe-cat"
+               class="modal-image"/>
+          <h2 class="modal-title">thank you!</h2>
+          <p class="modal-text">Lorem Ipsum is simply dummy
+                                text of the printing industry. </p>
+          <button class="action-btn" id="modal-close-btn" >OK! I Love ZADU</button>
+        </div>
+      </div>
         <!-- 모달 섹션 - 끝 - -->
-    </div>
-  </body>
+  </div>
+  <script> //==========================스크립트=====================
+    const modal = document.getElementById("my-modal");
+    const subscribeBtn = document.getElementById("subscribe-btn");
+    const closeBtn = document.getElementById("modal-close-btn");
+    // 1. Subscribe 버튼 클릭 시 모달 표시
+    subscribeBtn.addEventListener("click", function (event) {
+      event.preventDefault(); // 폼 제출 방지
+      modal.classList.remove("hidden");
+    });
+
+    // 2. 닫기 버튼 클릭 시 모달 숨김
+    closeBtn.addEventListener("click", function () {
+      modal.classList.add("hidden");
+    });
+
+    // 3. 모달 컨테이너(오버레이) 클릭 시 모달 숨김
+    modal.addEventListener("click", function (event) {
+      // 모달 컨테이너를 클릭했을 때만 닫기 (콘텐츠 영역 클릭은 제외)
+      if (event.target === modal) {
+        modal.classList.add("hidden");
+      }
+    });
+  </script>
+</body>
 </html>

@@ -4,6 +4,7 @@
   --accent-color: #ef835d; /* 강조색 (버튼, 아이콘) */
   --accent-hover: #dc5b28; /* 호버 상태 색상 */
   --header-bg-color: #f2d8d9; /* 헤더/히어로 배경색 */
+  --modal-bg-color: rgba(0, 0, 0, 0.5); /* 모달 배경색 */
   --dark-bg: #2c3e50; /* 다크 배경 (구독 섹션) */
 
   /* 텍스트 색상 */
