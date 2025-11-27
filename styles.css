@@ -249,7 +249,7 @@ header {
 }
 
 /* hamburger menu */
-.hamburger-menu-toggle ~ .nav-item-list {
+.nav-item-list {
   transform: translateY(-100%);
 }
 .hamburger-menu-toggle:checked ~ .nav-item-list,
@@ -258,13 +258,16 @@ header {
   opacity: 1;
   z-index: 101;
 }
-.hamburger-menu-toggle ~ .nav-item-list > .nav-item {
+.nav-item-list > .nav-item {
   background-color: var(--header-bg-color);
   padding: 1rem 2rem;
   width: 4rem;
   text-align: center;
 }
-.hamburger-menu-toggle ~ .nav-item-list > .download-btn {
+.nav-item-list > .nav-item > a {
+  display: block;
+}
+.nav-item-list > .download-btn {
   margin-top: 1rem;
 }
 .hamburger-menu-toggle-lbl {
@@ -629,7 +632,7 @@ header {
   .hamburger-menu-toggle-lbl {
     display: none;
   }
-  .hamburger-menu-toggle ~ .nav-item-list {
+  .nav-item-list {
     display: flex;
     flex-direction: row;
     position: relative;
@@ -638,21 +641,16 @@ header {
     top: 0;
     opacity: 1;
     z-index: 101;
+    gap: 1.875rem;
   }
-  .hamburger-menu-toggle ~ .nav-item-list > .nav-item {
+  .nav-item-list > .nav-item {
     background-color: transparent;
     padding: 0;
     width: auto;
     text-align: center;
   }
-  .hamburger-menu-toggle ~ .nav-item-list > .download-btn {
+  .nav-item-list > .download-btn {
     margin-top: 0;
-  }
-  .nav-item-list {
-    top: var(--fixed-nav-height-md);
-    display: flex;
-    align-items: center;
-    gap: 1.875rem;
   }
 
   /* ---------------------------------- hero ---------------------------------- */
