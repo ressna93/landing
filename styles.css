@@ -22,12 +22,17 @@
 body {
     font-family: arial, sans-serif;
     color: #333
+
+}
+img {
+    max-width: 100%;
+    height: auto;
 }
 .container {
     width: 100%;
     max-width: 1920px;
-    margin: 0 auto;
 }
+/*헤더*/
 .header {
     background-color: #f2d8d9;
     width: auto;
@@ -35,6 +40,16 @@ body {
 }
 .navigation-bar {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 20px;
+}
+.navigation-pc-bar {
+    font-size: 16px;
+    color: #000000;
+}
+.header-logo img {
+    display: block;
 }
 .download-btn-pc {
     background-color: #d97652;
@@ -42,11 +57,20 @@ body {
     padding: 11px 24px;
     border-radius: 40px;
     color: white;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 /*790px이하*/
 @media (max-width: 790px) {
-    .downloa-btn-pc {
+    .header-logo img {
+        width: 92px;
+        height: 33px;
+    }
+    .download-btn-pc {
+        display: none;
+    }
+    .navigation-pc-bar {
         display: none;
     }
 }
@@ -55,5 +79,9 @@ body {
     .header-logo img {
         width: 149px;
         height: 53px;
+    }
+    .hamburger-btn-m {
+        display: none;
+        align-items: center;
     }
 }
