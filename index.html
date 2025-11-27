@@ -116,5 +116,56 @@
       </div>
     </div>
     </footer>
+     <!-- =====================모달===================== -->
+      <div class="modal hidden" id="subscribe-modal">
+        <div class="modal-popup">
+          <div class="modal-dialog">
+            <button
+              type="button"
+              class="modal-close-btn"
+              aria-label="닫기"
+            ></button>
+            <img
+              src="./images/cat-subscribe.png"
+              alt="구독좋아요"
+              class="modal-image"
+            />
+            <h2>Thank You!</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing industry.</p>
+
+            <button type="button" class="btn btn-primary modal-ok-btn">
+              OK! I Love ZADU
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const modal = document.getElementById("subscribe-modal");
+      const subscribeBn = document.querySelector(".sub-buuton");
+      const closeBtn = document.querySelector(".modal-close-btn");
+      const modalPopup = document.querySelector(".modal-popup");
+      const modalOkBtn = document.querySelector(".modal-ok-btn");
+
+      subscribeBtn.addEventListener("click", function (event) {
+        event.preventDefault();
+        modal.classList.remove("hidden");
+      });
+
+      closeBtn.addEventListener("click", function () {
+        modal.classList.add("hidden");
+      });
+
+      modalOkBtn.addEventListener("click", function () {
+        modal.classList.add("hidden");
+      });
+
+      modalPopup.addEventListener("click", function (event) {
+        if (event.target === modalPopup) {
+          modal.classList.add("hidden");
+        }
+      });
+    </script>
   </body>
 </html>
