@@ -49,27 +49,37 @@ body {
   --shadow-lg: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
+a {
+  display: inline-block;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+input:focus {
+  outline: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .btn {
   padding: 10px 20px;
   color: white;
+  font-size: 1.1rem;
   font-weight: 600;
   text-align: center;
-  background-color: var(--accent-color);
   border-radius: 30px;
   border: none;
   cursor: pointer;
 }
-.btn:hover {
-  background-color: var(--accent-hover);
-}
 
-.icon {
-}
 .icon-box {
   display: inline-flex;
   align-items: center;
   justify-content: space-around;
-  padding: 10px;
   background-color: var(--accent-color);
   border-radius: 50%;
   border: none;
@@ -79,17 +89,9 @@ body {
   background-color: var(--accent-hover);
 }
 
-img {
-  max-width: 100%;
-  height: auto;
+.bg-orange {
+  background-color: var(--accent-color);
 }
-
-ul {
-  list-style: none;
-}
-input:focus {
-  outline: none;
-}
-a {
-  display: inline-block;
+.bg-orange:hover {
+  background-color: var(--accent-hover);
 }

@@ -11,9 +11,9 @@
   <body>
     <!-- --header-bg -->
     <section class="header-container">
-      <!-- content : 1층 -->
+      <!-- content 1층 -->
       <header class="header-box">
-        <!-- 1층 - header -->
+        <!-- header nav > logo,menu -->
         <nav class="nav-box">
           <a class="header-logo" href="#">
             <img class="logo" src="./images/logo-h.png" alt="ZADU_logo" />
@@ -23,7 +23,7 @@
             <li class="manu-list">About</li>
             <li class="manu-list">Support</li>
             <li class="manu-list">
-              <button class="btn btn-download">Download</button>
+              <button class="btn btn-download bg-orange">Download</button>
             </li>
           </ul>
           <button class="icon-box btn-menu" type="button">
@@ -59,39 +59,49 @@
             </svg>
           </button>
         </nav>
-        <!-- 1층 - main (박스를 뒤집어 쓴 고양이) -->
-        <div class="header-content-box">
-          <article class="article-box">
+        <!-- header main > Hero Section -->
+        <div class="header-hero-box">
+          <article class="hero-article-box">
             <ul class="text-box text-bold">
-              <li class="">Lorem Ipsum is simply dummy text</li>
-              <li class="">of the printing and</li>
+              <li class="">Lorem Ipsum is simply</li>
+              <li class="">dummy text of the printing and</li>
             </ul>
             <ul class="text-box">
-              <li class="">Lorem Ipsum is simply dummy text</li>
-              <li class="">of the printing and typesetting industry.</li>
-              <li class="">Lorem Ipsum has been the industry's</li>
-              <li class="">standard dummy text ever since the 1500s,</li>
-              <li class="">when an unknown</li>
+              <li class="text-box-list">
+                Lorem Ipsum is simply dummy text of the printing and
+              </li>
+              <li class="text-box-list">typesetting industry.</li>
+              <li class="text-box-list">
+                Lorem Ipsum has been the industry's standard dummy text
+              </li>
+              <li class="text-box-list">
+                ever since the 1500s, when an unknown
+              </li>
             </ul>
+            <button class="btn btn-download bg-orange" type="submit">
+              Download
+            </button>
           </article>
-          <button class="btn btn-download" type="submit">Download</button>
-          <img
-            class="box-cat"
-            src="./images/box-cat.png"
-            alt="박스를 뒤집어 쓴 고양이"
-          />
+          <div class="hero-cat-box">
+            <img
+              class="box-cat"
+              src="./images/box-cat.png"
+              alt="박스를 뒤집어 쓴 고양이"
+            />
+          </div>
         </div>
       </header>
     </section>
     <main class="main-container">
       <!-- content : 2층 -->
       <section class="section-box section-box02">
+        <!-- Card Section -->
         <img class="lying-cat" src="./images/img_4.jpg" alt="누워있는 고양이" />
         <article class="article-box">
           <ul class="text-box">
-            <li class="">Lorem Ipsum is simply</li>
-            <li class="">dummy text of the printing</li>
-            <li class="">and dummy text</li>
+            <li class="text-box-list">Lorem Ipsum is simply</li>
+            <li class="text-box-list">dummy text of the printing</li>
+            <li class="text-box-list">and dummy text</li>
           </ul>
           <ul class="text-box">
             <li class="">
@@ -103,16 +113,17 @@
       </section>
       <!-- content : 3층 -->
       <section class="section-box section-box03">
+        <!-- Gallery Section -->
         <article class="article-box">
           <ul class="text-box">
             <li class="">dummy text of the printing and dummy</li>
           </ul>
           <ul class="text-box">
-            <li class="">
+            <li class="text-box-list">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry.
             </li>
-            <li class="">
+            <li class="text-box-list">
               Lorem Ipsum has been the industry's standard dummy text ever since
               the 1500s, when an unknown
             </li>
@@ -137,34 +148,35 @@
         </div>
         <article class="article-box">
           <ul class="text-box">
-            <li class="">
+            <li class="text-box-list">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry.
             </li>
-            <li class="">
+            <li class="text-box-list">
               Lorem Ipsum has been the industry's standard dummy text ever since
               the 1500s, when an unknown
             </li>
-            <li class="">
+            <li class="text-box-list">
               Ipsum is simply dummy text of the printing and typesetting
               industry.
             </li>
           </ul>
         </article>
-        <button class="btn" type="submit">Learn More</button>
+        <button class="btn btn-More bg-orange" type="submit">Learn More</button>
       </section>
       <!-- content : 4층 (구독 박스) -->
       <section class="section-box section-box04">
+        <!-- Subscribe Section -->
         <article class="article-box">
           <ul class="text-box">
-            <li class="">Subscribe to our Blog post</li>
+            <li class="text-box-list">Subscribe to our Blog post</li>
           </ul>
           <ul class="text-box">
-            <li class="">
+            <li class="text-box-list">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry.
             </li>
-            <li class="">
+            <li class="text-box-list">
               Lorem Ipsum has been the industry's standard dummy text
             </li>
           </ul>
@@ -201,18 +213,12 @@
               placeholder="Enter your e-mail address"
             />
             <!-- email button -->
-            <button class="btn btn-subscribe">Subscribe</button>
+            <button class="btn btn-subscribe bg-orange">Subscribe</button>
           </div>
         </article>
       </section>
-      <!-- content : 4층 (고양이 배경)
-      <section class="section-box05">
-        <img class="cat-bg" src="./images/up-cat.png" alt="고양이 배경" />
-      </section>
-       -->
-      <!-- footer : logo & icon list & menu list -->
       <!-- content : 5층 footer -->
-      <section class="section-box05">
+      <section class="section-box section-box05">
         <footer class="footer-box">
           <a class="icon-box" href="#">
             <svg
@@ -244,8 +250,6 @@
               <li class="icon-box">
                 <svg
                   class="icon icon-blog"
-                  width="24"
-                  height="24"
                   viewBox="0 0 24 24"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -256,11 +260,9 @@
                   />
                 </svg>
               </li>
-              <li class="icon-box">
+              <li class="icon-box bg-orange">
                 <svg
                   class="icon icon-instagram"
-                  width="24"
-                  height="24"
                   viewBox="0 0 24 24"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -288,11 +290,9 @@
                   />
                 </svg>
               </li>
-              <li class="icon-box">
+              <li class="icon-box bg-orange">
                 <svg
                   class="icon icon-facebook"
-                  width="24"
-                  height="24"
                   viewBox="0 0 24 24"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -303,11 +303,9 @@
                   />
                 </svg>
               </li>
-              <li class="icon-box">
+              <li class="icon-box bg-orange">
                 <svg
                   class="icon icon-youtube"
-                  width="24"
-                  height="24"
                   viewBox="0 0 24 24"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
