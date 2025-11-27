@@ -529,7 +529,7 @@ img {
 @media (min-width: 768px) and (max-width: 1023px) {
   .subscribe-section {
     width: 860px;
-    height: 200px;
+    height: auto;
     margin: 0 auto;
     padding: 2.5rem 3rem;
     border-radius: 20px;
