@@ -307,7 +307,6 @@ img {
 
 /* 푸터 */
 .site-footer {
-  background-color: #fff;
   padding: 2rem 1.5rem;
 }
 
@@ -343,6 +342,11 @@ img {
   justify-content: center;
 }
 
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
 .footer-right {
   display: flex;
   flex-direction: column;
@@ -895,7 +899,6 @@ img {
     display: flex;
     gap: 1.2rem;
   }
-
   .footer-right {
     display: none;
   }
