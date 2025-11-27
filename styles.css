@@ -35,12 +35,9 @@ div.top {
 }
 /*헤더*/
 header {
-  width: 390px;
+  display: flex;
+  justify-content: space-between;
   height: 76px;
-}
-
-div.header_center {
-  width: 226px;
 }
 
 div.header_left {
