@@ -555,6 +555,15 @@ body {
   .subscribe-contents {
     max-width: 50rem;
   }
+  .input-email {
+    width: 14rem;
+  }
+  .btn-subscribe {
+    position: relative;
+    top: -25%;
+    left: 0%;
+  }
+
   .right-column {
     justify-content: center;
     align-items: center;
