@@ -207,12 +207,12 @@ body {
 
 /* 4.고양이 갤러리 */
 
-.cat-gallary {
+.cat-gallery {
   margin-bottom: 50px;
   padding-left: 32px;
 }
 
-.image-gallary {
+.image-gallery {
   display: flex;
   flex-direction: row;
   overflow: hidden;
@@ -228,12 +228,12 @@ body {
   border-radius: 18px;
 }
 
-.gallary-text {
+.gallery-text {
   text-align: start;
   overflow-wrap: break-word;
 }
 
-.cat-gallary-container {
+.cat-gallery-container {
   display: grid;
   grid-template-columns: 1fr;
   padding-right: 32px;
@@ -360,6 +360,12 @@ input:placeholder-shown {
   height: 32px;
   border-radius: 50%;
   background-color: var(--social-btn-color);
+  border: none;
+}
+
+.icon-circle:active {
+  transform: scale(0.95);
+  opacity: 0.8;
 }
 
 .footer-mobile-menu {
@@ -572,12 +578,12 @@ input:placeholder-shown {
 
   /* 4. 고양이 갤러리 */
 
-  .cat-gallary {
+  .cat-gallery {
     justify-items: center;
     padding: 0;
   }
 
-  .image-gallary {
+  .image-gallery {
     display: flex;
     flex-direction: row;
     gap: 72px;
@@ -589,7 +595,7 @@ input:placeholder-shown {
     width: 378px;
     height: 378px;
   }
-  .cat-gallary-container {
+  .cat-gallery-container {
     display: flex;
     flex-direction: row;
     gap: 52px;
