@@ -27,14 +27,16 @@ html {
 
 body {
   margin: 0;
-}
-.landing {
-  background-color: var(--header-bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
 }
 /* 
 <!-- ---------------------------- -->
 <!--            헤더               -->
 <!-- ---------------------------- --> */
+.landing {
+  background-color: var(--header-bg-color);
+}
 .navbar {
   display: flex;
   align-items: center;
@@ -61,10 +63,23 @@ body {
   width: 14rem;
   height: 5rem;
   background-color: var(--accent-color);
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 .btn-download:hover {
   background-color: var(--accent-hover);
 }
+.btn-nav-menu {
+  margin-right: 2rem;
+  border: none;
+  background-color: var(--header-bg-color);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.btn-nav-menu:hover {
+  transform: scale(1.1);
+}
+
 /* 
 <!-- ---------------------------- -->
 <!--            히어로 섹션         -->
@@ -102,19 +117,16 @@ body {
 .title .line {
   white-space: nowrap;
 }
-
 .title-explanation {
   font-size: 1.4rem;
   line-height: 1;
   display: flex;
   flex-direction: column;
 }
-
 .title-image {
   width: 20rem;
   height: 42rem;
 }
-
 /* 
 <!-- ---------------------------- -->
 <!--            카드 섹션           -->
@@ -211,6 +223,9 @@ body {
   border-radius: 4rem;
   width: 12.6rem;
   height: 4rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-right: 2rem;
 }
 .btn-learnmore:hover {
   background-color: var(--accent-hover);
@@ -297,8 +312,10 @@ body {
   border-radius: 4rem;
   align-self: flex-end;
   margin-bottom: 3rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
-.btn-Subscribe:hover {
+.btn-subscribe:hover {
   background-color: var(--accent-hover);
 }
 /* 
@@ -399,6 +416,11 @@ body {
   aspect-ratio: 1/1;
   border-radius: 50%;
   border: none;
+  cursor: pointer;
+  transition: all 0.3 ease;
+}
+.btn-snsicon:hover {
+  background-color: var(--accent-hover);
 }
 .footer-menu {
   display: flex;
@@ -423,7 +445,7 @@ body {
   bottom: 23rem;
   width: 4.8rem;
   height: 4.8rem;
-  color: var(--text-light);
+  background-color: var(--border-color);
   border-radius: 50%;
   border: none;
   cursor: pointer;
@@ -431,6 +453,14 @@ body {
   align-items: center;
   justify-content: center;
 }
+.up-btn-image {
+  transition: all 0.3 ease;
+}
+.up-btn-image:hover {
+  filter: brightness(0) saturate(100%) invert(42%) sepia(58%) saturate(20%)
+    hue-rotate(99deg) brightness(100%) contrast(98%);
+}
+
 /* 
 <!-- ---------------------------- -->
 <!--          반응형(768)            -->
@@ -456,8 +486,8 @@ body {
     align-items: flex-start; /* 왼쪽 정렬 */
     text-align: left;
   }
-
   .title-container {
+    max-width: 60rem;
     align-items: flex-start;
     margin-left: 2rem; /* 자연스러운 왼쪽 정렬 느낌 */
     margin-right: auto;
@@ -506,6 +536,9 @@ body {
     position: relative;
     top: -3rem;
   }
+  .subscribe-section::after {
+    height: 20rem;
+  }
   .subscribe-box {
     width: clamp(70rem, 70vw, 105rem);
     height: 20rem;
@@ -525,6 +558,7 @@ body {
     align-items: center;
     max-width: 53rem;
     height: 20rem;
+    margin-right: 2rem;
   }
   .footer-logo-img {
     display: flex;
@@ -551,7 +585,6 @@ body {
     margin-left: 20%; /* 화면 커질수록 조금 왼쪽에 치우치게 */
     margin-right: auto;
   }
-
   .image-container {
     margin-right: 20%; /* 이미지도 균형 맞게 */
   }
@@ -564,13 +597,13 @@ body {
   .subscribe-title {
     font-size: 3.6rem;
   }
-
   .subscribe-input {
     width: 40rem;
     margin-top: 5rem;
   }
   .input-email {
-    width: 45rem;
+    width: 20rem;
+    height: 3rem;
   }
   .btn-subscribe {
     position: relative;
