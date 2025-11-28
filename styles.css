@@ -247,12 +247,13 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 32.6rem;
+  width: 33rem;
   aspect-ratio: 1/1;
   border-radius: 1.8rem;
   margin-top: 5rem;
   margin-left: 3rem;
 }
+
 .subscribe-section::after {
   content: "";
   position: absolute;
@@ -271,7 +272,7 @@ body {
   font-size: 2.4rem;
   font-weight: bold;
   padding-left: 3rem;
-  margin-bottom: 0;
+  margin-bottom: -1.2rem;
 }
 .subscribe-contents {
   font-size: 1.4rem;
@@ -281,11 +282,12 @@ body {
 .right-column {
   display: flex;
   flex-direction: column;
+  align-items: right;
+  gap: 1.5rem;
 }
 .subscribe-form {
   width: 30rem;
   gap: 2rem;
-  align-items: center;
 }
 .subscribe-input {
   position: relative;
@@ -294,7 +296,7 @@ body {
   padding: 1.2rem 1.5rem;
   display: flex;
   align-items: center;
-  width: 26rem;
+  width: 25rem;
   height: 4rem;
   left: 1rem;
 }
@@ -555,13 +557,20 @@ body {
   .subscribe-contents {
     max-width: 50rem;
   }
+  .right-column {
+    position: relative;
+    top: 4rem;
+  }
+  .subscribe-input {
+    width: 28rem;
+    margin-left: -2rem;
+  }
   .input-email {
-    width: 14rem;
+    width: 30rem;
   }
   .btn-subscribe {
     position: relative;
-    top: -25%;
-    left: 0%;
+    top: -6.5rem;
   }
 
   .right-column {
@@ -601,7 +610,9 @@ body {
   .image-container {
     margin-right: 20%; /* 이미지도 균형 맞게 */
   }
-
+  .btn-learnmore {
+    margin: 0 auto;
+  }
   .title-image {
     width: 25rem;
     height: 56rem;
@@ -622,7 +633,6 @@ body {
   }
   .subscribe-input {
     width: 40rem;
-    margin-top: 5rem;
   }
   .input-email {
     width: 20rem;
@@ -630,8 +640,8 @@ body {
   }
   .btn-subscribe {
     position: relative;
-    top: -25%;
-    left: 40%;
+    top: -32%;
+    left: 30%;
   }
 
   .title-image {
