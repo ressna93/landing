@@ -364,6 +364,10 @@ a {
     flex-direction: row;
     width: 100%;
   }
+  .hero-download-btn {
+    margin-top: 2vh;
+    width: 69vh;
+  }
   .hero-image {
     width: 41vh;
     top: 14vh;
