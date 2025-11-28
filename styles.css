@@ -205,17 +205,31 @@ img {
     font-weight: bold;
     cursor: pointer;
     margin-top: 20px;
+    margin-left: auto;
     flex-shrink: 0;
 }
 .subscribe-form {
     display: flex;
+    margin-left: 20px;
+}
+.input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
 }
 .input-wrapper input {
     width: 100%;
+    padding: 16px 16px 16px 44px;
+    border: 1px solid #767676;
+    border-radius: 24px;
+    font-size: 16px;
 }
 .input-wrapper svg.input-icon {
     position: absolute;
     left: 14px;
+    width: 20px;
+    height: 20px;
 }
 
 /*790px이하*/
@@ -273,7 +287,7 @@ img {
     }
     .subscribe-box {
         flex-direction: column;
-        width: 70%;
+        width: 55%;
         min-width: 326px;
         min-height: 348px;
         padding: 16px 8px;
@@ -286,11 +300,6 @@ img {
     .subscribe-form {
         align-items: center;
         flex-direction: column;
-    }
-    .input-wrapper input {        
-        width: 262px;
-        padding: 16px 8px;
-        border-radius: 24px;
     }
 }
 
