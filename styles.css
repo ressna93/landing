@@ -73,6 +73,30 @@ header h3 {
   background-color: transparent;
 }
 
+.btn-home,
+.btn-about,
+.btn-support {
+  display: inline-block;
+  color: var(--text-color);
+  background-color: transparent;
+  font-weight: 700;
+  width: 80px;
+  height: 20px;
+  border: none;
+}
+
+.btn-pc-download {
+  background-color: var(--accent-color);
+  color: var(--text-lighter);
+  font-weight: 700;
+  width: 119px;
+  height: 40px;
+  border-radius: 40px;
+  border: none;
+  box-sizing: border-box;
+  margin-left: 16px;
+}
+
 h1 {
   font-size: 1.5rem;
 }
@@ -295,11 +319,21 @@ form h3 {
   margin: 0 auto;
 }
 
+@media (max-width: 767px) {
+  .pc-button {
+    display: none;
+  }
+}
+
 @media (min-width: 768px) {
   header {
     height: auto;
-    padding: 18px 12px 140px; /* extra bottom padding for the positioned cat */
-    text-align: center;
+    padding: 18px 12px 140px;
+    text-align: left;
+  }
+
+  .hamburger {
+    display: none;
   }
 
   .nav-row {
