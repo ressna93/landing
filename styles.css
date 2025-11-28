@@ -64,6 +64,10 @@ input:focus-visible {
 /* 헤더 - 끝 -*/
 
 /* 히어로섹션 - 시작 -*/
+.hero-container {
+  height: 802px;
+  background: var(--header-bg-color);
+}
 .hero-section {
   display: flex;
   flex-direction: column;
@@ -72,15 +76,15 @@ input:focus-visible {
   height: 206vw;
 }
 .hero-text {
-  margin-top: 5vw;
+  margin-top: 12%;
   padding: 0px 16vw;
 } 
 .hero-image {
   display: flex;
-  width: 51.5vw;
-  right: 23vw;
+  width: 50%;
+  right: 25%;
   position: absolute;
-  top: 130vw;
+  top: 53%;
 } 
 /* 히어로섹션 - 끝 -*/ 
 
@@ -295,8 +299,14 @@ input:focus-visible {
 .action-btn, /* 부드러운 모션 */
 .social-icon,
 .footer-bottom a,
+img,
+.gallery-section,
 .main-nav a {
   transition: all 0.3s ease;
+}
+.card-section  /*느린 모션*/
+  {
+  transition: all 1s ease;
 }
 a {
   text-decoration: none;
