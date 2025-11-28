@@ -254,7 +254,7 @@ input:focus-visible {
 
 /* 종합 베이스 - 시작 - */
 .action-btn { /* 변수를 이용해 어느화면이던 버튼 사이즈를 일정하게*/
-  color: var(--text-color);
+  color: var(--text-lighter);
   font-size: 1.2rem;
   padding: 2.9vw 6vw;
   border: none;
@@ -307,7 +307,7 @@ a {
 /* 데스크톱 */
 @media (min-width: 768px) { 
   .action-btn {
-    padding: 1.5vh 3vh;
+    padding: 1vh 2vh;
     font-size: 1.5rem;
   }
   .header-nav {
@@ -357,21 +357,22 @@ a {
     align-items: flex-start;
     justify-content: space-evenly;
     text-align: start;
-    padding: 0 28vh 0;
+    width: 38%;
   }
   .hero-section {
     display: flex;
     flex-direction: row;
     width: 100%;
+    height: 100vh;
   }
   .hero-download-btn {
     margin-top: 2vh;
     width: 69vh;
   }
   .hero-image {
-    width: 41vh;
+    width: 36vh;
     top: 14vh;
-    right: -12vh;
+    right: 4vh;
   }
   .menu-desktop-btn,  /* 데스크톱 메뉴 보임 */
   .menu-desktop-link,
@@ -381,4 +382,23 @@ a {
   .menu-mb-btn { /* 데스크톱에서 모바일 메뉴버튼 숨김 */
     display: none;
   }
+  .card-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 8vh 0;
+    gap: 3vh;
+  }
+  .card-section-main {
+    width: 40vh;
+  }
+
 }
+@media (min-width: 1024px) {
+  .hero-text {
+    width: 50%;
+  }
+}
+/* 데스크톱 - 끝 - */
