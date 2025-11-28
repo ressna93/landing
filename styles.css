@@ -31,6 +31,10 @@ body {
 .landing {
   background-color: var(--header-bg-color);
 }
+/* 
+<!-- ---------------------------- -->
+<!--            헤더               -->
+<!-- ---------------------------- --> */
 .navbar {
   display: flex;
   align-items: center;
@@ -61,7 +65,10 @@ body {
 .btn-download:hover {
   background-color: var(--accent-hover);
 }
-
+/* 
+<!-- ---------------------------- -->
+<!--            히어로 섹션         -->
+<!-- ---------------------------- --> */
 .hero-section {
   display: flex;
   flex-direction: column;
@@ -108,6 +115,10 @@ body {
   height: 42rem;
 }
 
+/* 
+<!-- ---------------------------- -->
+<!--            카드 섹션           -->
+<!-- ---------------------------- --> */
 .card-section {
   display: flex;
   flex-direction: column;
@@ -135,7 +146,10 @@ body {
 .card-text-contents {
   font-size: 1.4rem;
 }
-/* 갤러리 섹션 스타일 */
+/* 
+<!-- ---------------------------- -->
+<!--            갤러리 섹션         -->
+<!-- ---------------------------- --> */
 .gallery-Section {
   display: flex;
   flex-direction: column;
@@ -177,7 +191,6 @@ body {
 .gallery-image-box img:first-child {
   margin-left: 2rem;
 }
-
 .gallery-contents-box {
   display: flex;
   flex-direction: column;
@@ -202,6 +215,11 @@ body {
 .btn-learnmore:hover {
   background-color: var(--accent-hover);
 }
+
+/* 
+<!-- ---------------------------- -->
+<!--            구독 섹션           -->
+<!-- ---------------------------- --> */
 .subscribe-section {
   position: relative;
   z-index: 0;
@@ -280,11 +298,13 @@ body {
   align-self: flex-end;
   margin-bottom: 3rem;
 }
-
 .btn-Subscribe:hover {
   background-color: var(--accent-hover);
 }
-
+/* 
+<!-- ---------------------------- -->
+<!--            모달               -->
+<!-- ---------------------------- --> */
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -297,11 +317,9 @@ body {
   align-items: center;
   z-index: 1000;
 }
-
 .hidden {
   display: none;
 }
-/* 실제 모달 박스 */
 .modal-box {
   position: relative;
   width: 40rem;
@@ -310,8 +328,6 @@ body {
   border-radius: 20px;
   text-align: center;
 }
-
-/* 닫기 버튼 X */
 .modal-close {
   position: absolute;
   right: 20px;
@@ -321,17 +337,14 @@ body {
   border: none;
   cursor: pointer;
 }
-
 .modal-title {
   font-size: 3rem;
   margin: 1rem 0;
 }
-
 .modal-text {
   font-size: 1.4rem;
   margin-bottom: 2rem;
 }
-
 .modal-ok {
   width: 18rem;
   height: 5rem;
@@ -345,6 +358,10 @@ body {
   aspect-ratio: 1/1;
   object-fit: cover;
 }
+/* 
+<!-- ---------------------------- -->
+<!--            푸터               -->
+<!-- ---------------------------- --> */
 .footer-container {
   position: absolute;
   margin: 0 auto;
@@ -396,6 +413,10 @@ body {
   color: var(--text-light);
   text-decoration: none;
 }
+/* 
+<!-- ---------------------------- -->
+<!--            업버튼               -->
+<!-- ---------------------------- --> */
 .btn-top-scroll {
   position: fixed;
   right: 2.4rem;
@@ -410,6 +431,10 @@ body {
   align-items: center;
   justify-content: center;
 }
+/* 
+<!-- ---------------------------- -->
+<!--          반응형(768)            -->
+<!-- ---------------------------- --> */
 @media (min-width: 768px) {
   .navbar {
     display: flex;
@@ -463,7 +488,6 @@ body {
   .card-text-contents {
     font-size: 1.6rem;
   }
-
   .gallery-contents-box {
     display: flex;
     flex-direction: row;
