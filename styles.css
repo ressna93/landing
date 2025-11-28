@@ -117,6 +117,9 @@ p.text_four {
   text-align: left;
 }
 
+div.text_container_two {
+  margin-top: 55px;
+}
 p.text_five {
   font-size: 24px;
   text-align: center;
@@ -130,4 +133,20 @@ p.text_six {
 
 span.text_six {
   color: var(--text-center);
+}
+
+/*고양이 이미지 슬라이더*/
+div.cat_slider {
+  margin: auto;
+  margin-bottom: 36px;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  width: 900px;
+  height: 260px;
+}
+
+div.slide {
+  box-shadow: var(--shadow-gt);
+  border-radius: 10px;
 }
