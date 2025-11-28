@@ -370,6 +370,8 @@ img {
     .subscribe-form {
         align-items: center;
         flex-direction: column;
+        margin-top: 10px;
+        margin-right: 20px;
     }
     .subscribe-img .scroll-btn {
         display: none;
