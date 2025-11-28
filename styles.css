@@ -113,6 +113,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 0.3rem;
+  white-space: pre-line;
 }
 .title .line {
   white-space: nowrap;
@@ -122,6 +123,7 @@ body {
   line-height: 1;
   display: flex;
   flex-direction: column;
+  white-space: pre-line;
 }
 .title-image {
   width: 20rem;
@@ -583,6 +585,7 @@ body {
 @media (min-width: 1024px) {
   .title-container {
     max-width: 60rem;
+
     margin-left: 20%; /* 화면 커질수록 조금 왼쪽에 치우치게 */
     margin-right: auto;
   }
@@ -591,7 +594,7 @@ body {
   }
 
   .title-image {
-    width: 28rem;
+    width: 25rem;
     height: 56rem;
   }
 }
