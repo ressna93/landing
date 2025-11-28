@@ -482,14 +482,14 @@ body {
     display: none; /* 큰 화면에서는 메뉴 버튼 숨김 */
   }
   .hero-section {
+    height: 60rem;
     flex-direction: row;
     align-items: flex-start; /* 왼쪽 정렬 */
     text-align: left;
   }
   .title-container {
-    max-width: 60rem;
     align-items: flex-start;
-    margin-left: 2rem; /* 자연스러운 왼쪽 정렬 느낌 */
+    margin-left: 10rem; /* 자연스러운 왼쪽 정렬 느낌 */
     margin-right: auto;
   }
 
@@ -582,18 +582,29 @@ body {
 }
 @media (min-width: 1024px) {
   .title-container {
+    max-width: 60rem;
     margin-left: 20%; /* 화면 커질수록 조금 왼쪽에 치우치게 */
     margin-right: auto;
   }
   .image-container {
     margin-right: 20%; /* 이미지도 균형 맞게 */
   }
+
   .title-image {
-    width: 41.5rem;
-    height: 76rem;
+    width: 28rem;
+    height: 56rem;
   }
 }
 @media (min-width: 1440px) {
+  .hero-section {
+    height: 70rem;
+  }
+  .title-container {
+    max-width: 100rem;
+    height: 50rem;
+    margin: 0auto;
+    justify-content: center;
+  }
   .subscribe-title {
     font-size: 3.6rem;
   }
@@ -609,5 +620,10 @@ body {
     position: relative;
     top: -25%;
     left: 40%;
+  }
+
+  .title-image {
+    width: 41.5rem;
+    height: 76rem;
   }
 }
