@@ -306,7 +306,7 @@ h1,
   width: 300px;
   height: 300px;
   border-radius: 30px;
-  background-color: #2e6ff2;
+  background-color: #1d273a;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -357,9 +357,9 @@ h1,
   font-weight: 600;
 }
 .modal-ok-btn:hover {
-  background-color: var(--accent-hover);
+  background-color: white;
 }
 .modal-ok-btn {
-  background-color: var(--accent-color);
-  color: #ffffff;
+  color: #79d5d4;
+  background-color: tomato;
 }
