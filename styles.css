@@ -60,13 +60,6 @@ img {
   background-color: var(--accent-hover);
 }
 
-.btn-outline {
-  background-color: var(--accent-color);
-  color: var(--accent-color);
-  color: #fff;
-  border-radius: 40px;
-}
-
 .btn-download {
   background-color: var(--accent-color);
   color: var(--border-color);
