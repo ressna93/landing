@@ -135,7 +135,7 @@ body {
   max-width: 800px;
 }
 
-@media (max-width: 768px) {
+모바일 박스켓 @media (max-width: 768px) {
   .hero-section {
     display: flex;
     flex-direction: column !important;
@@ -188,7 +188,7 @@ body {
   }
 }
 
-/* ____________________________________ */
+/* ________________컨텐츠__________________ */
 .content-area {
   background-color: white;
   margin: 0 auto;
@@ -324,6 +324,8 @@ body {
   left: 50px;
   top: 25px;
 }
+
+/* 모바일 컨텐츠 */
 
 @media (max-width: 768px) {
   .content-area {
@@ -475,6 +477,8 @@ body {
   }
 }
 
+/* 구독 */
+
 .subscribe {
   background: #263140;
   display: flex;
@@ -557,6 +561,8 @@ body {
 .mobile-subscribe-button {
   display: none;
 }
+
+/* 모바일 구독 */
 
 @media (max-width: 768px) {
   .subscribe {
@@ -669,6 +675,8 @@ body {
   }
 }
 
+/* 고양이사진 */
+
 .cat-5 {
   width: 100%;
   height: 340px;
@@ -679,6 +687,8 @@ body {
   opacity: 0.6;
   margin-top: -170px;
 }
+
+/* 푸터 */
 
 .footer {
   width: 100%;
@@ -725,6 +735,8 @@ body {
 .mobile-social-icons {
   display: none;
 }
+
+/* 모바일푸터 */
 
 @media (max-width: 768px) {
   .footer {
@@ -791,6 +803,7 @@ body {
   }
 }
 
+/* 스크롤탑버튼 */
 .scroll-top-btn {
   width: 50px;
   height: 50px;
