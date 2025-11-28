@@ -381,6 +381,7 @@ body {
   background-color: var(--accent-color);
   aspect-ratio: 1/1;
   border-radius: 50%;
+  border: none;
 }
 .footer-menu {
   display: flex;
@@ -394,6 +395,20 @@ body {
 .footer-link {
   color: var(--text-light);
   text-decoration: none;
+}
+.btn-top-scroll {
+  position: fixed;
+  right: 2.4rem;
+  bottom: 23rem;
+  width: 4.8rem;
+  height: 4.8rem;
+  color: var(--text-light);
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 @media (min-width: 768px) {
   .navbar {
@@ -487,8 +502,26 @@ body {
     max-width: 53rem;
     height: 20rem;
   }
+  .footer-logo-img {
+    display: flex;
+    flex-direction: row;
+    width: 80rem;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer-menu {
+    display: none;
+  }
+  .footer-logo {
+    width: 22.6rem;
+    height: 7rem;
+  }
+  .btn-snsicon {
+    width: 4rem;
+    height: 4rem;
+  }
 }
-
 @media (min-width: 1024px) {
   .title-container {
     margin-left: 20%; /* 화면 커질수록 조금 왼쪽에 치우치게 */
