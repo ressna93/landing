@@ -117,7 +117,7 @@ a {
   right: 1rem;
   top: 50%;
   transform: translateY(-50%);
-  z-index: 3;
+  z-index: 0;
 }
 /*=========================================*/
 /*===== MAIN =====*/
@@ -445,6 +445,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 10;
 }
 .hidden {
   display: none;
@@ -459,6 +460,7 @@ a {
   position: absolute;
   z-index: 5;
   animation: fadeIn 0.3s ease;
+  pointer-events: none;
 }
 .modal-dialog {
   display: flex;
@@ -466,6 +468,7 @@ a {
   justify-content: center;
   align-items: center;
   text-align: center;
+  pointer-events: auto;
 }
 .modal-dialog img {
   width: 5rem;
