@@ -1,5 +1,5 @@
 // 필요한 요소 선택
-const modal = document.getElementById("Smodal-set");
+const modal = document.getElementById("smodal-set");
 const subscribeBtn = document.getElementById("subscribe-btn");
 // 클래스 지정에서 아이디 지정으로 변경함
 const closeBtn = document.getElementById("modal-close-btn");
