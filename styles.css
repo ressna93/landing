@@ -86,7 +86,6 @@ body {
   color: white;
   border-radius: 56px;
   text-align: center;
-  margin-right: 50px;
 }
 /* 메인 콘텐츠*/
 .content {
@@ -383,8 +382,9 @@ h1,
     justify-content: normal;
     height: 700px;
   }
-  .main-image {
+  .btn-download {
     margin-top: 20px;
+    padding: 20px 30px;
   }
   .box-cat {
     position: absolute;
@@ -393,6 +393,26 @@ h1,
   .card-body {
     flex-direction: column;
     align-items: center;
+  }
+  .body-subtext {
+    margin-top: 20px;
     text-align: center;
+  }
+  .img-flex {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .text-button {
+    display: grid;
+    padding: 20px;
+    justify-items: end;
+  }
+  .body-text2 {
+    font-size: 20px;
+  }
+  .learn-button {
+    width: 100px;
+    height: 50px;
   }
 }
