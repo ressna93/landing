@@ -197,6 +197,26 @@ p {
 
 /* subscribe */
 
+.subscribe-wrapper {
+  margin-left: 36px;
+  margin-right: 36px;
+  width: 326px;
+  position: relative;
+}
+
+.subscribe-wrapper::after {
+  content: "";
+  position: absolute;
+  bottom: -50%;
+  width: 100%;
+  height: 240px;
+  background: url("images/up-cat.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.6;
+  z-index: -1;
+}
+
 form {
   background-color: var(--dark-bg);
   border-radius: 18px;
@@ -248,11 +268,6 @@ form h3 {
   background-color: var(--accent-hover);
 }
 
-.selfie-cat {
-  width: 100%;
-  height: 240px;
-}
-
 /* footer */
 
 .footer_logo {
@@ -265,12 +280,6 @@ form h3 {
   list-style-type: none;
 }
 
-.social-icon {
-  background-color: #f29d52;
-  border-radius: 50%;
-  transition: background-color 0.3s ease;
-}
-
 .social-icon:hover {
   background-color: var(--accent-hover);
 }
@@ -279,10 +288,49 @@ form h3 {
   width: 24px;
   height: 24px;
   color: white;
+  background-color: #f29d52;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+  border: none;
+  margin: 0 auto;
 }
 
 @media (min-width: 768px) {
-  .slider-container {
+  header {
+    height: auto;
+    padding: 18px 12px 140px; /* extra bottom padding for the positioned cat */
+    text-align: center;
+  }
+
+  .nav-row {
+    gap: 16px;
+    padding-top: 12px;
+    justify-content: space-between;
+  }
+
+  .btn-download {
+    margin-top: 8px;
+    margin-bottom: 12px;
+    width: 100px;
+  }
+
+  .box-cat {
+    width: 140px;
+    bottom: -48px;
+  }
+
+  .main-content {
+    margin: 0 16px;
+  }
+
+  .lying-cat {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    margin: 20px auto;
+  }
+
+  .swipe-container {
     overflow-x: visible;
     scroll-snap-type: none;
     gap: 20px;
@@ -291,5 +339,62 @@ form h3 {
   .card {
     flex: 1;
     padding: 0;
+  }
+
+  .card img {
+    width: 220px;
+    height: 220px;
+    margin-left: 16px;
+  }
+
+  .learn-more {
+    margin: 0 16px 16px 16px;
+  }
+
+  .btn-learn-more {
+    float: none;
+    display: inline-block;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  form {
+    width: calc(100% - 32px);
+    margin: 36px auto;
+    padding: 20px;
+    background-position: right 8px bottom 8px;
+    background-size: 64px;
+    border-radius: 14px;
+  }
+
+  .e-mail {
+    width: calc(100% - 64px);
+    margin: 16px auto;
+    padding-left: 48px;
+    height: 44px;
+  }
+
+  .btn-subscribe {
+    width: calc(100% - 64px);
+    margin: 12px auto 18px;
+    display: block;
+  }
+
+  .selfie-cat {
+    width: 100%;
+    height: auto;
+  }
+
+  .footer_menu_group {
+    float: none;
+    text-align: left;
+    margin-top: 12px;
+  }
+
+  .social-icon {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    margin-top: 12px;
   }
 }

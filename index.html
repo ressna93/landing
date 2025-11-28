@@ -11,6 +11,7 @@
     <title>Welcome to ZADU</title>
   </head>
   <body>
+    <!---header--->
     <header>
       <nav class="nav-row">
         <img src="images/logo_h.png" alt="로고" class="nav_logo" />
@@ -31,6 +32,8 @@
       <button type="button" class="btn btn-download">Download</button>
       <img src="images/box-cat.png" alt="박스캣" class="box-cat" />
     </header>
+
+    <!---main-content--->
     <div class="main-content">
       <img src="images/img_4.png" alt="눕캣" class="lying-cat" />
       <h1>
@@ -53,6 +56,7 @@
         industry's standard dummy text ever since the 1500s, when an unknown
       </p>
     </div>
+    <!---Swiper --->
     <div class="swiper">
       <div class="swipe-container">
         <div class="card">
@@ -67,7 +71,7 @@
       </div>
     </div>
 
-    <!--- Swiper JS --->
+    <!---Swiper JS--->
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script>
       const swiper = new Swiper(".swiper", {
@@ -76,6 +80,7 @@
       });
     </script>
 
+    <!---learn-more--->
     <div class="learn-more">
       <p>
         Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -86,28 +91,52 @@
       </p>
       <button type="button" class="btn btn-learn-more">Learn More</button>
     </div>
-    <form>
-      <h1>
-        Subscribe to our<br />
-        Blog post
-      </h1>
-      <h3>
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text
-      </h3>
-      <input
-        type="text"
-        class="e-mail"
-        placeholder="Enter your e-mail address"
-        style="
-          background: url('images/mail.svg') no-repeat 5px center;
-          background-size: 27px;
-          padding-left: 40px;
-        "
-      />
-      <button type="button" class="btn btn-subscribe">Subscribe</button>
-    </form>
-    <img src="images/up-cat.png" alt="냥셀카" class="selfie-cat" />
+
+    <!---subscribe--->
+    <div class="subscribe-wrapper">
+      <form>
+        <h1>
+          Subscribe to our<br />
+          Blog post
+        </h1>
+        <h3>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text
+        </h3>
+        <input
+          type="text"
+          class="e-mail"
+          placeholder="Enter your e-mail address"
+          style="
+            background: url('images/mail.svg') no-repeat 5px center;
+            background-size: 27px;
+            padding-left: 40px;
+          "
+        />
+        <button type="button" class="btn btn-subscribe">Subscribe</button>
+      </form>
+    </div>
+
+    <!--subscribe JS--->
+    <script>
+      const modal = document.getElementById("my-modal");
+      const subscribeBtn = document.getElementById("btn-subscribe");
+      const closeBtn = document.querySelector(".modal-close-btn");
+      subscribeBtn.addEventListener("click", function (event) {
+        event.preventDefault();
+        modal.classList.remove("hidden");
+      });
+      closeBtn.addEventListener("click", function () {
+        modal.classList.add("hidden");
+      });
+      modal.addEventListener("click", function (event) {
+        if (event.target === modal) {
+          modal.classList.add("hidden");
+        }
+      });
+    </script>
+
+    <!---footer-->
     <footer>
       <img src="images/logo_h.png" alt="로고" class="footer_logo" />
       <div class="footer_menu_group">
