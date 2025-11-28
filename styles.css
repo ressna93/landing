@@ -179,3 +179,27 @@ button.learn_more {
   border-radius: 20px;
   background-color: var(--text-center);
 }
+
+/*모달창*/
+div.modal {
+  width: 326px;
+  height: 348px;
+  text-align: center;
+  padding: 20px;
+  margin: auto;
+  margin-top: 50px;
+  border-radius: 20px;
+  background-color: var(--dark-bg);
+}
+
+p.modal_text {
+  font-size: 30px;
+  text-align: left;
+  color: #ffff;
+}
+
+p.modal_text_s {
+  font-size: 18px;
+  text-align: left;
+  color: var(--text-lighter);
+}
