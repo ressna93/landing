@@ -65,6 +65,7 @@ body {
   background-color: var(--accent-color);
   cursor: pointer;
   transition: all 0.3s ease;
+  border: none;
 }
 .btn-download:hover {
   background-color: var(--accent-hover);
@@ -75,6 +76,7 @@ body {
   background-color: var(--header-bg-color);
   cursor: pointer;
   transition: all 0.3s ease;
+  border: none;
 }
 .btn-nav-menu:hover {
   transform: scale(1.1);
@@ -228,6 +230,7 @@ body {
   cursor: pointer;
   transition: all 0.3s ease;
   margin-right: 2rem;
+  border: none;
 }
 .btn-learnmore:hover {
   background-color: var(--accent-hover);
@@ -282,7 +285,6 @@ body {
 .right-column {
   display: flex;
   flex-direction: column;
-  align-items: right;
   gap: 1.5rem;
 }
 .subscribe-form {
@@ -293,12 +295,12 @@ body {
   position: relative;
   background: white;
   border-radius: 6rem;
-  padding: 1.2rem 1.5rem;
+  padding: 0.5rem;
   display: flex;
   align-items: center;
   width: 25rem;
   height: 4rem;
-  left: 1rem;
+  left: 4rem;
 }
 .mail-icon {
   width: 1.8rem;
@@ -315,9 +317,10 @@ body {
   height: 4rem;
   border-radius: 4rem;
   align-self: flex-end;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   cursor: pointer;
   transition: all 0.3s ease;
+  border: none;
 }
 .btn-subscribe:hover {
   background-color: var(--accent-hover);
@@ -570,9 +573,9 @@ body {
   }
   .btn-subscribe {
     position: relative;
-    top: -6.5rem;
+    top: -5.9rem;
+    left: 0.9rem;
   }
-
   .right-column {
     justify-content: center;
     align-items: center;
@@ -633,6 +636,8 @@ body {
   }
   .subscribe-input {
     width: 40rem;
+    height: 4rem;
+    padding: 1rem;
   }
   .input-email {
     width: 20rem;
@@ -640,10 +645,11 @@ body {
   }
   .btn-subscribe {
     position: relative;
-    top: -32%;
-    left: 30%;
+    width: 13rem;
+    height: 5rem;
+    top: -35%;
+    left: 32%;
   }
-
   .title-image {
     width: 41.5rem;
     height: 76rem;
