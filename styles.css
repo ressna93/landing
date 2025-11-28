@@ -306,7 +306,7 @@ h1,
   width: 300px;
   height: 300px;
   border-radius: 30px;
-  background-color: #1d273a;
+  background-color: #8798b8;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -334,14 +334,14 @@ h1,
 
 .modal-dialog h2 {
   font-size: 24px;
-  color: var(--accent-color);
+  color: black;
   font-weight: 700;
   margin: 8px 0 6px;
 }
 
 .modal-dialog p {
   font-size: 14px;
-  color: var(--text-color);
+  color: black;
   margin: 0 0 18px;
   line-height: 1.4;
 }
@@ -360,6 +360,23 @@ h1,
   background-color: white;
 }
 .modal-ok-btn {
-  color: #79d5d4;
+  color: black;
   background-color: tomato;
+}
+
+@media (min-width: 768px) {
+  .header {
+    padding: 20px 80px;
+    display: flex;
+  }
+  .menu-icon {
+    display: flex;
+    width: 37px;
+    height: 36px;
+    border-width: 1px;
+    margin-left: 50px;
+  }
+  .navbar {
+    display: none;
+  }
 }
