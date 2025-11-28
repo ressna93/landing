@@ -183,7 +183,7 @@ button.learn_more {
 /*모달창*/
 div.modal {
   width: 326px;
-  height: 348px;
+  height: 368px;
   text-align: center;
   padding: 20px;
   margin: auto;
@@ -219,4 +219,21 @@ input.email {
   border: none;
   outline: none;
   padding-top: 10px;
+}
+
+img.email_icon {
+  text-align: left;
+  padding-top: 10px;
+}
+
+button.subscribe_btn {
+  float: right;
+  text-align: center;
+  width: 117px;
+  height: 40px;
+  margin-top: 20px;
+  border-radius: 20px;
+  background-color: var(--text-center);
+  color: #ffff;
+  border: none;
 }
