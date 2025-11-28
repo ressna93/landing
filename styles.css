@@ -203,3 +203,20 @@ p.modal_text_s {
   text-align: left;
   color: var(--text-lighter);
 }
+
+div.email_address {
+  text-align: center;
+  margin: auto;
+  width: 262px;
+  height: 40px;
+  background-color: #ffff;
+  border-radius: 20px;
+}
+
+input.email {
+  font-size: 16px;
+  color: #767676;
+  border: none;
+  outline: none;
+  padding-top: 10px;
+}
