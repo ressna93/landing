@@ -142,7 +142,6 @@
             </p>
           </div>
         </article>
-
         <!-- Gallery Section > images -->
         <div class="gallery-img-box flex overflow-hidden">
           <div class="gallery-img-inner-box flex">
@@ -169,7 +168,6 @@
             </div>
           </div>
         </div>
-
         <!-- Gallery Section > bottom > text -->
         <article class="article-box gallery-article-bottom-box flex">
           <div class="text-box">
@@ -213,36 +211,38 @@
           </article>
           <!-- Subscribe Section > input box -->
           <div class="subscribe-input-box flex border-radius">
-            <!-- input box > mail-icon -->
-            <svg
-              class="icon mail-icon"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z"
-                stroke="#767676"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+            <div class="input-box flex">
+              <!-- input box > mail-icon -->
+              <svg
+                class="icon mail-icon"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z"
+                  stroke="#767676"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M22 6L12 13L2 6"
+                  stroke="#767676"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <!-- input box > email input -->
+              <input
+                class="section-emali-input text-left"
+                type="email"
+                placeholder="Enter your e-mail address"
               />
-              <path
-                d="M22 6L12 13L2 6"
-                stroke="#767676"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-            <!-- input box > email input -->
-            <input
-              class="section-emali-input text-left"
-              type="email"
-              placeholder="Enter your e-mail address"
-            />
+            </div>
             <!-- input box > email button -->
             <button class="btn btn-subscribe bg-orange" type="button">
               Subscribe
@@ -250,6 +250,7 @@
           </div>
         </section>
       </div>
+
       <!-- 5층: footer -->
       <footer class="footer-box">
         <!-- icon: arrow-up -->
