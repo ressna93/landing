@@ -79,7 +79,7 @@ strong {
   flex-direction: column;
   text-align: center;
   background-color: var(--header-bg-color);
-  height: 206vw;
+  height: 200vw;
 }
 .hero-text {
   margin-top: 12%;
@@ -158,7 +158,7 @@ strong {
 .subscribe-container {
   display: flex;
   justify-content: space-evenly;
-  height: 80vw;
+  height: 37vh;
 }
 .subscribe-section {
   display: flex;
@@ -166,13 +166,14 @@ strong {
   text-align: start;
   flex-wrap: nowrap;
   align-items: flex-end;
+  justify-content: space-evenly;
+  position: absolute;
   padding: 4vw 7vw;
-  width: 68%;
-  bottom: -167%;
+  width: 67%;
+  height: 37%;
   border-radius: 18px;
   background: var(--dark-bg);
   color: var(--text-lighter);
-  position: absolute;
 }
 .e-mail-form {
   display: flex;
@@ -199,7 +200,7 @@ strong {
   height: auto;
 }
 .footer-section {
-  height: 41.4vw;
+  height: 178px;
   display: flex;
   flex-direction: row;
   padding: 6.2vw 0 6vw 0;
@@ -424,8 +425,18 @@ a {
   .gallery-section-img {
     width: 50%;
   }
+  .subscribe-container {
+   height: 50vh;
+  }
+  .subscribe-section {
+  width: 50%;
+  height: 50%;
+  }
 }
 @media (min-width: 1024px) {
+  .footer-links { /* 푸터 링크 숨기기 */
+    display: none;
+  }
   .hero-text {
     width: 50%;
   }
@@ -441,6 +452,19 @@ a {
   }
   .gallery-section-img {
     width: 25%;
+  }
+  .footer-section{
+    display: flex;
+    height: 8vh;
+  }
+  .footer-section-btn {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: space-around;
+    gap: 50vh;
   }
 }
 /* 데스크톱 - 끝 - */
