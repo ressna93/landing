@@ -319,8 +319,8 @@ img,
 .main-nav a {
   transition: all 0.3s ease;
 }
-.card-section  /*느린 모션*/
-  {
+.card-section,/*느린 모션*/
+.footer-main-img {
   transition: all 1s ease;
 }
 a {
@@ -455,7 +455,13 @@ a {
   }
   .footer-section{
     display: flex;
+    padding: 3vh 0;
     height: 8vh;
+  }
+  .footer-logo {
+    width: 30vh;
+    position: relative;
+    bottom: 12%;
   }
   .footer-section-btn {
     display: flex;
@@ -465,6 +471,10 @@ a {
     align-items: center;
     align-content: space-around;
     gap: 50vh;
+  }
+  .footer-main-img {
+    height: 45vh;
+    object-fit: cover;
   }
 }
 /* 데스크톱 - 끝 - */
