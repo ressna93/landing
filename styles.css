@@ -162,3 +162,20 @@ div.text_container_three {
 p.text_seven {
   text-align: left;
 }
+
+/*Learn More 버튼*/
+div.learn_more_btn {
+  width: 326px;
+  text-align: right;
+  margin: auto;
+}
+
+button.learn_more {
+  width: 126px;
+  height: 40px;
+  font-size: 14px;
+  color: #ffff;
+  border: none;
+  border-radius: 20px;
+  background-color: var(--text-center);
+}
