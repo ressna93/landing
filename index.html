@@ -17,10 +17,8 @@
         <img src="./images/logo_h.svg" alt="ZADU타이틀" class="header-logo" />
         <!-- 모바일용 햄버거 메뉴 -->
         <div class="mobile-only">
-          <button class="d-flex flex-col justify-between nav-icon-btn">
-            <span class="nav-line"></span>
-            <span class="nav-line"></span>
-            <span class="nav-line"></span>
+          <button class="nav-icon-btn">
+            <img src="./images/menu.svg" alt="" />
           </button>
         </div>
 
@@ -101,7 +99,7 @@
             </div>
 
             <!-- 고양이 사진 모음집 -->
-            <div class="d-flex">
+            <div class="d-flex cat-gallery">
               <img
                 src="./images/img_1.jpg"
                 alt="캣탑 고양이"
@@ -119,19 +117,21 @@
               />
             </div>
 
-            <div class="text-box">
-              <p>
-                Lorem Ipsum is simply dummy text of the
-                <span> printing and typesetting industry.</span>
-              </p>
-              <p>
-                Lorem Ipsum has been the industry's standard dummy text ever
-                since the 1500s, when an unknown
-              </p>
-              <p>
-                Ipsum is simply dummy text of the printing and typesetting
-                industry.
-              </p>
+            <div class="d-flex flex-col text-box">
+              <div>
+                <p>
+                  Lorem Ipsum is simply dummy text of the
+                  <span> printing and typesetting industry.</span>
+                </p>
+                <p>
+                  Lorem Ipsum has been the industry's standard dummy text ever
+                  since the 1500s, when an unknown
+                </p>
+                <p>
+                  Ipsum is simply dummy text of the printing and typesetting
+                  industry.
+                </p>
+              </div>
               <button class="btn">Learn More</button>
             </div>
           </div>
@@ -147,29 +147,24 @@
             </div>
 
             <div class="subscribe-input-box">
-              <img
-                src="./images/mail.svg"
-                alt="메일 아이콘"
-                class="Subscribe-icon"
-              />
               <input
                 type="email"
                 id="Subscribe-email"
                 placeholder="Enter your e-mail address"
               />
+              <button class="btn Subscribe-btn" id="subscribe-btn">
+                Subscribe
+              </button>
             </div>
-
-            <button class="btn Subscribe-btn" id="subscribe-btn">
-              Subscribe
-            </button>
           </div>
         </div>
+
         <!-- 메인 컨텐츠 아래 고양이 이미지 -->
         <div class="bottom-img"></div>
       </section>
     </main>
 
-    <footer class="d-flex flex-row justify-between">
+    <footer class="d-flex flex-row justify-between text">
       <div class="d-flex flex-col left-footer">
         <img src="./images/logo_h.svg" alt="푸터 로고" />
         <div class="d-flex flex-row">

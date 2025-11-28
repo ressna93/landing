@@ -1,7 +1,6 @@
 /* 390px 제한 */
 .page-wrapper {
   max-width: 39rem;
-  width: 100%;
   margin: 0 auto;
 }
 
@@ -21,18 +20,8 @@
 }
 
 .nav-icon-btn {
-  padding: 0;
   background-color: var(--header-bg-color);
-  width: 3rem;
-  height: 2.5rem;
-  position: relative;
-}
-
-.nav-line {
-  display: block;
-  width: 100%;
-  height: 0.3rem;
-  background-color: var(--dark-bg);
+  padding: 0px;
 }
 
 /* hero */
@@ -99,25 +88,19 @@
 }
 
 .text-box {
-  position: relative;
-  /* padding-bottom: 4rem; */
   margin-bottom: 7rem;
-}
-
-.text-box button {
-  position: absolute;
-  top: 100%;
-  left: 60%;
-  /* transform: translate(-50%, -50%); */
+  align-items: flex-end;
+  gap: 1rem;
 }
 
 /* 구독 폼 */
 .Subscribe-form {
-  /* position: relative; */
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
   background-color: var(--dark-bg);
   color: var(--text-lighter);
   padding: 3.6rem 3.2rem;
-  padding-bottom: 0;
   border-radius: 1.8rem;
 }
 
@@ -131,27 +114,27 @@
 
 .subscribe-input-box {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 /* 우선순위 : 클래스 10점 가상 클래스 10점 태그 *3 3점 */
 .Subscribe-form > div:nth-child(2) input {
   font-size: 1.2rem;
-  padding: 1.2rem 7rem 1.2rem 4.8rem;
+  padding: 1.2rem 5% 1.2rem 4.8rem;
   border: none;
+  box-sizing: border-box;
   border-radius: 6rem;
-}
-
-.Subscribe-icon {
-  position: absolute;
-  top: 50%;
-  left: 10%;
-  transform: translate(-50%, -50%);
-  width: 1.8rem;
-  height: auto;
+  width: 100%;
+  background-image: url("../images/mail.svg");
+  background-size: 1.8rem;
+  background-repeat: no-repeat;
+  background-position: 5% 50%;
 }
 
 .Subscribe-btn {
-  margin: 0 3.2rem 3rem 17.7rem;
+  align-self: flex-end;
 }
 
 /* 메인 컨텐츠 아래 고양이 백그라운드 */
@@ -296,12 +279,13 @@
 
   /* 네비바와 고양이의 위치가 맞지않음 수정요함 */
   .navbar-container {
-    padding: 3rem 32rem 3.2rem 17.4rem;
+    padding: 3rem;
   }
 
   .hero-container {
     flex-direction: row;
     gap: 12.8rem;
+    justify-content: flex-start;
     justify-content: center;
   }
 
@@ -326,7 +310,7 @@
   }
 
   .main-content {
-    padding: 8rem 32rem 3rem 32rem;
+    padding: 8rem 3rem 3rem 3rem;
     margin-bottom: -15.3rem;
   }
 
@@ -347,28 +331,39 @@
     padding-bottom: 1.5rem;
   }
 
+  .cat-gallery {
+    justify-content: center;
+  }
+
   .cats-img {
     margin: 8.8rem 7.2rem 9rem 0;
     width: 37.8rem;
     height: 37.8rem;
   }
 
-  .text-box button {
-    left: 70%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+  .cat-gallery > .cats-img:nth-child(3) {
+    margin-right: 0;
+  }
+
+  .text-box {
+    flex-direction: row;
+    align-items: center;
+    gap: 3rem;
+    justify-content: center;
   }
 
   .Subscribe-form {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    width: 70%;
     padding: 5rem 6rem;
   }
 
   #Subscribe-email {
     font-size: 1.6rem;
-    padding: 2rem 27rem 2rem 7rem;
+    padding: 2rem 17rem 2rem 7rem;
+    background-size: 2.4rem;
   }
 
   .Subscribe-icon {
@@ -377,9 +372,10 @@
   }
 
   .Subscribe-btn {
-    margin-left: -20rem;
-    margin-bottom: 1rem;
-    z-index: 10;
+    position: absolute;
+    right: 1%;
+    top: 50%;
+    transform: translateY(-50%);
   }
 
   .bottom-img {
@@ -390,9 +386,13 @@
   .left-footer {
     flex-direction: row;
     width: 100%;
-    padding: 4.2rem 32rem;
+    padding: 4.2rem;
     justify-content: space-between;
     align-items: center;
+  }
+
+  .test {
+    width: 100%;
   }
 
   .left-footer > img {
