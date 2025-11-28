@@ -306,33 +306,73 @@ a {
 
 /* 데스크톱 */
 @media (min-width: 768px) { 
+  .action-btn {
+    padding: 1.5vh 3vh;
+    font-size: 1.5rem;
+  }
   .header-nav {
-    height: 2vw;
-    padding: 1vw 4vw;
+    justify-content: space-around;
+    align-items: center;
+    height: 2vh;
+    padding: 3vh 4vh;
   }
   .main-logo {
-    width: 2vw;
+    width: 12vh;
   }
   .main-mb-btn {
     display: none;
   }
+  .menu-desktop-btn {
+    display: flex;
+    width: 36vh;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .menu-desktop-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .hero-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+  }
   .hero-content {
     display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   .hero-text {
     font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    text-align: start;
+    padding: 0 28vh 0;
   }
   .hero-section {
     display: flex;
     flex-direction: row;
+    width: 100%;
   }
   .hero-image {
-    width: 2vw;
+    width: 41vh;
+    top: 14vh;
+    right: -12vh;
   }
   .menu-desktop-btn,  /* 데스크톱 메뉴 보임 */
   .menu-desktop-link,
   .menu-download-btn {
-    display: flex; 
+    display: flex;
   }
   .menu-mb-btn { /* 데스크톱에서 모바일 메뉴버튼 숨김 */
     display: none;
