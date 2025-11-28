@@ -17,7 +17,7 @@
         <img src="./images/logo_h.svg" alt="ZADU타이틀" class="header-logo" />
         <!-- 모바일용 햄버거 메뉴 -->
         <div class="mobile-only">
-          <button class="nav-icon-btn">
+          <button type="button" class="nav-icon-btn">
             <img src="./images/menu.svg" alt="" />
           </button>
         </div>
@@ -30,7 +30,7 @@
               <a href="#">About</a>
               <a href="#">Support</a>
             </div>
-            <button class="btn">Download</button>
+            <button type="button" class="btn">Download</button>
           </div>
         </div>
       </nav>
@@ -132,7 +132,7 @@
                   industry.
                 </p>
               </div>
-              <button class="btn">Learn More</button>
+              <button type="button" class="btn">Learn More</button>
             </div>
           </div>
 
@@ -152,7 +152,11 @@
                 id="Subscribe-email"
                 placeholder="Enter your e-mail address"
               />
-              <button class="btn Subscribe-btn" id="subscribe-btn">
+              <button
+                type="submit"
+                class="btn Subscribe-btn"
+                id="subscribe-btn"
+              >
                 Subscribe
               </button>
             </div>
@@ -168,16 +172,28 @@
       <div class="d-flex flex-col left-footer">
         <img src="./images/logo_h.svg" alt="푸터 로고" />
         <div class="d-flex flex-row">
-          <button class="d-flex justify-center item-center footer-btn">
+          <button
+            type="button"
+            class="d-flex justify-center item-center footer-btn"
+          >
             <img src="./images/blog.svg" alt="블로그 버튼" />
           </button>
-          <button class="d-flex justify-center item-center footer-btn">
+          <button
+            type="button"
+            class="d-flex justify-center item-center footer-btn"
+          >
             <img src="./images/instagram.svg" alt="인스타 버튼" />
           </button>
-          <button class="d-flex justify-center item-center footer-btn">
+          <button
+            type="button"
+            class="d-flex justify-center item-center footer-btn"
+          >
             <img src="./images/facebook.svg" alt="페이스북 버튼" />
           </button>
-          <button class="d-flex justify-center item-center footer-btn">
+          <button
+            type="button"
+            class="d-flex justify-center item-center footer-btn"
+          >
             <img src="./images/youtube.svg" alt="유튜브 버튼" />
           </button>
         </div>
@@ -192,6 +208,23 @@
         </div>
       </div>
     </footer>
+
+    <div class="non-mobile">
+      <a href="#" class="top-btn">
+        <svg
+          width="40"
+          height="40"
+          viewBox="0 0 40 40"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M12.35 25.6833L20 18.0499L27.65 25.6833L30 23.3333L20 13.3333L10 23.3333L12.35 25.6833Z"
+            fill="currentColor"
+          />
+        </svg>
+      </a>
+    </div>
 
     <!-- 모달 -->
     <div
