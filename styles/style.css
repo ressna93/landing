@@ -24,7 +24,6 @@
 
 /* header > nav */
 .nav-box {
-  display: flex;
   align-items: center;
   justify-content: space-between;
 }
@@ -32,7 +31,6 @@
   width: 92px;
 }
 .menu-list {
-  display: flex;
   align-items: center;
   justify-content: center;
   padding: 40px 15px;
@@ -55,7 +53,6 @@
     width: 149px;
   }
   .header-menu {
-    display: flex;
     align-items: center;
     justify-content: space-between;
   }
@@ -102,12 +99,10 @@ h2 {
 
 /* header > Hero Section */
 .header-hero-box {
-  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  flex-direction: column;
   gap: 10px;
-  overflow: hidden;
   background-color: brown;
 }
 .hero-article-box {
@@ -135,9 +130,6 @@ h2 {
     justify-content: center;
   }
 }
-.hero-article-box .btn-box {
-  display: flex;
-}
 .box-cat {
   width: 197px;
   height: 422px;
@@ -153,38 +145,31 @@ h2 {
 
 /* 2층: Card Section */
 .lying-cat-box {
-  display: flex;
   align-items: center;
   max-width: 100%;
   width: 326px;
   height: 190px;
   margin: 0 auto;
-  overflow: hidden;
   box-shadow: var(--shadow-lg);
 }
 .lying-cat {
+}
+img {
   object-fit: cover;
 }
 
 /* 3층: Gallery Section */
 .gallery-img-box {
-  display: flex;
   margin: 0 auto;
-  overflow: hidden;
 }
 .gallery-img-inner-box {
-  display: flex;
   gap: 4.5rem;
   box-sizing: border-box;
 }
 .gallery-img {
   width: 260px;
   height: 260px;
-  overflow: hidden;
   box-shadow: var(--shadow-md);
-}
-.gallery-article-bottom-box {
-  display: flex;
 }
 @media (min-width: 768px) {
   .gallery-img {
@@ -201,7 +186,6 @@ h2 {
   background-size: 100%;
 }
 .section-subscribe {
-  display: flex;
   height: 200px;
   background-color: var(--dark-bg);
   box-sizing: border-box;

@@ -96,17 +96,8 @@ img {
   cursor: pointer;
 }
 
-.bg-orange {
-  background-color: var(--accent-color);
-}
-.bg-orange:hover {
-  background-color: var(--accent-hover);
-}
-.color-orange {
-  color: var(--accent-color);
-}
-.color-white {
-  color: var(--text-white);
+.flex {
+  display: flex;
 }
 .font-bold {
   font-weight: 700;
@@ -114,8 +105,17 @@ img {
 .text-left {
   text-align: left;
 }
-.border-radius {
-  border-radius: 1.125rem;
+.color-white {
+  color: var(--text-white);
+}
+.color-orange {
+  color: var(--accent-color);
+}
+.bg-orange {
+  background-color: var(--accent-color);
+}
+.bg-orange:hover {
+  background-color: var(--accent-hover);
 }
 .border-radius {
   border-radius: 1.125rem;
@@ -125,4 +125,7 @@ img {
   .border-radius {
     border-radius: 1.875rem;
   }
+}
+.overflow-hidden {
+  overflow: hidden;
 }
