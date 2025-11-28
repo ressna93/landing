@@ -169,7 +169,7 @@ h1,
 /* 텍스트 옆 버튼 */
 .text-button {
   display: flex;
-  padding-top: 50px;
+  padding: 50px;
   justify-content: center;
 }
 .body-text2 {
@@ -190,7 +190,7 @@ h1,
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 48px;
+  position: relative;
 }
 
 .e-mail {
@@ -198,7 +198,6 @@ h1,
   background-color: gray;
   width: 800px;
   height: 150px;
-  margin-top: 48px;
   border-radius: 30px;
   position: relative;
   z-index: 0;
@@ -218,14 +217,14 @@ h1,
   flex-direction: row;
   justify-content: left;
   align-items: center;
-  margin-bottom: 1.3rem;
+  margin-bottom: 20xp;
 }
 
 .email img {
   align-items: center;
-  width: 1.3rem;
-  height: 1.3rem;
-  margin: 1rem;
+  width: 20px;
+  height: 20px;
+  margin: 16px;
 }
 
 .email input {
@@ -234,18 +233,17 @@ h1,
   font-size: 10px;
   width: 70%;
 }
-.blog {
-  position: relative;
-}
+
 .blog::after {
   content: "";
   position: absolute;
   width: 100%;
-  height: 500px;
+  height: 336px;
   margin-top: 352px;
   background-image: url("./images/up-cat.png");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   pointer-events: none;
   z-index: -1;
 }
