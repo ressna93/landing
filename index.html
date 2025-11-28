@@ -95,10 +95,16 @@
         Lorem Ipsum is simply dummy text of the printing and typesetting
         industry. Lorem Ipsum has been the industry's standard dummy text
       </h3>
-      <span class="input-field">
-        <img src="images/mail.svg" alt="메일" class="mail" />
-        <p>Enter your e-mail address</p>
-      </span>
+      <input
+        type="text"
+        class="e-mail"
+        placeholder="Enter your e-mail address"
+        style="
+          background: url('images/mail.svg') no-repeat 5px center;
+          background-size: 27px;
+          padding-left: 40px;
+        "
+      />
       <button type="button" class="btn btn-subscribe">Subscribe</button>
     </form>
     <img src="images/up-cat.png" alt="냥셀카" class="selfie-cat" />
@@ -111,10 +117,18 @@
         <li>Terms of Use</li>
       </div>
       <div class="social-icon">
-        <img src="images/blog.svg" alt="블로그" />
-        <img src="images/instagram.svg" alt="인스타" />
-        <img src="images/facebook.svg" alt="페북" />
-        <img src="images/youtube.svg" alt="유튜브" />
+        <button type="button" class="blog">
+          <img src="images/blog.svg" alt="블로그" />
+        </button>
+        <button type="button" class="instagram">
+          <img src="images/instagram.svg" alt="인스타" />
+        </button>
+        <button type="button" class="facebook">
+          <img src="images/facebook.svg" alt="페북" />
+        </button>
+        <button type="button" class="youtube">
+          <img src="images/youtube.svg" alt="유튜브" />
+        </button>
       </div>
     </footer>
   </body>
