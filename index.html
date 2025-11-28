@@ -9,7 +9,7 @@
   <body>
     <header>
       <nav>
-        <img class="logo" src="images/logo_h.png" alt="logo" />
+        <img class="logo-img" src="images/logo_h.png" alt="logo" />
         <div class="nav-div">
           <p>Home</p>
           <p>About</p>
@@ -18,7 +18,7 @@
         </div>
       </nav>
       <div class="header-p">
-        <div class="hpt">
+        <div class="header-p-text">
           <h1>Lorem Ipsum is simply <br />dummy text of the printing and</h1>
           <h5>
             Lorem Ipsum is simply dummy text of the printing and
@@ -32,7 +32,7 @@
       </div>
     </header>
     <main>
-      <div class="bed">
+      <div class="div-bed">
         <img class="bed-cat" src="images/img_4.jpg" alt="bed-cat" />
         <div class="bed-text">
           <h1>
@@ -45,7 +45,7 @@
           </h5>
         </div>
       </div>
-      <div class="dummy">
+      <div class="div-dummy">
         <h1 style="color: #d97652">dummy text of the printing and dummy</h1>
         <h5>
           Lorem Ipsum is simply <b>dummy text</b> of the printing and
@@ -54,9 +54,9 @@
         </h5>
       </div>
       <div class="img-box">
-        <img class="ci" src="images/img_1.jpg" alt="img_1" />
-        <img class="ci" src="images/img_2.jpg" alt="img_2" />
-        <img class="ci" src="images/img_3.jpg" alt="img_3" />
+        <img class="ci" src="images/img_1.jpg" alt="cat1" />
+        <img class="ci" src="images/img_2.jpg" alt="cat2" />
+        <img class="ci" src="images/img_3.jpg" alt="cat3" />
       </div>
       <div class="learn">
         <div>
@@ -68,10 +68,10 @@
             Ipsum is simply dummy text of the printing and typesetting industry.
           </h5>
         </div>
-        <button class="l-btn">learn more</button>
+        <button class="learn-btn">learn more</button>
       </div>
-      <div class="Subscribe">
-        <div class="su-text">
+      <div class="div-subscribe">
+        <div class="subscribe-text">
           <h1>Subscribe to our Blog post</h1>
           <h5>
             Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -82,16 +82,57 @@
         <div class="input-box">
           <input
             type="email"
-            placeholder="            Enter your e-mail address"
-          />
-          <button
-            type="button"
-            class="su-btn"
-            onClick="location.href='subscribe.html'"
-          >
-            Subscribe
-          </button>
-          <img class="su-img" src="images/mail.svg" alt="mail" />
+            placeholder="            Enter your e-mail address" required
+          />   
+                <div class="modal hidden" id="subscribe-modal">
+              
+        <div class="modal-popup">
+          <div class="modal-dialog">
+            <button
+              type="button"
+              class="modal-close-btn"
+              aria-label="닫기"
+            ></button>
+            <img
+              src="./images/cat-subscribe.png"
+              alt="구독좋아요"
+              class="modal-image"
+            />
+            <h2>Thank You!</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing industry.</p>
+
+            <button type="button" class="btn btn-primary modal-ok-btn">
+              OK! I Love ZADU
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+          <script>
+            // 필요한 요소 선택
+            const modal = document.getElementById("my-modal");
+            const subscribeBtn = document.getElementById("subscribe-btn");
+            const closeBtn = document.querySelector(".modal-close-btn");
+
+            // 1. Subscribe 버튼 클릭 시 모달 표시
+            subscribeBtn.addEventListener("click", function (event) {
+              event.preventDefault(); // 폼 제출 방지
+              modal.classList.remove("hidden");
+            });
+
+            // 2. 닫기 버튼 클릭 시 모달 숨김
+            closeBtn.addEventListener("click", function () {
+              modal.classList.add("hidden");
+            });
+
+            // 3. 오버레이 클릭 시 모달 숨김
+            modal.addEventListener("click", function (event) {
+              if (event.target === modal) {
+                modal.classList.add("hidden");
+              }
+            });
+          </script>
+          <img class="subscribe-img" src="images/mail.svg" alt="mail" />
         </div>
       </div>
     </main>
