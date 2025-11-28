@@ -21,8 +21,6 @@
     margin: 50px auto 0 auto;
   }
 }
-.section-box {
-}
 /* header > nav */
 .nav-box {
   align-items: center;
@@ -211,7 +209,12 @@ h2 {
   padding: 30px;
   background-color: var(--dark-bg);
   box-sizing: border-box;
-  transform: translateY(-150px);
+  transform: translateY(-250px);
+}
+@media (min-width: 768px) {
+  .section-subscribe {
+    transform: translateY(-150px);
+  }
 }
 
 .subscribe-input-box {
@@ -220,12 +223,20 @@ h2 {
 }
 .input-box {
   align-items: center;
+  position: relative;
 }
-.mail-icon {
-  margin: 0 5px;
+.mail-icon-box {
+  position: absolute;
+  top: 20px;
+  left: 5px;
 }
 input[type="email"] {
+  width: 100%;
   padding: 12px;
+  margin-left: 40px;
+}
+.btn-subscribe {
+  z-index: 1;
 }
 @media (min-width: 768px) {
   .section-subscribe {
@@ -243,7 +254,7 @@ input[type="email"] {
     border: 5px solid var(--white-color);
   }
   .mail-icon {
-    margin-left: 20px;
+    left: 20px;
   }
   input[type="email"] {
     max-width: 100%;
@@ -266,6 +277,7 @@ input[type="email"] {
     justify-content: flex-end;
   }
 }
+인풋 박스가 테블릿 버전 이상에서 반응형에 따라 줄어들면 버튼이 안 보여져 자연스럽게 보이고 싶은데 어떡하면 좋을까?
 
 /* footer sns icon size */
 .icon {
