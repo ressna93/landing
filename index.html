@@ -56,56 +56,56 @@
           <button class="download">Download</button>
         </div>
       </nav>
-      <!-- 전체 문구 -->
-      <div class="hero-text">
-        <!-- 첫 번째 문구 -->
-        <p class="header-title">
-          Lorem Ipsum is simply dummy text of the printing and
-        </p>
-        <!-- 두 번째 문구 -->
-        <p class="header-subtext">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown
-        </p>
-        <button class="download_btn">Download</button>
-        <img src="./images/box-cat.png" alt="박스고양이" class="box-cat" />
+      <div class="header-text">
+        <!-- 전체 문구 -->
+        <div class="hero-text">
+          <!-- 첫 번째 문구 -->
+          <p class="header-title">
+            Lorem Ipsum is simply
+            <br />
+            dummy text of the printing and
+          </p>
+          <!-- 두 번째 문구 -->
+          <p class="header-subtext">
+            Lorem Ipsum is simply dummy text of the printing and
+            <br />
+            typesetting industry.
+            <br />
+            Lorem Ipsum has been the industry's standard dummy text
+            <br />
+            ever since the 1500s, when an unknown
+          </p>
+          <button class="download_btn">Download</button>
+        </div>
+        <div class="hero-box-cat">
+          <img src="./images/box-cat.png" alt="박스고양이" class="box-cat" />
+        </div>
       </div>
     </header>
     <!-- 메인 영역 -->
     <main class="main">
       <!-- 섹션 1 -->
       <section class="intro-section">
-        <img src="./images/img_4.jpg" alt="침대고양이" class="bedroom-cat" />
-        <p class="intro-title">
-          Lorem Ipsum is simply
-          <br />
-          dummy text of the printing
-          <br />
-          and dummy text
-        </p>
-        <p class="intro-description">
-          Lorem Ipsum is simply dummy text of the
-          <br />
-          printing and typesetting industry.
-        </p>
-        <p class="highlight-title">
-          dummy text of the printing
-          <br />
-          and dummy
-        </p>
+        <div class="intro-text">
+          <img src="./images/img_4.jpg" alt="침대고양이" class="bedroom-cat" />
+          <div class="intro-container">
+            <p class="intro-title">
+              Lorem Ipsum is simply dummy text of the printing and dummy text
+            </p>
+            <p class="intro-description">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.
+            </p>
+          </div>
+        </div>
+        <p class="highlight-title">dummy text of the printing and dummy</p>
         <p class="highlight-text">
           Lorem Ipsum is simply
           <span class="highlight">dummy text</span>
-          of the
+          of the printing and typesetting industry.
           <br />
-          printing and typesetting industry.
-          <br />
-          Lorem Ipsum has been the industry's
-          <br />
-          standard dummy text ever since the 1500s,
-          <br />
-          when an unknown
+          Lorem Ipsum has been the industry's standard dummy text ever since the
+          1500s, when an unknown
         </p>
       </section>
 
@@ -124,43 +124,55 @@
             class="cat-back-view"
           />
         </div>
-        <p class="img-caption">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry.<br>
-          Lorem Ipsum has been the industry's, standard dummy text ever
-          since the 1500s, when an unknown<br> Ipsum is simply dummy text of the
-          printing and typesetting industry.
-        </p>
-        <button class="learn-more">Learn More</button>
+        <div class="img-container">
+          <p class="img-caption">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+            <br />
+            Lorem Ipsum has been the industry's, standard dummy text ever since
+            the 1500s, when an unknown
+            <br />
+            Ipsum is simply dummy text of the printing and typesetting industry.
+          </p>
+          <button class="learn-more">Learn More</button>
+        </div>
       </section>
 
       <!-- 섹션 3 -->
       <section class="info-text">
         <div class="blog-cta">
-          <p class="blog-cta-title">Subscribe to our Blog post</p>
+          <div class="blog-description">
+            <p class="blog-cta-title">Subscribe to our Blog post</p>
 
-          <p class="blog-cta-text">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-          </p>
-
-          <div class="email-wrap">
-            <img src="./images/mail.svg" alt="메일 아이콘" class="mail-icon" />
-            <input
-              type="email"
-              id="user-email-input"
-              placeholder="Enter your e-mail address"
-            />
+            <p class="blog-cta-text">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+            </p>
           </div>
-
-          <button class="subscribe-bt">Subscribe</button>
+          <div class="email-description">
+            <div class="email-wrap">
+              <img
+                src="./images/mail.svg"
+                alt="메일 아이콘"
+                class="mail-icon"
+              />
+              <input
+                type="email"
+                id="user-email-input"
+                placeholder="Enter your e-mail address"
+              />
+            </div>
+            <button class="subscribe-bt">Subscribe</button>
+          </div>
         </div>
       </section>
     </main>
 
     <!-- 하단 -->
     <footer class="footer">
-      <img src="./images/up-cat.png" alt="위에 보는 고양이" class="up-cat" />
+      <div class="up-cat-container">
+        <img src="./images/up-cat.png" alt="위에 보는 고양이" class="up-cat" />
+      </div>
       <div class="footer-container">
         <div class="footer-box">
           <img src="./images/logo_h.png" alt="자두 로고" class="zadu" />
