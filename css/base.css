@@ -15,6 +15,8 @@
   /* 기타 */
   --border-color: #eee; /* 테두리 색상 */
   --modal-Bcolor: rgba(0, 0, 0, 0.6); /* 모달 백그라운드 배경*/
+  --top-btn-color: #c4c4c4;
+  --top-btn-hover-color: #767676;
 
   /* 그림자 효과 */
   --shadow-sm: 0 2px 5px rgba(0, 0, 0, 0.1);
