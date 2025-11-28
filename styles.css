@@ -251,7 +251,7 @@ a {
 .hamburger-menu-toggle:checked ~ .nav-item-list,
 .hamburger-menu-group:focus-within > .nav-item-list {
   transform: translateY(0);
-  opacity: 1;
+  display: flex;
 }
 .nav-item-list > .nav-item {
   background-color: var(--header-bg-color);
@@ -275,13 +275,12 @@ a {
 
 /* nav items */
 .nav-item-list {
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
   position: absolute;
   right: 0;
   top: var(--fixed-nav-height-md);
-  opacity: 0;
 }
 
 /* hero */
@@ -638,7 +637,6 @@ a {
     transition: none;
     transform: translateY(0);
     top: 0;
-    opacity: 1;
     gap: 1.875rem;
   }
   .nav-item-list > .nav-item {
