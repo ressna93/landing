@@ -150,3 +150,15 @@ div.slide {
   box-shadow: var(--shadow-gt);
   border-radius: 10px;
 }
+
+/*본문3*/
+div.text_container_three {
+  text-align: left;
+  font-size: 16px;
+  width: 326px;
+  height: 186px;
+  margin: auto;
+}
+p.text_seven {
+  text-align: left;
+}
