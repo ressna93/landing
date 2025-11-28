@@ -57,7 +57,7 @@ img {
 }
 
 .btn-primary:hover {
-  background-color: var(--accent-color);
+  background-color: var(--accent-hover);
 }
 
 .btn-outline {
