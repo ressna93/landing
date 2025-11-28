@@ -29,6 +29,12 @@ input:focus-visible {
   outline: none;
   border: none;
 }
+h2 {
+  color: var(--accent-color);
+}
+strong {
+  color: var(--accent-color);
+}
 /* 기본 부모 - 끝 - */
 
 /* 모바일 반응형 - 시작 - */
@@ -103,7 +109,7 @@ input:focus-visible {
   box-shadow: var(--shadow-lg);
   margin-top: 2vw;
   margin-bottom: 2vw;
-  object-fit: cover;
+  width: 75%;
 }
 .card-section-text {
   display: flex;
@@ -112,6 +118,13 @@ input:focus-visible {
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
+}
+.middle-text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: var(--text-color);
+
 }
 /* 카드 섹션 - 끝 - */
 
@@ -138,6 +151,7 @@ input:focus-visible {
   width: 82%;
   box-shadow: var(--shadow-lg);
 }
+
 /* 갤러리 섹션 - 끝 - */
 
 /* 구독 섹션 - 시작 - */
@@ -404,11 +418,29 @@ a {
   .card-section-main {
     width: 40vh;
   }
-
+  .gallery-section {
+    overflow-x: auto;
+  }
+  .gallery-section-img {
+    width: 50%;
+  }
 }
 @media (min-width: 1024px) {
   .hero-text {
     width: 50%;
+  }
+  .card-section-main {
+    width: 40vh;
+  }
+  .gallery-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    overflow-x: auto;
+  }
+  .gallery-section-img {
+    width: 25%;
   }
 }
 /* 데스크톱 - 끝 - */
