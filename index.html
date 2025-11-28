@@ -9,7 +9,9 @@
   </head>
   <body>
     <div class="container">
+      <!------------------------------------------------------------------------>
       <!---/////header/////-->
+      <!------------------------------------------------------------------------>
       <div class="header">
         <div class="zadu-logo">
           <img src="./images/logo_h.png" alt="ZADU 로고" />
@@ -21,11 +23,43 @@
             <button type="button" class="btn-orange">Download</button>
           </div>
           <!--///hamburger///-->
-          <button type="button" class="btn-hamburger">☰</button>
+          <button type="button" class="btn-hamburger" aria-label="메뉴">
+            <svg
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M4 16H28"
+                stroke="#263140"
+                stroke-width="2"
+                stroke-linecap="square"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M4 8H28"
+                stroke="#263140"
+                stroke-width="2"
+                stroke-linecap="square"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M4 24H28"
+                stroke="#263140"
+                stroke-width="2"
+                stroke-linecap="square"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+
         </div>
       </div>
-
+      <!------------------------------------------------------------------------>
       <!--/////MAIN/////-->
+      <!------------------------------------------------------------------------>
       <div class="main">
         <!--///hero-section///-->
         <div class="hero-section">
@@ -37,13 +71,21 @@
                 <span class="hero-text-bold"> of the printing and</span>
               </div>
             </p>
-            <p class="hero-text-regular">
-              Lorem Ipsum is simply dummy text
-              <span>of the printing and typesetting industry.</span>
-              <span>Lorem Ipsum has been the industry's</span>
-              <span>standard dummy text ever since the 1500s,</span>
-              <span>when an unkwon</span>
-            </p>
+            <div class="hero-text-regular">
+              <p class="hero-subtext-mobile">
+                <span>Lorem Ipsum is simply dummy text</span>
+                <span>of the printing and typesetting industry.</span>
+                <span>Lorem Ipsum has been the industry's</span>
+                <span>standard dummy text ever since the 1500s,</span>
+                <span>when an unkwon</span>
+              </span>
+              <p class="hero-subtext-desktop">
+                <span>Lorem Ipsum is simply dummy text of the printing and </span>
+                <span>typesetting industry.</span>
+                <span>Lorem Ipsum has been the industry's standard dummy text</span>
+                <span> ever since the 1500s, when an unkwon</span>
+               </p>
+            </div>
             <button type="button" class="btn-orange down-btn">Download</button>
           </div>
           <div class="box-cat">
@@ -53,7 +95,6 @@
         <!--///card-section///-->
         <div class="card-section">
           <div class="card-cat-img">
-
             <img src="./images/img_4.png" alt="침대에 누워있는 고양이" />
           </div>
           <div class="card-text-contents">
@@ -62,12 +103,18 @@
               <span>dummy text of the printing</span>
               <span>and dummy text</span>
             </p>
-            <p class="card-text Regular">
-              Lorem Ipsum is simply dummy text of the
-              <span >printing and typesetting 
+            <div class="card-subtext-mobile">
+              <p class="card-text Regular">
+                <span>Lorem Ipsum is simply dummy text of the</span>
+                <span>printing and typesetting industry</span>
+              </p>
+            </div>
+            <div class="card-subtext-desktop">
+              <p class="card-text Regular">
+                <span>Lorem Ipsum is simply dummy text of the printing and typesetting</span>
                 <span>industry</span>
-              </span>
-             </p>
+              </p>
+            </div>
           </div>
         </div>
         <!--///gallery-section///-->
@@ -96,20 +143,31 @@
             <img src="./images/img_3.jpg" alt="고양이 앞모습" />
           </div>
           <div class="gal-bottom">
-            <div class="gal-bottom-text">
-              <div>
-                <span class="gal-subtext-flex-left">
-                  Lorem Ipsum is simply dummy text of the
-                  <span>printing and typesetting industry.</span>
-                </span>
-                <span class="gal-subtext-flex-left">Lorem Ipsum has been the industry's
-                  <span>standard dummy text ever since the 1500s,</span>
-                  <span>when an unkwon</span>
-                </span>
-                <span class="gal-subtext-flex-left">Ipsum is simply dummy text of the printing
-                  <span>and typesetting industry</span>
-                </span>
-              </div>
+            <div class="gal-bottext-mobile">
+              <p class="gal-bottext-flex-left">
+                <span>Lorem Ipsum is simply dummy text of the </span>
+                <span>printing and typesetting industry.</span>
+                <span>Lorem Ipsum has been the industry's</span>
+                <span>standard dummy text ever since the 1500s,</span>
+                <span>when an unkwon</span>
+                <span>Lorem Ipsum is simply dummy text of the printing </span>
+                <span>and typesetting industry.</span>
+              </span>
+            </div>
+            <div class="gal-bottext-tablet">
+              <p class="gal-bottext-flex-left">
+                <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+                <span>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</span>
+                <span> when an unkwon</span>
+                <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+              </p>
+            </div>
+            <div class="gal-bottext-desktop">
+              <p class="gal-bottext-flex-left">
+                <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+                <span>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unkwon</span>
+                <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+              </p>
             </div>
             <div class="learn-btn">
               <button type="button" class="btn-orange">Learn More</button>
@@ -146,13 +204,15 @@
                 </div>
               </div>
               <div class="button-subscribe">
-                <button type="button" class="subscribe-btn">Subscribe</button>
+                <button type="button" class="subscribe-btn" id="subscribe-btn">Subscribe</button>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <!------------------------------------------------------------------------>
       <!--/////Footer/////-->
+      <!------------------------------------------------------------------------>
       <div class="footer">
         <div class="bot-logo-icons">
           <img src="./images/logo_h.png" alt="ZADU 로고" />
@@ -180,5 +240,15 @@
         </div>
       </div>
     </div>
+    <!------------------------------------------------------------------------>
+    <!--/////top-hover/////-->
+    <!------------------------------------------------------------------------>
+    <a href="#top">
+      <button type="button" class="top-btn">
+         <svg width="20" height="13" viewBox="0 0 20 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M2.35 12.35L10 4.71667L17.65 12.35L20 10L10 0L0 10L2.35 12.35Z" fill="#767676"/>
+         </svg>
+      </button>
+    </a>
   </body>
 </html>

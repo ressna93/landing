@@ -49,12 +49,11 @@ body {
 a {
   cursor: pointer;
 }
-.m-bot {
-  margin-bottom: 2rem;
-}
+
 .container {
   display: flex;
   flex-direction: column;
+  transition: all 0.3s ease;
 }
 /*-------------------------*/
 /* =======font/color======= */
@@ -116,7 +115,7 @@ a {
   cursor: pointer;
   position: absolute;
   right: 1rem;
-  top: 40%;
+  top: 50%;
   transform: translateY(-50%);
   z-index: 3;
 }
@@ -135,17 +134,29 @@ a {
 .hero-text-contents {
   margin: 2rem 0 2rem 0;
 }
+
 .box-cat {
   width: 197px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 26rem;
+  overflow: hidden;
 }
 .box-cat img {
   width: 100%;
 }
 .hero-dummy-text {
   margin: -1.7rem 0 2rem 0;
+}
+.hero-subtext-mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.hero-subtext-desktop {
+  display: none;
 }
 .hero-text-bold {
   font-family: "NotosansB";
@@ -159,12 +170,10 @@ a {
 .hero-text-regular {
   font-family: "Notosans";
   line-height: 1.3;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
 }
-
+.down-btn {
+  margin-top: 1rem;
+}
 /*-------------------------*/
 /* card-section */
 /*-------------------------*/
@@ -191,6 +200,9 @@ a {
   display: flex;
   flex-direction: column;
   text-align: left;
+}
+.card-subtext-desktop {
+  display: none;
 }
 /*-------------------------*/
 /* gallery-section */
@@ -221,19 +233,32 @@ a {
   display: flex;
   flex-direction: column;
 }
-.gal-bottom-text {
+
+.gal-bottext-flex-left {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  line-height: 1.6;
+}
+.gal-bottext-mobile {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: left;
-  font-family: "Notosans";
-  line-height: 1.5;
-  margin-bottom: 1.5rem;
 }
-.gal-subtext-flex-left {
+.gal-bottext-tablet {
   display: flex;
   flex-direction: column;
+  align-items: center;
   text-align: left;
+  display: none;
+}
+.gal-bottext-desktop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  display: none;
 }
 .image-gal {
   display: inline-flex;
@@ -373,6 +398,7 @@ a {
   display: flex;
   flex-direction: row;
   gap: 1rem;
+  cursor: pointer;
 }
 .icon {
   background-color: var(--icons-color);
@@ -401,4 +427,9 @@ a {
   z-index: 2;
   gap: 0.5rem;
   margin-right: 1rem;
+}
+/*=========================================*/
+/*===== top-hover =====*/
+.hover-container {
+  display: none;
 }

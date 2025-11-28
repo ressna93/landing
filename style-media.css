@@ -1,4 +1,4 @@
-@media (min-width: 775px) {
+@media (min-width: 790px) {
   .header {
     padding: 2.5rem;
   }
@@ -25,8 +25,11 @@
     width: 8rem;
     height: 2.7rem;
   }
+  /*-------------------------*/
+  /* hreo-section */
+  /*-------------------------*/
   .hero-text-contents {
-    margin: -4rem 0 1rem 0;
+    margin-bottom: 5em;
   }
   .hero-dummy-text {
     display: flex;
@@ -39,28 +42,34 @@
     text-align: left;
     font-size: 2.2rem;
   }
-  .hero-text-regular {
+  .hero-subtext-mobile {
+    display: none;
+  }
+  .hero-subtext-desktop {
+    display: flex;
+    flex-direction: column;
     align-items: flex-start;
     text-align: left;
-    font-size: 1.1rem;
   }
   .down-btn {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     text-align: left;
+    margin-top: 2rem;
   }
   .hero-section {
     flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 5rem;
-    margin-top: -1rem;
   }
   .box-cat {
-    width: 15rem;
+    width: 16rem;
     margin-top: 0;
+    height: 29rem;
   }
+
   /*-------------------------*/
   /* card-section */
   /*-------------------------*/
@@ -73,7 +82,6 @@
   .card-cat-img {
     width: 370px;
   }
-
   /*-------------------------*/
   /* gallery-section */
   /*-------------------------*/
@@ -107,17 +115,24 @@
   .gal-bottom {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: row;
     gap: 3.5rem;
-  }
-  .gal-subtext-flex-left {
-    flex-direction: row;
+    margin-bottom: 2rem;
   }
 
   .learn-btn {
     height: 50%;
   }
-
+  .gal-bottext-mobile {
+    display: none;
+  }
+  .gal-bottext-tablet {
+    display: block;
+  }
+  .gal-bottext-desktop {
+    display: none;
+  }
   /*-------------------------*/
   /* subscribe-section */
   /*-------------------------*/
@@ -162,12 +177,17 @@
     flex-direction: row;
     align-items: center;
   }
+  .subscribe-section::after {
+    margin-top: 12rem;
+    height: 18rem;
+  }
   /*=========================================*/
   /*===== Footer =====*/
   .bottom {
     display: none;
   }
   .footer {
+    margin-top: 15.5rem;
     justify-content: center;
     align-items: center;
   }
@@ -175,5 +195,37 @@
     flex-direction: row;
     gap: 26rem;
     margin: 0;
+  }
+  /*=========================================*/
+  /*===== top-hover =====*/
+
+  .top-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 3rem;
+    height: 3rem;
+    background-color: #ffffff63;
+    border-radius: 50%;
+    border: 1px solid gray;
+  }
+}
+
+@media (min-width: 890px) {
+  .card-subtext-desktop {
+    display: block;
+  }
+  .card-subtext-mobile {
+    display: none;
+  }
+
+  .gal-bottext-tablet {
+    display: none;
+  }
+  .gal-bottext-desktop {
+    display: block;
   }
 }
