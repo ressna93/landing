@@ -115,7 +115,7 @@ b {
   color: #d97652;
 }
 
-.learn {
+.div-learn {
   display: flex;
   text-align: start;
   margin-top: 50px;
@@ -171,9 +171,11 @@ input {
   position: relative;
   top: -130px;
   opacity: 0.8;
+  width: 100%;
+  height: 300px;
 }
 
-.ve-img {
+.vector-img {
   position: relative;
   left: 95%;
   bottom: 200px;
@@ -182,12 +184,12 @@ input {
   color: #c4c4c4;
   border-radius: 50%;
   width: 20px;
-  height: 20px;
+  height: 13px;
   border: 1px solid #c4c4c4;
   padding: 10px;
 }
 
-.ve-img:hover {
+.vector-img:hover {
   color: #767676;
 }
 
