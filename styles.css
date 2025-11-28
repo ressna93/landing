@@ -311,10 +311,14 @@ strong {
   height: 24px;
   color: var(--text-color);
 }
+img,
 .action-btn, /* 부드러운 모션 */
 .social-icon,
+.subscribe-container,
+.subscribe-section,
+.subscribe-text,
+.e-mail-form,
 .footer-bottom a,
-img,
 .gallery-section,
 .main-nav a {
   transition: all 0.3s ease;
@@ -452,6 +456,37 @@ a {
   }
   .gallery-section-img {
     width: 25%;
+  }
+  .subscribe-container {
+    height: 9vh;
+  }
+  .subscribe-section {
+    display: flex;
+    height: 16%;
+    width: 65%;
+    padding: 0 1vh;
+    flex-direction: row;
+    align-items: center;
+    gap: 1vh;
+    justify-content: space-evenly;
+  }
+.subscribe-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .e-mail-form{
+    display: flex;
+    height: 1vh;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 2vh;
+  }
+  #subscribe-btn {
+    position: absolute;
+    right: 1.5vh;
+    top: 5.72vh;
   }
   .footer-section{
     display: flex;
