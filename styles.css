@@ -79,6 +79,7 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 10px;
+  text-align: center;
 }
 .btn-download {
   background-color: orange;
@@ -175,7 +176,17 @@ h1,
 .body-text2 {
   font-size: 14px;
 }
-.sub-buuton {
+.learn-button {
+  background-color: orangered;
+  color: white;
+  border-radius: 56px;
+  text-align: center;
+  width: 147px;
+  height: 35px;
+  margin: 14px;
+}
+
+.sub-button {
   background-color: orangered;
   color: white;
   border-radius: 56px;
@@ -295,7 +306,7 @@ h1,
   width: 300px;
   height: 300px;
   border-radius: 30px;
-  background-color: var(--header-bg-color);
+  background-color: #2e6ff2;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -345,7 +356,10 @@ h1,
   font-size: 14px;
   font-weight: 600;
 }
-
 .modal-ok-btn:hover {
   background-color: var(--accent-hover);
+}
+.modal-ok-btn {
+  background-color: var(--accent-color);
+  color: #ffffff;
 }
