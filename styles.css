@@ -456,6 +456,36 @@ input:placeholder-shown {
   display: none;
 }
 
+/* ----------------모바일에서 갤러리 슬라이드--------------------- */
+
+@media (max-width: 767px) {
+  .image-gallery:hover {
+    animation: slideRight 8s linear infinite;
+    overflow: visible;
+  }
+}
+@keyframes slideRight {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(calc(-820px + 70vw));
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+/* ---------------------tablet 사이즈---------------------------- */
+
+@media (min-width: 768px) {
+  .info-text-group {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
 /*----------------------- PC 사이즈 ------------------------------*/
 
 @media (min-width: 1024px) {
@@ -594,6 +624,7 @@ input:placeholder-shown {
   .image-cat {
     width: 378px;
     height: 378px;
+    transition: 0.5s ease;
   }
   .cat-gallery-container {
     display: flex;
@@ -603,6 +634,10 @@ input:placeholder-shown {
 
   .learn-btn {
     width: 147px;
+  }
+
+  .image-gallery > img:hover {
+    scale: 1.2;
   }
 
   /* 5.후원 */
