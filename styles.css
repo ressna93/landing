@@ -30,6 +30,15 @@ p {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:active {
+  color: inherit;
+}
+
 body {
   min-width: 390px;
   background-color: var(--main-bg-color);
