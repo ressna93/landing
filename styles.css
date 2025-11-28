@@ -103,7 +103,7 @@ body {
   cursor: pointer;
 }
 
-/* _________________________________________________ */
+/* _________________________박스켓_____________________ */
 
 .hero-section {
   display: flex;
@@ -135,7 +135,9 @@ body {
   max-width: 800px;
 }
 
-모바일 박스켓 @media (max-width: 768px) {
+/* 모바일 박스켓 */
+
+@media (max-width: 768px) {
   .hero-section {
     display: flex;
     flex-direction: column !important;
@@ -484,7 +486,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 1280px;
+  width: 1170px;
   height: 200px;
   border-radius: 25px;
   padding: 50px;
@@ -515,7 +517,6 @@ body {
   height: 60px;
   width: 480px;
   padding: 10px;
-  margin-left: 150px;
 }
 .email-input {
   border-radius: 40px;
